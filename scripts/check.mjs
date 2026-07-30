@@ -25,6 +25,11 @@ for (const issue of content.issues) {
   for (const field of fields) {
     if (!issue[field] || issue[field].length === 0) errors.push(`Issue ${issue.number} is missing ${field}`);
   }
+  if (!issue.share?.url) errors.push(`Issue ${issue.number} is missing its permanent share URL`);
+  if (!issue.share?.image) errors.push(`Issue ${issue.number} is missing its Open Graph image`);
+  if (!issue.share?.hook) errors.push(`Issue ${issue.number} is missing its Open Graph hook`);
+  if (!issue.share?.alt) errors.push(`Issue ${issue.number} is missing Open Graph image alt text`);
+  if (!issue.share?.message) errors.push(`Issue ${issue.number} is missing its iMessage copy`);
 }
 
 await readdir(join(root, "assets"));

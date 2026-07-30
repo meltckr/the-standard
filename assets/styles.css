@@ -224,6 +224,10 @@ a {
   text-decoration: none;
 }
 
+.issue-card + .issue-card {
+  border-top: 0;
+}
+
 .issue-card::before {
   position: absolute;
   inset: 0;
@@ -474,6 +478,46 @@ a {
 
 .section-body p {
   margin: 0 0 1.35em;
+}
+
+.language-shifts {
+  display: grid;
+  gap: 18px;
+  margin-top: 44px;
+  font-family: var(--sans);
+}
+
+.language-shift {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1.35fr;
+  gap: 22px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+}
+
+.language-shift__context,
+.language-shift__label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.language-shift__context {
+  color: var(--ember);
+}
+
+.language-shift__label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--graphite);
+}
+
+.language-shift p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.5;
 }
 
 .prompt-list {
@@ -799,6 +843,11 @@ a {
 
   .section-body {
     max-width: 740px;
+  }
+
+  .language-shift {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .application ol {

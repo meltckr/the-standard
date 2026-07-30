@@ -20,7 +20,7 @@ function masthead(light = false) {
 }
 
 function home() {
-  const featured = issues[0];
+  const libraryIssues = [...issues].reverse();
   document.title = "The Standard — Private Leadership Series";
   root.innerHTML = `
     <a class="skip-link" href="#library">Skip to issue library</a>
@@ -36,15 +36,16 @@ function home() {
         <h2>The issue library</h2>
         <span class="eyebrow">Private circulation · 2026</span>
       </div>
-      <a class="issue-card reveal" href="${withBase(`/issues/${featured.slug}/`)}" aria-label="Read Issue ${featured.number}: ${featured.title}">
-        <span class="issue-card__number">${featured.number}</span>
-        <span>
-          <span class="eyebrow">${featured.readingTime}</span>
-          <h3>${featured.title}</h3>
-          <p>${featured.summary}</p>
-        </span>
-        <span class="issue-card__action">Read issue</span>
-      </a>
+      ${libraryIssues.map((issue) => `
+        <a class="issue-card reveal" href="${withBase(`/issues/${issue.slug}/`)}" aria-label="Read Issue ${issue.number}: ${issue.title}">
+          <span class="issue-card__number">${issue.number}</span>
+          <span>
+            <span class="eyebrow">${issue.readingTime}</span>
+            <h3>${issue.title}</h3>
+            <p>${issue.summary}</p>
+          </span>
+          <span class="issue-card__action">Read issue</span>
+        </a>`).join("")}
       <p class="coming reveal">More principles coming.</p>
     </main>
     <footer class="site-footer">
@@ -63,6 +64,21 @@ function renderSection(section, quote) {
       </div>
       <div class="section-body">
         ${section.body.map((paragraph) => `<p>${paragraph}</p>`).join("")}
+        ${section.comparisons ? `
+          <div class="language-shifts" aria-label="Turn reactions into useful responses">
+            ${section.comparisons.map((comparison) => `
+              <div class="language-shift">
+                <span class="language-shift__context">${comparison.context}</span>
+                <div>
+                  <span class="language-shift__label">The reaction</span>
+                  <p>${comparison.reaction}</p>
+                </div>
+                <div>
+                  <span class="language-shift__label">The useful response</span>
+                  <p>${comparison.response}</p>
+                </div>
+              </div>`).join("")}
+          </div>` : ""}
         ${section.prompts ? `<ol class="prompt-list">${section.prompts.map((item) => `<li>${item}</li>`).join("")}</ol>` : ""}
       </div>
     </section>
@@ -138,7 +154,7 @@ function issuePage(issue) {
         <div class="footer-actions">
           <a class="back-link" href="${withBase("/")}">Series library</a>
           <div class="controls" aria-label="Issue actions">
-            <button class="control" type="button" data-copy>Copy link</button>
+            <button class="control" type="button" data-copy data-copy-url="${issue.share.url}">Copy link</button>
             <button class="control" type="button" data-print>Print / PDF</button>
           </div>
         </div>
@@ -196,14 +212,34 @@ function initIssue() {
 
   document.querySelector("[data-print]").addEventListener("click", () => window.print());
   document.querySelector("[data-copy]").addEventListener("click", async (event) => {
+    const button = event.currentTarget;
+    const shareUrl = button.dataset.copyUrl;
+    let copied = false;
+
     try {
-      await navigator.clipboard.writeText(window.location.href);
-      event.currentTarget.textContent = "Link copied";
+      await navigator.clipboard.writeText(shareUrl);
+      copied = true;
     } catch {
-      event.currentTarget.textContent = "Copy unavailable";
+      const fallback = document.createElement("textarea");
+      fallback.value = shareUrl;
+      fallback.setAttribute("readonly", "");
+      fallback.style.position = "fixed";
+      fallback.style.opacity = "0";
+      document.body.append(fallback);
+      fallback.select();
+      copied = document.execCommand("copy");
+      fallback.remove();
     }
+
+    if (copied) {
+      button.textContent = "Correct link copied";
+    } else {
+      button.textContent = "Copy failed";
+      window.prompt("Copy this permanent link:", shareUrl);
+    }
+
     window.setTimeout(() => {
-      event.currentTarget.textContent = "Copy link";
+      button.textContent = "Copy link";
     }, 1800);
   });
 }
