@@ -17,13 +17,24 @@ for (const file of required) {
 const html = await readFile(join(root, "index.html"), "utf8");
 if (!html.includes('lang="en"')) errors.push("Document language is missing");
 if (!html.includes('name="viewport"')) errors.push("Viewport metadata is missing");
+for (const token of [
+  'rel="canonical"',
+  'name="robots"',
+  'property="og:image:secure_url"',
+  'property="og:image:width"',
+  'property="og:image:height"',
+  'name="twitter:image:alt"',
+  'type="application/ld+json" data-structured-data',
+]) {
+  if (!html.includes(token)) errors.push(`Publishing metadata shell is missing ${token}`);
+}
 
 const content = await import("../content/issues.js");
 const { brand } = await import("../content/brand.js");
 if (!brand.logos.onDark || !brand.logos.onLight) errors.push("AVC header/footer brand assets are missing");
 if (!brand.palette.blue || !brand.palette.black || !brand.palette.white) errors.push("AVC core palette is incomplete");
 for (const issue of content.issues) {
-  const fields = ["number", "slug", "title", "thesis", "summary", "readingTime", "publicationDate", "sections", "applicationPoints", "closingQuestion", "closingStandard", "sources"];
+  const fields = ["number", "slug", "title", "thesis", "summary", "readingTime", "publicationDate", "publishedAt", "modifiedAt", "sections", "applicationPoints", "closingQuestion", "closingStandard", "sources"];
   for (const field of fields) {
     if (!issue[field] || issue[field].length === 0) errors.push(`Issue ${issue.number} is missing ${field}`);
   }
@@ -32,6 +43,22 @@ for (const issue of content.issues) {
   if (!issue.share?.hook) errors.push(`Issue ${issue.number} is missing its Open Graph hook`);
   if (!issue.share?.alt) errors.push(`Issue ${issue.number} is missing Open Graph image alt text`);
   if (!issue.share?.message) errors.push(`Issue ${issue.number} is missing its iMessage copy`);
+  if (!Number.isInteger(issue.share?.imageWidth) || !Number.isInteger(issue.share?.imageHeight)) errors.push(`Issue ${issue.number} share image dimensions are missing`);
+  if (!Number.isFinite(Date.parse(issue.publishedAt)) || !Number.isFinite(Date.parse(issue.modifiedAt))) errors.push(`Issue ${issue.number} has invalid publication timestamps`);
+  if (Date.parse(issue.modifiedAt) < Date.parse(issue.publishedAt)) errors.push(`Issue ${issue.number} modifiedAt precedes publishedAt`);
+  const expectedUrl = `https://meltckr.github.io/the-standard/issues/${issue.slug}/`;
+  if (issue.share?.url !== expectedUrl) errors.push(`Issue ${issue.number} has the wrong canonical share URL`);
+  try {
+    const imagePath = join(root, "assets", issue.share.image);
+    const image = await readFile(imagePath);
+    const pngSignature = image.subarray(1, 4).toString("ascii") === "PNG";
+    const width = pngSignature && image.length >= 24 ? image.readUInt32BE(16) : 0;
+    const height = pngSignature && image.length >= 24 ? image.readUInt32BE(20) : 0;
+    if (!pngSignature || width !== issue.share.imageWidth || height !== issue.share.imageHeight) errors.push(`Issue ${issue.number} share image dimensions do not match its metadata`);
+    if (width < 1200 || Math.abs(width / height - 1.905) > 0.01) errors.push(`Issue ${issue.number} share image must preserve the large-image social ratio`);
+  } catch {
+    errors.push(`Issue ${issue.number} share image is missing`);
+  }
   if (issue.audio) {
     const audioFields = ["label", "title", "description", "durationLabel", "src", "transcriptFile", "metadataFile", "requiredClosing", "transcript"];
     for (const field of audioFields) {

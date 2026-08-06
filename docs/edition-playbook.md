@@ -18,7 +18,7 @@ The writing should answer what happened, what it reveals, why it matters and wha
 
 - Preserve the shared page architecture, section rhythm, typography, AVC blue/black/white palette, navigation, cards, footer and motion language.
 - Use the structured issue object in `content/issues.js`; do not create a one-off page.
-- Use a 1200 × 630 Open Graph image for every new issue.
+- Use a 1200 × 630 Open Graph image for every new issue and record its exact dimensions in structured content.
 - Keep the social card composition consistent: publication mark and edition number at top left; short hook and issue title on the left; one restrained symbolic visual on the right; AVC mark at top right; month and year at the bottom.
 - Prefer one visual metaphor over a collage. Keep the social card legible at message-preview size.
 - Make design changes only for function, clarity, accessibility or repeatability.
@@ -46,11 +46,13 @@ Beginning with Edition 003, audio is a parallel consumption path for The Standar
 ## Release checklist
 
 1. Add the issue object and permanent URL.
-2. Update title, thesis, summary, reading time, publication date and share message.
-3. Add a current 1200 × 630 social image, hook and alt text.
+2. Update title, thesis, summary, reading time, display date, ISO publication/modification timestamps and share message.
+3. Add a current 1200 × 630 social image, hook, exact dimensions and alt text.
 4. Confirm the article includes the leadership distinction, evidence, practical application, question for Mat and closing standard.
 5. When the edition includes audio, generate the unique MP3 and confirm the exact transcript and metadata files.
 6. Run `npm run lint` and `npm run build`.
-7. Search for stale issue numbers, titles, dates, names, images, audio references and metadata.
-8. Check desktop and mobile layouts, audio controls and transcript once.
-9. Publish through the existing GitHub Pages workflow and verify the permanent URL, MP3 and MIME type.
+7. Confirm canonical, robots, Open Graph, Twitter, Article JSON-LD and optional AudioObject metadata in the generated issue head.
+8. Confirm `sitemap.xml` and `robots.txt` contain the permanent issue and sitemap URLs.
+9. Search for stale issue numbers, titles, dates, names, images, audio references and metadata.
+10. Check desktop and mobile layouts, audio controls and transcript once.
+11. Publish through the existing GitHub Pages workflow and verify the permanent URL, OG image, MP3 and MIME types.

@@ -8,9 +8,13 @@ export const issues = [
       "Ambitious outcomes narrow the range of behaviors compatible with achieving them. The objective remains firm; the methods must remain adaptable.",
     readingTime: "7 min read",
     publicationDate: "July 2026",
+    publishedAt: "2026-07-23T11:37:02-07:00",
+    modifiedAt: "2026-07-23T11:37:02-07:00",
     share: {
       url: "https://meltckr.github.io/the-standard/issues/001-illusion-of-choice/",
       image: "og.png",
+      imageWidth: 1731,
+      imageHeight: 909,
       hook: "Your goal changes your choices.",
       alt: "The Standard Edition 001, The Illusion of Choice.",
       message:
@@ -114,9 +118,13 @@ export const issues = [
       "The standard is not forced positivity. It is honest, useful communication that keeps information moving and gives people a next play.",
     readingTime: "7 min read",
     publicationDate: "July 2026",
+    publishedAt: "2026-07-30T00:14:16-07:00",
+    modifiedAt: "2026-07-30T00:14:16-07:00",
     share: {
       url: "https://meltckr.github.io/the-standard/issues/002-how-strong-teams-talk-under-pressure/",
       image: "og-002-v4.png",
+      imageWidth: 1200,
+      imageHeight: 630,
       hook: "What you say next matters.",
       alt: "The words What You Say Next Matters beside a white basketball coaching board with one blue route toward the next play.",
       message:
@@ -248,9 +256,13 @@ export const issues = [
       "Personal example matters, but it is only the beginning. Strong leaders accept responsibility for the team’s standard and address drift before silence turns it into permission.",
     readingTime: "8 min read",
     publicationDate: "August 2026",
+    publishedAt: "2026-08-05T22:49:23-07:00",
+    modifiedAt: "2026-08-05T22:58:46-07:00",
     share: {
       url: "https://meltckr.github.io/the-standard/issues/003-leading-by-example-is-not-leadership/",
       image: "og-003.png",
+      imageWidth: 1200,
+      imageHeight: 630,
       hook: "Your example is only the beginning.",
       alt: "The words Your Example Is Only the Beginning beside a precise row of five forms, with one blue connection bringing a misaligned form back to the standard.",
       message:
