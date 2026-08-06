@@ -2,6 +2,8 @@
 
 A private executive editorial series. Issue content lives in `content/issues.js`; future installments are added as one structured issue object and rendered by the shared publication layout.
 
+New editions publish on Thursday. The recurring editorial, visual and release standard is documented in [`docs/edition-playbook.md`](docs/edition-playbook.md).
+
 ## AVC brand system
 
 Accelerated Velocity Consulting is built into the shared publication frame. Every library page, issue and future installment automatically inherits:
