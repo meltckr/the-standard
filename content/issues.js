@@ -257,14 +257,14 @@ export const issues = [
     readingTime: "8 min read",
     publicationDate: "August 2026",
     publishedAt: "2026-08-05T22:49:23-07:00",
-    modifiedAt: "2026-08-06T11:48:11-07:00",
+    modifiedAt: "2026-08-06T11:56:47-07:00",
     share: {
       url: "https://meltckr.github.io/the-standard/issues/003-leading-by-example-is-not-leadership/",
-      image: "og-003-v2.png",
+      image: "og-003-v3.png",
       imageWidth: 1200,
       imageHeight: 630,
       hook: "Your example is only the beginning.",
-      alt: "The words Your Example Is Only the Beginning beside a leader speaking directly to a teammate in a dark basketball practice setting.",
+      alt: "The words Your Example Is Only the Beginning beside two peer basketball players speaking eye-to-eye during a private accountability moment.",
       message:
         "Mat — here is Edition No. 3 of The Standard: Leading by Example Is Not Leadership. It challenges an idea we hear constantly in sports and business. Meeting the standard gives a leader credibility, but the harder responsibility is protecting that standard when a teammate drifts. The piece looks at why silence changes what a group believes is acceptable—and how direct, respectful peer accountability turns individual discipline into team culture. I’d be interested to hear what stands out to you."
     },
