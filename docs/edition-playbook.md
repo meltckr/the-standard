@@ -30,13 +30,27 @@ The writing should answer what happened, what it reveals, why it matters and wha
 - Wednesday: complete copy, social card and local verification.
 - Thursday morning: publish, verify the live issue and send the prepared message.
 
+## Audio edition
+
+Beginning with Edition 003, audio is a parallel consumption path for The Standard. Reuse the established AVC ElevenLabs generation and accessible-player infrastructure; adapt the script for a four-to-six-minute spoken essay rather than reading the article verbatim.
+
+- Keep the exact narration in the issue's structured `audio.transcript` field.
+- Render the player automatically from the issue's `audio` object.
+- Preserve play/pause, ±15-second seek, timeline, speed controls, no autoplay and a collapsed exact transcript.
+- Use a unique versioned MP3 filename for every edition and apply measured two-pass normalization to -16 LUFS with a true-peak ceiling of -1.5 dBTP, mono, 96 kbps. The generator must fail closed when the finished MP3 misses that contract.
+- End the narration with the issue's exact closing standard and no speech afterward.
+- Generate with `npm run audio:generate -- --issue NNN` only after the written edition and sources are final.
+- Verify duration, opening/middle/close, transcript match, mobile controls, file hash, live MIME type and HTTP 200 before release.
+- Preserve the MP3, transcript and generation metadata with the shipped edition.
+
 ## Release checklist
 
 1. Add the issue object and permanent URL.
 2. Update title, thesis, summary, reading time, publication date and share message.
 3. Add a current 1200 × 630 social image, hook and alt text.
 4. Confirm the article includes the leadership distinction, evidence, practical application, question for Mat and closing standard.
-5. Run `npm run lint` and `npm run build`.
-6. Search for stale issue numbers, titles, dates, names, images and metadata.
-7. Check desktop and mobile layouts once.
-8. Publish through the existing GitHub Pages workflow and verify the permanent URL.
+5. When the edition includes audio, generate the unique MP3 and confirm the exact transcript and metadata files.
+6. Run `npm run lint` and `npm run build`.
+7. Search for stale issue numbers, titles, dates, names, images, audio references and metadata.
+8. Check desktop and mobile layouts, audio controls and transcript once.
+9. Publish through the existing GitHub Pages workflow and verify the permanent URL, MP3 and MIME type.

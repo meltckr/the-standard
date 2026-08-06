@@ -36,6 +36,9 @@ Open `http://127.0.0.1:4173`.
 ## Validation
 
 ```sh
+npm run audio:generate -- --issue 003
 npm run lint
 npm run build
 ```
+
+Audio is optional per issue and rendered from the structured `audio` object. Every audio-enabled edition ships a versioned MP3, exact transcript and generation metadata.

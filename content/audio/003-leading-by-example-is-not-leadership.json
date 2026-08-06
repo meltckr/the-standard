@@ -1,0 +1,16 @@
+{
+  "issue": "003",
+  "slug": "003-leading-by-example-is-not-leadership",
+  "title": "Leading by Example Is Not Leadership — The Standard No. 003",
+  "source": "/assets/audio/standard-003-leading-by-example-is-not-leadership-v1.mp3",
+  "transcript": "/content/audio/003-leading-by-example-is-not-leadership.txt",
+  "wordCount": 800,
+  "durationSeconds": 317.695,
+  "voiceId": "Ib97zM6uFBc71OWgj75I",
+  "modelId": "eleven_multilingual_v2",
+  "normalization": "measured two-pass loudnorm with codec compensation / -16 LUFS / ≤ -1.5 dBTP / mono / 96 kbps MP3",
+  "measuredIntegratedLufs": -16.1,
+  "measuredTruePeakDbtp": -1.51,
+  "sha256": "ad71af321c93e96977095be853eaa36a79e3f9df52eff2470d49d6f47e70884c",
+  "generatedAt": "2026-08-06T05:43:32.267Z"
+}
