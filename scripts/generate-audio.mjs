@@ -33,6 +33,20 @@ function projectPath(value) {
   return path;
 }
 
+function applyPronunciationAliases(text, aliases = []) {
+  let speechInput = text;
+  for (const alias of aliases) {
+    if (!alias?.written || !alias?.spoken || alias.written === alias.spoken) {
+      throw new Error("Pronunciation aliases require different written and spoken forms.");
+    }
+    if (!speechInput.includes(alias.written)) {
+      throw new Error(`Pronunciation alias source is missing from the transcript: ${alias.written}`);
+    }
+    speechInput = speechInput.replaceAll(alias.written, alias.spoken);
+  }
+  return speechInput;
+}
+
 function measureLoudness(inputPath, targetIntegratedLufs = -16, targetTruePeakDbtp = -1.5) {
   const result = spawnSync("ffmpeg", [
     "-hide_banner", "-nostats", "-i", inputPath,
@@ -86,6 +100,8 @@ if (!issue.audio) throw new Error(`Issue ${issue.number} has no audio configurat
 
 const { audio } = issue;
 const narration = audio.transcript.join("\n\n").trim();
+const pronunciationAliases = audio.pronunciationAliases ?? [];
+const speechInput = applyPronunciationAliases(narration, pronunciationAliases);
 if (!narration) throw new Error(`Issue ${issue.number} has an empty audio transcript.`);
 if (!narration.endsWith(audio.requiredClosing)) {
   throw new Error(`Narration must end exactly with: ${audio.requiredClosing}`);
@@ -114,7 +130,7 @@ try {
     method: "POST",
     headers: { "xi-api-key": apiKey, "Content-Type": "application/json" },
     body: JSON.stringify({
-      text: narration,
+      text: speechInput,
       model_id: MODEL_ID,
       voice_settings: {
         stability: 0.42,
@@ -200,6 +216,9 @@ try {
     normalization: "measured two-pass loudnorm with codec compensation / -16 LUFS / ≤ -1.5 dBTP / mono / 96 kbps MP3",
     measuredIntegratedLufs,
     measuredTruePeakDbtp,
+    pronunciationAliases,
+    transcriptSha256: createHash("sha256").update(narration).digest("hex"),
+    speechInputSha256: createHash("sha256").update(speechInput).digest("hex"),
     sha256: createHash("sha256").update(audioBuffer).digest("hex"),
     generatedAt: new Date().toISOString()
   };

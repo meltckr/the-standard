@@ -35,6 +35,7 @@ The writing should answer what happened, what it reveals, why it matters and wha
 Beginning with Edition 003, audio is a parallel consumption path for The Standard. Reuse the established AVC ElevenLabs generation and accessible-player infrastructure; adapt the script for a four-to-six-minute spoken essay rather than reading the article verbatim.
 
 - Keep the exact narration in the issue's structured `audio.transcript` field.
+- Keep proper names correctly spelled in the article and visible transcript. When the speech model needs help, add a narrowly scoped `audio.pronunciationAliases` rule that changes only the text sent to ElevenLabs, and version the replacement MP3 to prevent stale playback.
 - Render the player automatically from the issue's `audio` object.
 - Preserve play/pause, ±15-second seek, timeline, speed controls, no autoplay and a collapsed exact transcript.
 - Use a unique versioned MP3 filename for every edition and apply measured two-pass normalization to -16 LUFS with a true-peak ceiling of -1.5 dBTP, mono, 96 kbps. The generator must fail closed when the finished MP3 misses that contract.

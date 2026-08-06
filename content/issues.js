@@ -257,7 +257,7 @@ export const issues = [
     readingTime: "8 min read",
     publicationDate: "August 2026",
     publishedAt: "2026-08-05T22:49:23-07:00",
-    modifiedAt: "2026-08-05T22:58:46-07:00",
+    modifiedAt: "2026-08-06T10:28:28-07:00",
     share: {
       url: "https://meltckr.github.io/the-standard/issues/003-leading-by-example-is-not-leadership/",
       image: "og-003.png",
@@ -273,9 +273,15 @@ export const issues = [
       title: "Leading by Example Is Not Leadership — The Standard No. 003",
       description: "A spoken edition on the difference between meeting the standard and protecting it in others.",
       durationLabel: "5 min listen",
-      src: "/assets/audio/standard-003-leading-by-example-is-not-leadership-v1.mp3",
+      src: "/assets/audio/standard-003-leading-by-example-is-not-leadership-v2.mp3",
       transcriptFile: "/content/audio/003-leading-by-example-is-not-leadership.txt",
-      metadataFile: "/content/audio/003-leading-by-example-is-not-leadership.json",
+      metadataFile: "/content/audio/003-leading-by-example-is-not-leadership-v2.json",
+      pronunciationAliases: [
+        {
+          written: "Dwyane Wade",
+          spoken: "Dwayne Wade"
+        }
+      ],
       minSeconds: 240,
       maxSeconds: 390,
       requiredClosing: "Set the example. Confront the drift. Protect the team.",

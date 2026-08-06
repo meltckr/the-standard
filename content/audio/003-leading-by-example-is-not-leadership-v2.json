@@ -1,0 +1,24 @@
+{
+  "issue": "003",
+  "slug": "003-leading-by-example-is-not-leadership",
+  "title": "Leading by Example Is Not Leadership — The Standard No. 003",
+  "source": "/assets/audio/standard-003-leading-by-example-is-not-leadership-v2.mp3",
+  "transcript": "/content/audio/003-leading-by-example-is-not-leadership.txt",
+  "wordCount": 800,
+  "durationSeconds": 326.983,
+  "voiceId": "Ib97zM6uFBc71OWgj75I",
+  "modelId": "eleven_multilingual_v2",
+  "normalization": "measured two-pass loudnorm with codec compensation / -16 LUFS / ≤ -1.5 dBTP / mono / 96 kbps MP3",
+  "measuredIntegratedLufs": -16.22,
+  "measuredTruePeakDbtp": -1.66,
+  "pronunciationAliases": [
+    {
+      "written": "Dwyane Wade",
+      "spoken": "Dwayne Wade"
+    }
+  ],
+  "transcriptSha256": "22b0b21c59de429804f67ccc4e9ff1219b271618883f3fbd3437710a52fda3ed",
+  "speechInputSha256": "2b8147be79b71212cd57d2da31ca8f3210534b090b59e562801f3781140aa9bf",
+  "sha256": "200ac84d2eccd546ee39f1d849fcaf3e87c289f9945b7356de939a79978ad334",
+  "generatedAt": "2026-08-06T17:28:28.581Z"
+}

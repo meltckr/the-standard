@@ -8,6 +8,10 @@ const root = fileURLToPath(new URL("../", import.meta.url));
 const required = ["index.html", "assets/styles.css", "assets/site.js", "content/brand.js", "content/issues.js"];
 const errors = [];
 
+function applyPronunciationAliases(text, aliases = []) {
+  return aliases.reduce((speechInput, alias) => speechInput.replaceAll(alias.written, alias.spoken), text);
+}
+
 for (const file of required) {
   const text = await readFile(join(root, file), "utf8");
   if (!text.trim()) errors.push(`${file} is empty`);
@@ -65,6 +69,13 @@ for (const issue of content.issues) {
       if (!issue.audio[field] || issue.audio[field].length === 0) errors.push(`Issue ${issue.number} audio is missing ${field}`);
     }
     const narration = issue.audio.transcript.join("\n\n").trim();
+    const pronunciationAliases = issue.audio.pronunciationAliases ?? [];
+    if (!Array.isArray(pronunciationAliases)) errors.push(`Issue ${issue.number} pronunciation aliases must be an array`);
+    for (const alias of pronunciationAliases) {
+      if (!alias?.written || !alias?.spoken || alias.written === alias.spoken) errors.push(`Issue ${issue.number} has an invalid pronunciation alias`);
+      if (!narration.includes(alias?.written)) errors.push(`Issue ${issue.number} pronunciation alias source is absent from the transcript`);
+    }
+    const speechInput = applyPronunciationAliases(narration, pronunciationAliases);
     if (!narration.endsWith(issue.audio.requiredClosing)) errors.push(`Issue ${issue.number} audio has the wrong closing line`);
     if (narration.split(/\s+/).length < 500 || narration.split(/\s+/).length > 950) errors.push(`Issue ${issue.number} audio transcript is outside 500-950 words`);
     if (!Number.isFinite(issue.audio.minSeconds) || !Number.isFinite(issue.audio.maxSeconds) || issue.audio.minSeconds >= issue.audio.maxSeconds) errors.push(`Issue ${issue.number} audio duration contract is invalid`);
@@ -104,6 +115,9 @@ for (const issue of content.issues) {
       if (!metadata.normalization?.includes("two-pass loudnorm")) errors.push(`Issue ${issue.number} audio metadata is missing two-pass normalization`);
       if (!Number.isFinite(metadata.measuredIntegratedLufs) || Math.abs(metadata.measuredIntegratedLufs - (-16)) > 0.25) errors.push(`Issue ${issue.number} audio loudness is outside -16 ±0.25 LUFS`);
       if (!Number.isFinite(metadata.measuredTruePeakDbtp) || metadata.measuredTruePeakDbtp > -1.45) errors.push(`Issue ${issue.number} audio true peak exceeds the -1.5 dBTP ceiling`);
+      if (JSON.stringify(metadata.pronunciationAliases ?? []) !== JSON.stringify(pronunciationAliases)) errors.push(`Issue ${issue.number} audio pronunciation metadata is stale`);
+      if (metadata.transcriptSha256 !== createHash("sha256").update(narration).digest("hex")) errors.push(`Issue ${issue.number} transcript hash does not match metadata`);
+      if (metadata.speechInputSha256 !== createHash("sha256").update(speechInput).digest("hex")) errors.push(`Issue ${issue.number} speech-input hash does not match pronunciation aliases`);
       const audioPath = join(root, issue.audio.src.replace(/^\/+/, ""));
       const digest = createHash("sha256").update(await readFile(audioPath)).digest("hex");
       if (metadata.sha256 !== digest) errors.push(`Issue ${issue.number} audio hash does not match metadata`);
