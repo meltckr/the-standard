@@ -140,6 +140,7 @@ function renderAudio(issue) {
 function issuePage(issue) {
   document.title = `${issue.title} — The Standard No. ${issue.number}`;
   const issueHref = withBase(`/issues/${issue.slug}/`);
+  const shareUrl = new URL(issueHref, window.location.origin).href;
   const navItems = [
     ...(issue.audio ? [["listen", "Listen"]] : []),
     ...issue.sections.map((section) => [section.id, section.eyebrow]),
@@ -201,7 +202,7 @@ function issuePage(issue) {
         <div class="footer-actions">
           <a class="back-link" href="${withBase("/")}">Series library</a>
           <div class="controls" aria-label="Issue actions">
-            <button class="control" type="button" data-copy data-copy-url="${issue.share.url}">Copy link</button>
+            <button class="control" type="button" data-copy data-copy-url="${shareUrl}">Copy link</button>
             <button class="control" type="button" data-print>Print / PDF</button>
           </div>
         </div>

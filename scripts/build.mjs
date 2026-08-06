@@ -5,7 +5,13 @@ import { issues } from "../content/issues.js";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const dist = join(root, "dist");
-const siteUrl = "https://meltckr.github.io/the-standard/";
+const defaultSiteUrl = "https://meltckr.github.io/the-standard/";
+const configuredSiteUrl = process.env.STANDARD_SITE_URL ?? defaultSiteUrl;
+const siteUrl = configuredSiteUrl.endsWith("/") ? configuredSiteUrl : `${configuredSiteUrl}/`;
+const configuredBasePath = process.env.STANDARD_BASE_PATH ?? new URL(siteUrl).pathname;
+const basePath = configuredBasePath === "/"
+  ? "/"
+  : `/${configuredBasePath.replace(/^\/+|\/+$/g, "")}/`;
 await rm(dist, { recursive: true, force: true });
 await mkdir(join(dist, "assets"), { recursive: true });
 await mkdir(join(dist, "content"), { recursive: true });
@@ -13,7 +19,9 @@ await cp(join(root, "assets"), join(dist, "assets"), { recursive: true });
 await cp(join(root, "content"), join(dist, "content"), { recursive: true });
 
 const shell = await readFile(join(root, "index.html"), "utf8");
-const pagesShell = shell.replace('<base href="/">', '<base href="/the-standard/">');
+const pagesShell = shell
+  .replace('<base href="/">', `<base href="${basePath}">`)
+  .replaceAll(defaultSiteUrl, siteUrl);
 await writeFile(join(dist, "index.html"), pagesShell);
 await writeFile(join(dist, ".nojekyll"), "");
 
@@ -54,7 +62,7 @@ function isoDuration(seconds) {
 
 async function issueShell(issue) {
   const title = `${issue.title} — The Standard No. ${issue.number}`;
-  const url = issue.share.url;
+  const url = new URL(`issues/${issue.slug}/`, siteUrl).href;
   const imageName = issue.share?.image ?? (issue.number === "001" ? "og.png" : `og-${issue.number}.png`);
   const image = `${siteUrl}assets/${imageName}`;
   const imageAlt = issue.share?.alt ?? title;
@@ -137,7 +145,10 @@ for (const issue of issues) {
 
 const sitemapEntries = [
   { url: siteUrl, modifiedAt: issues.at(-1)?.modifiedAt },
-  ...issues.map((issue) => ({ url: issue.share.url, modifiedAt: issue.modifiedAt })),
+  ...issues.map((issue) => ({
+    url: new URL(`issues/${issue.slug}/`, siteUrl).href,
+    modifiedAt: issue.modifiedAt,
+  })),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -146,4 +157,4 @@ ${sitemapEntries.map((entry) => `  <url>\n    <loc>${entry.url}</loc>\n    <last
 `;
 await writeFile(join(dist, "sitemap.xml"), sitemap);
 await writeFile(join(dist, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${siteUrl}sitemap.xml\n`);
-console.log(`Built The Standard with ${issues.length} issue routes to ${dist}.`);
+console.log(`Built The Standard with ${issues.length} issue routes to ${dist} for ${siteUrl}.`);

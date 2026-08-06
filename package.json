@@ -7,6 +7,7 @@
     "dev": "node scripts/dev-server.mjs",
     "audio:generate": "node scripts/generate-audio.mjs",
     "lint": "node scripts/check.mjs",
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "build:netlify": "STANDARD_SITE_URL=https://the-standard-avc.netlify.app/ STANDARD_BASE_PATH=/ node scripts/build.mjs"
   }
 }

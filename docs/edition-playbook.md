@@ -57,3 +57,5 @@ Beginning with Edition 003, audio is a parallel consumption path for The Standar
 9. Search for stale issue numbers, titles, dates, names, images, audio references and metadata.
 10. Check desktop and mobile layouts, audio controls and transcript once.
 11. Publish through the existing GitHub Pages workflow and verify the permanent URL, OG image, MP3 and MIME types.
+
+If GitHub Pages is unavailable, run `npm run build:netlify` and deploy the generated `dist` directory to the linked `the-standard-avc` Netlify site. This preserves the edition system while emitting fallback-specific canonical, social, sitemap, audio and copy-link URLs.
