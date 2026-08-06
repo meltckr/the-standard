@@ -258,27 +258,29 @@ export const issues = [
     },
     sections: [
       {
+        id: "story",
+        eyebrow: "The Basketball Lesson",
+        title: "The standard needs more than a model. It needs a voice.",
+        body: [
+          "In February 2026, Dwyane Wade reflected on three of the strongest leaders he encountered during his Hall of Fame career. The way he described two of them reveals an important division of responsibility inside the Miami Heat.",
+          "Pat Riley established the standard. Wade remembered that details were corrected in practice regardless of whether the mistake came from the first unit or the third. Udonis Haslem carried that standard into the locker room.",
+          "Haslem was never the team’s biggest star, but Wade said he had its strongest voice because teammates knew it was not being used for selfish reasons. He made sure Riley’s rules applied to everyone. When LeBron James and Chris Bosh arrived, that did not change.",
+          "Wade summarized the sequence precisely: “Accountability to each other starts with accountability individually.”",
+          "Haslem earned the right to speak through the way he served, prepared and competed. But his leadership did not stop with his own example. He used that trust to protect the standard in somebody else—even when that person had more talent, status or power.",
+          "The standard did not bend around the most important person in the room because someone in the room was willing to give it a voice."
+        ]
+      },
+      {
         id: "distinction",
         eyebrow: "The Distinction",
         title: "Example is credibility. It is not the whole job.",
         body: [
-          "Throughout my career, I have heard the same description of certain players and coaches: He is a great leader because he leads by example.",
-          "There is a reason the phrase has endured. People watch what a leader does. They notice who arrives prepared, who studies, who finishes, who keeps his word and who remains dependable when the work becomes uncomfortable. Research on behavioral integrity reinforces the point: when a leader’s actions match his words, trust and performance are more likely to follow.",
-          "Example matters. Without it, a leader has no credibility.",
-          "But meeting the standard is still doing your job. It proves that you can lead yourself. It does not prove that you are willing to protect the team when someone beside you stops meeting it.",
-          "Leadership begins when personal discipline becomes shared responsibility. The question is no longer only, “Am I doing it right?” It becomes, “Will I say something when we are not doing it right?”"
-        ]
-      },
-      {
-        id: "moment",
-        eyebrow: "The Moment",
-        title: "The standard moves when nobody speaks.",
-        body: [
-          "Every coach knows the sequence. A player gives less than the required effort. A coach leaves a detail uncorrected. A teammate repeatedly arrives unprepared. Everybody sees it. The film sees it. The meeting room feels it.",
-          "The first time, people may treat it as a mistake. The second time, they begin looking at one another. The respected veteran notices. The assistant coach notices. Each assumes someone else will handle it—or decides that quietly doing his own job is enough.",
-          "That first silence buys comfort. The next silence creates precedent. Soon the team is operating with two standards: the one posted on the wall and the one people have learned they can get away with.",
+          "Throughout my career, I have heard the same description of certain players and coaches: He is a great leader because he leads by example. The phrase has endured because example matters. People watch who prepares, who finishes, who keeps his word and who remains dependable when the work becomes uncomfortable. Without that behavioral integrity, a leader has no credibility.",
+          "But meeting the standard is still doing your job. It proves that you can lead yourself. It does not prove that you will protect the team when someone beside you stops meeting it. The question must move from “Am I doing it right?” to “Will I say something when we are not doing it right?”",
+          "Every coach knows the sequence. A player gives less than the required effort. A detail goes uncorrected. A teammate repeatedly arrives unprepared. Everybody sees it, but each assumes someone else will handle it—or decides that quietly doing his own job is enough.",
+          "The first silence buys comfort. The next creates precedent. Soon the team has two standards: the one posted on the wall and the one people have learned they can get away with.",
           "In Chapter 23 of The Program, Eric Kapitulik and Jake MacDonald make a hard distinction: meeting the organization’s standards is one responsibility; holding teammates accountable to those standards is another. Calling the first one leadership can give good people credit for the safer half of the job while excusing them from the harder half.",
-          "Silence is not always cowardice. Sometimes it comes from uncertainty about role, fear of damaging a relationship or the assumption that a formal leader will intervene. But the group still receives a message: this behavior is survivable here.",
+          "Silence is not always cowardice. It can come from uncertainty about role, fear of damaging a relationship or the assumption that a formal leader will intervene. But the group still receives a message: this behavior is survivable here.",
           "A leader does not have to correct everything or control everyone. A leader does have to recognize when a behavior threatens a shared standard—and refuse to treat that moment as somebody else’s responsibility."
         ]
       },
@@ -287,9 +289,9 @@ export const issues = [
         eyebrow: "What The Evidence Shows",
         title: "Silence teaches the group what is permitted.",
         body: [
+          "Team science does not treat watching a teammate’s performance as somebody else’s job. Eduardo Salas, Dana Sims and Shawn Burke identified mutual performance monitoring and backup behavior among the five core components of teamwork. In plain language, effective teammates notice lapses, communicate what they see and help one another recover before the shared work breaks down.",
           "In six field experiments published in Science, Kees Keizer and his colleagues tested what happened when people encountered visible evidence that others had ignored a rule. In one experiment, 33% of people littered in a clean alley. When the same alley contained graffiti directly beneath a no-graffiti sign, 69% littered. Across the studies, one visible norm violation made other violations more likely.",
           "A locker room is not an alley, and the researchers were not studying sports teams. The useful principle is narrower: people do not learn standards only from what is announced. They also learn from what they observe being tolerated.",
-          "The reluctance to intervene is equally well established. Frances Milliken, Elizabeth Morrison and Patricia Hewlin found that 85% of the employees they interviewed had faced an important workplace issue they did not raise. The most common reason was fear of being labeled negatively or damaging a valued relationship.",
           "The newest healthcare evidence shows both progress and the remaining gap. In the 2026 Silence Kills 2.0 study of more than 3,500 clinicians and administrators, 32% reported speaking up when they witnessed potentially harmful behavior—up from 10% in the 2005 study. But among those who saw rules broken or mistakes made, only about half said they directly confronted the person and fully expressed the concern.",
           "These studies do not prove that one confrontation guarantees a better outcome. They support a more practical conclusion: when violations are visible and response is absent, people update their understanding of the real standard. Silence does not preserve the culture. It helps rewrite it."
         ]
@@ -301,7 +303,8 @@ export const issues = [
         body: [
           "Jon Katzenbach and Douglas Smith drew a useful line between a working group and a team. A working group is built primarily on individual accountability. A team requires individual and mutual accountability for a shared result.",
           "That difference matters. A collection of people can all perform their own assignments well and still fail to function as a team. The unit changes when members accept that the quality of the shared work is also their responsibility.",
-          "The same pattern appears in sport. Research on athlete leadership shows that leadership is usually distributed across several players and several roles—not contained entirely in the head coach or the captain. In a study of 31 professional soccer teams, groups with more shared leadership reported stronger role clarity, cohesion, collective confidence and perceived performance than groups with leadership concentrated in fewer people.",
+          "Pixar cofounder Ed Catmull built the company’s Braintrust around the same principle. Filmmakers regularly put unfinished work in front of a group of respected peers and invite direct criticism. Catmull said the discussions could be intense, but they were not personal. The group had no authority to take the project away or dictate the answer. Its responsibility was to tell the truth about the work so the person who owned it could make it better.",
+          "That candor was not left to personality or chance. Pixar made it an operating practice. The team protected the quality of the film by making honest peer challenge part of how the work moved forward.",
           "A coach or executive creates the conditions. Formal leaders define the standard, model it, teach it and support people who speak honestly. But they cannot be present in every huddle, hallway, meeting and decision.",
           "If the standard exists only when the person with authority is in the room, it is not yet culture. It is supervision."
         ]
@@ -309,12 +312,13 @@ export const issues = [
       {
         id: "confrontation",
         eyebrow: "The Important Distinction",
-        title: "Confrontation is not aggression.",
+        title: "Direct is useful. Personal is expensive.",
         body: [
           "Some teams hear the word accountability and picture anger, humiliation or one person imposing a personal preference on everyone else. That is not the standard.",
           "A useful confrontation protects two things at the same time: the dignity of the teammate and the integrity of the work. It is direct without becoming personal. It names an observable behavior, connects that behavior to a shared expectation and gives the person a clear next action.",
+          "That distinction is not cosmetic. In a major review of 607 feedback effects, Avraham Kluger and Angelo DeNisi found that feedback improved performance on average—but more than one-third of the effects were negative. Their analysis showed why the target matters: feedback is more useful when it directs attention toward the task and how to improve it, and less useful when it pulls attention toward the self.",
           "Amy Edmondson’s work on psychological safety helps clarify the balance. High standards without safety create anxiety and concealment. Safety without standards creates comfort without growth. Strong teams need both: the freedom to tell the truth and the responsibility to respond to it.",
-          "The goal is not to win the confrontation. The goal is to restore the standard while preserving the relationship required to pursue it together."
+          "The goal is not to prove who is right or to win the confrontation. The goal is to restore the standard while preserving the relationship required to pursue it together."
         ],
         comparisons: [
           {
@@ -356,7 +360,7 @@ export const issues = [
     ],
     pullQuotes: [
       {
-        after: "distinction",
+        after: "story",
         text: "Your example protects your credibility. Your voice protects the team."
       },
       {
@@ -372,18 +376,19 @@ export const issues = [
       "Recognize people who raise difficult issues early and help teammates respond well."
     ],
     closingQuestion:
-      "Where might we be calling someone a leader because of how he works while avoiding the harder question of whether he will protect the standard in others?",
+      "Who are we calling a leader because he meets the standard—but has not shown that he will protect it in others?",
     closingStandard: "Set the example. Confront the drift. Protect the team.",
     sources: [
+      "Dwyane Wade, “These Are the Three Best Leaders I Played With in the NBA” (2026)",
       "Eric Kapitulik and Jake MacDonald, “The Program,” Chapter 23: “Do Not ‘Lead by Example’” (2019)",
       "Simons, Leroy, Collewaert and Masschelein, “How Leader Alignment of Words and Deeds Affects Followers” (2015)",
+      "Salas, Sims and Burke, “Is There a ‘Big Five’ in Teamwork?” (2005)",
       "Keizer, Lindenberg and Steg, “The Spreading of Disorder” (2008)",
-      "Milliken, Morrison and Hewlin, “An Exploratory Study of Employee Silence” (2003)",
       "Grenny, Good, Lavandero and Scruth, “Silence Kills 2.0” (2026)",
       "Katzenbach and Smith, “The Discipline of Teams” (1993)",
-      "Darley and Latané, “Bystander Intervention in Emergencies” (1968)",
-      "Edmondson, “The Fearless Organization” (2019)",
-      "Leo et al., “How Many Leaders Does It Take to Lead a Sports Team?” (2019)"
+      "Ed Catmull, “Inside the Braintrust,” Stanford eCorner (2014)",
+      "Kluger and DeNisi, “The Effects of Feedback Interventions on Performance” (1996)",
+      "Edmondson, “The Fearless Organization” (2019)"
     ]
   }
 ];
