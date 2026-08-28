@@ -108,8 +108,10 @@ if (!narration.endsWith(audio.requiredClosing)) {
 }
 
 const wordCount = narration.split(/\s+/).length;
-if (wordCount < 500 || wordCount > 950) {
-  throw new Error(`Narration is ${wordCount} words; The Standard audio contract is 500-950 words.`);
+const minWords = audio.minWords ?? 500;
+const maxWords = audio.maxWords ?? 950;
+if (wordCount < minWords || wordCount > maxWords) {
+  throw new Error(`Narration is ${wordCount} words; this edition's audio contract is ${minWords}-${maxWords} words.`);
 }
 
 const apiKey = process.env.ELEVENLABS_API_KEY;

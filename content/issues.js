@@ -445,6 +445,187 @@ export const issues = [
       "Kluger and DeNisi, “The Effects of Feedback Interventions on Performance” (1996)",
       "Edmondson, “The Fearless Organization” (2019)"
     ]
+  },
+  {
+    number: "004",
+    slug: "004-comfortable-being-uncomfortable",
+    title: "Comfortable Being Uncomfortable",
+    thesis: "Comfort is not rest. Comfort is the low-arousal side of the curve. Discomfort is not the goal. Capacity is.",
+    summary:
+      "Comfort is not rest. It is the low-arousal side of the curve. Discomfort is not the goal. Capacity is.",
+    readingTime: "8 min read",
+    publicationDate: "August 2026",
+    publishedAt: "2026-08-28T15:09:43-07:00",
+    modifiedAt: "2026-08-28T15:09:43-07:00",
+    share: {
+      url: "https://meltckr.github.io/the-standard/issues/004-comfortable-being-uncomfortable/",
+      image: "og-004-comfortable-being-uncomfortable.png",
+      imageWidth: 1200,
+      imageHeight: 630,
+      hook: "Choose the stretch.",
+      alt: "The Standard Edition 004 social card showing an inverted performance curve with the stretch zone highlighted beside the words Choose the Stretch.",
+      message:
+        "The Standard — No. 004\nComfortable Being Uncomfortable\n\nComfort is not rest. Comfort is the low-arousal side of the curve. Discomfort is not the goal. Capacity is.\n\nChris Paul: you can be comfortable or you can be great, but you can’t be both.\n\nProtect recovery. Choose the stretch. Grow the capacity."
+    },
+    audio: {
+      player: "mel-audio-player",
+      label: "Audio",
+      title: "Comfortable Being Uncomfortable",
+      description: "A spoken essay on using discomfort as information while protecting recovery and staying out of panic.",
+      durationLabel: "3 min listen",
+      src: "/assets/audio/standard-004-comfortable-being-uncomfortable-v1.mp3",
+      transcriptFile: "/content/audio/004-comfortable-being-uncomfortable.txt",
+      metadataFile: "/content/audio/004-comfortable-being-uncomfortable-v1.json",
+      pronunciationAliases: [
+        {
+          written: "Mat",
+          spoken: "Matt"
+        }
+      ],
+      minWords: 400,
+      maxWords: 950,
+      minSeconds: 150,
+      maxSeconds: 330,
+      requiredClosing: "Protect recovery. Choose the stretch. Grow the capacity.",
+      transcript: [
+        "Chris Paul worked from one sentence. You can be comfortable or you can be great, but you can’t be both.",
+        "Trainers around him said he asked for the harder drill. Break me. Give me something hard. He treated being at ease with the unknown as a skill, not a mood.",
+        "That is the whole argument, if you hear it cleanly. He was not collecting pain. He was refusing the version of practice that no longer asked anything of him.",
+        "Comfort is not rest.",
+        "Rest is recovery. It has a start, a stop, and a return to the work. Comfort is what happens when the work itself stops requiring adaptation. The room can still look busy. The standard is being met by repetition, not by growth.",
+        "If you want to be successful, you have to be comfortable being uncomfortable. That is not a dare to live in pain. It is a warning. Comfort protects the status quo. The status quo is where capacity stops expanding.",
+        "A big who only takes the shots he already makes and a processor who only works the files he already knows are making the same trade. They are protecting comfort and calling it competence.",
+        "The science has had the shape since 1908. Performance rises with challenge, then falls when the challenge becomes threat. Too little arousal and you drift. Too much and people hide. The middle is the stretch. That is the only place capacity grows.",
+        "In 2022, Woolley and Fishbach ran five experiments with 2,163 people. Some were told to treat the feeling of discomfort as a signal of growth. Those people stayed longer and took more risk. The study was not a practice and it was not a mortgage desk. The usable finding is smaller than the slogan. The feeling can be information. It does not have to be a stop sign.",
+        "Success makes this harder, not easier. The room that just performed is the room most likely to start protecting how it already works. A coach who makes practice easier because the team earned it is not recovering them unless recovery was the plan. A loan officer who only originates the product he already sells is shrinking the book. An owner who only sits in the meetings that already go well is staying where nothing will surprise him.",
+        "Some rooms hear this and start collecting hardship. Extra meetings. Extra reps. Extra noise. That is not the standard. Discomfort is not the goal. Capacity is. Stay in the stretch. Leave the panic. Protect recovery.",
+        "So the question for Mat is not who looks the toughest. The question is this. Where have we let a room get comfortable, and called it culture?",
+        "Protect recovery. Choose the stretch. Grow the capacity."
+      ]
+    },
+    sections: [
+      {
+        id: "story",
+        eyebrow: "The Basketball Lesson",
+        title: "Greatness and comfort do not share a room.",
+        body: [
+          "Chris Paul worked from one sentence: “You can be comfortable or you can be great, but you can’t be both.”",
+          "Trainers around him said he asked for the harder drill. “Break me, give me something hard.” He treated being at ease with the unknown as a skill, not a mood.",
+          "That is the sports moment. A point guard already good enough to protect his look, asking to be made less comfortable on purpose.",
+          "The easy read is toughness. The useful read is narrower. Paul was not collecting pain. He was refusing the version of practice that no longer asked anything of him.",
+          "A big who only takes the shots he already makes and a processor who only works the files he already knows are making the same trade. They are protecting comfort and calling it competence."
+        ]
+      },
+      {
+        id: "distinction",
+        eyebrow: "The Distinction",
+        title: "Comfort is not rest. Comfort is drift.",
+        body: [
+          "Rest is recovery. It has a start, a stop, and a return to the work. The body is tired. The system is being restored.",
+          "Comfort is different. Comfort is what happens when the work itself stops requiring adaptation. Nobody is tired. Nothing new is being asked. The room can still look busy. The standard is being met by repetition, not by growth.",
+          "If you want to be successful, you have to be comfortable being uncomfortable. That line is not a dare to live in pain. It is a warning about the other side of the curve. Comfort protects the status quo. The status quo is where capacity stops expanding.",
+          "On the far side of the curve, panic is not growth either. Too much arousal and the system protects itself. Learning drops. People hide. The science has had this shape since 1908: performance rises with challenge, then falls when the challenge becomes threat. The middle of that curve is the stretch. That is the only place capacity grows.",
+          "Discomfort is the feeling you get in that middle. It is information. It is not the assignment."
+        ]
+      },
+      {
+        id: "evidence",
+        eyebrow: "What The Evidence Shows",
+        title: "The feeling is a signal. It is not a stop sign.",
+        body: [
+          "Yerkes and Dodson mapped the inverted-U in 1908. Too little arousal and you underperform. Moderate challenge and you learn. Too much and you break. Comfort is not a neutral parking spot. It is the low-arousal side of that curve.",
+          "In 2022, Woolley and Fishbach published five experiments in Psychological Science with 2,163 people. Some were told to treat awkwardness and discomfort as a signal of growth. The others got standard instructions. The people told to seek the feeling stayed longer, took more risk, and reported more progress. The effect showed up where the growth task produced immediate discomfort — improvisation, hard writing, information people would rather not sit with.",
+          "The study was not a practice and it was not a mortgage desk. The usable finding is smaller than the slogan: people can use the feeling as information instead of a reason to quit.",
+          "That is the backstage. It does not need a collage of famous names to stand."
+        ]
+      },
+      {
+        id: "room",
+        eyebrow: "What Comfort Does to a Room",
+        title: "Success expands the zone. Then the room starts protecting it.",
+        body: [
+          "The room that just performed is the room most likely to start protecting how it already works.",
+          "A coach who makes practice easier because the team earned it is not recovering them unless recovery was the plan. He is moving them down the curve. A loan officer who only originates the product he already sells is not being efficient. He is shrinking the book. A player who only wants the look he already makes is not being professional. He is staying where he cannot miss. An owner who only sits in the meetings that already go well is not leading. He is staying where nothing will surprise him.",
+          "Kobe wrote that he liked “challenging people and making them uncomfortable” because it forced them to look at themselves. That sentence earns its place because it is the leadership half of Paul’s fork. The job is not to make people suffer. The job is to keep the room from settling into the version of itself that already works.",
+          "Navy SEALs drill the same phrase as a maxim: get comfortable being uncomfortable. The point of the repetition is not the cold water. It is that discomfort stops being a reason to quit."
+        ]
+      },
+      {
+        id: "capacity",
+        eyebrow: "The Important Distinction",
+        title: "Discomfort is not the goal. Capacity is.",
+        body: [
+          "Some rooms hear this and start collecting hardship. Extra meetings. Extra reps. Extra noise. That is not the standard.",
+          "The science does not support maximizing suffering. Optimal growth sits in the stretch: uncomfortable enough to force adaptation, recoverable, and aimed at a real skill. Panic is a different zone. So is rest. Confusing the three is how a program gets loud and worse.",
+          "Brené Brown put the same fork in different words: “You can choose courage or you can choose comfort. You cannot have both.” Courage here is not a speech. It is the decision to stay in the stretch when the easier room is available."
+        ],
+        comparisons: [
+          {
+            context: "Player to player",
+            reaction: "“I already have this. Give me the look I know.”",
+            response: "“Give me the one I miss. Stay in it.”"
+          },
+          {
+            context: "Coach to coach",
+            reaction: "“They earned an easier day.”",
+            response: "“Recovery is on the calendar. The work still has to stretch them.”"
+          },
+          {
+            context: "Loan officer / processor",
+            reaction: "“These are the files I know.”",
+            response: "“Take the one that makes you slow, and stay until you aren’t.”"
+          },
+          {
+            context: "Owner",
+            reaction: "“This room already works. Don’t touch it.”",
+            response: "“It works. That is why it will drift. What is the stretch this week?”"
+          }
+        ]
+      },
+      {
+        id: "practice",
+        eyebrow: "The Leadership Practice",
+        title: "Separate the three zones. Then pick the middle one.",
+        body: [
+          "Peer and staff accountability here is not about toughness theater. It is about naming which zone the room is actually in."
+        ],
+        prompts: [
+          "Is this rest, stretch, or panic? If you cannot name the zone, do not change the plan.",
+          "Am I asking for adaptation, or am I asking for pain? Only the first grows capacity.",
+          "Is the feeling immediate and tied to a real skill? If not, you are decorating the day.",
+          "Will the person be able to return tomorrow? If not, you left the stretch.",
+          "Did we just succeed? If yes, look for the comfort that will try to follow the win."
+        ]
+      }
+    ],
+    pullQuotes: [
+      {
+        after: "story",
+        text: "Comfort is not rest. Discomfort is not the goal. Capacity is."
+      },
+      {
+        after: "room",
+        text: "If the work no longer asks anything of you, you are not recovering. You are drifting."
+      }
+    ],
+    applicationTitle: "Make the stretch visible.",
+    applicationPoints: [
+      "Define rest as recovery with a return time. Everything else that feels easy at work is comfort.",
+      "Ask each leader for one stretch this week that is uncomfortable, recoverable, and tied to a real skill.",
+      "Correct the room that collects pain. Discomfort is the signal. Capacity is the job.",
+      "Put the floor and the mortgage desk on the same test: are we repeating what we already do, or expanding what we can do.",
+      "After a win, name the comfort that will try to follow it."
+    ],
+    closingQuestion: "Where have we let a room get comfortable, and called it culture?",
+    closingStandard: "Protect recovery. Choose the stretch. Grow the capacity.",
+    sources: [
+      "Chris Paul workout philosophy and trainer observations, as collected in the August 21, 2026 research brief",
+      "Yerkes and Dodson, “The Relation of Strength of Stimulus to Rapidity of Habit-Formation” (1908)",
+      "Woolley and Fishbach, “Motivating Personal Growth by Seeking Discomfort” (2022)",
+      "Kobe Bryant, leadership observation collected in the August 21, 2026 research brief",
+      "Navy SEAL maxim collected in the August 21, 2026 research brief",
+      "Brené Brown, courage and comfort observation collected in the August 21, 2026 research brief"
+    ]
   }
 ];
 

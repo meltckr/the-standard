@@ -1,5 +1,6 @@
 import { issues, getIssue } from "../content/issues.js";
 import { brand } from "../content/brand.js";
+import "./mel-audio-player/mel-audio-player.js";
 
 const root = document.querySelector("#app");
 const pagesBase = window.location.pathname === "/the-standard" || window.location.pathname.startsWith("/the-standard/")
@@ -96,6 +97,23 @@ function renderSection(section, quote) {
 function renderAudio(issue) {
   if (!issue.audio) return "";
   const audio = issue.audio;
+  if (audio.player === "mel-audio-player") {
+    return `
+      <section class="audio-edition" id="listen" data-section="listen" aria-label="Audio edition">
+        <div class="audio-edition__module reveal">
+          <mel-audio-player
+            src="${withBase(audio.src)}"
+            title="${audio.title}"
+            eyebrow="${audio.label}"
+            download
+          ></mel-audio-player>
+          <details class="audio-transcript audio-transcript--module">
+            <summary>Read the exact transcript</summary>
+            <div>${audio.transcript.map((paragraph) => `<p>${paragraph}</p>`).join("")}</div>
+          </details>
+        </div>
+      </section>`;
+  }
   return `
     <section class="audio-edition" id="listen" data-section="listen" aria-labelledby="audio-edition-title">
       <div class="audio-edition__inner reveal" data-audio-player>
@@ -140,7 +158,7 @@ function renderAudio(issue) {
 function issuePage(issue) {
   document.title = `${issue.title} — The Standard No. ${issue.number}`;
   const issueHref = withBase(`/issues/${issue.slug}/`);
-  const shareUrl = new URL(issueHref, window.location.origin).href;
+  const shareUrl = issue.share.url;
   const navItems = [
     ...(issue.audio ? [["listen", "Listen"]] : []),
     ...issue.sections.map((section) => [section.id, section.eyebrow]),
@@ -180,7 +198,7 @@ function issuePage(issue) {
             <div class="application__head">
               <div>
                 <span class="eyebrow">The Application</span>
-                <h2>Make the standard visible.</h2>
+                <h2>${issue.applicationTitle ?? "Make the standard visible."}</h2>
               </div>
               <ol>${issue.applicationPoints.map((point) => `<li>${point}</li>`).join("")}</ol>
             </div>
