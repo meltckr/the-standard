@@ -77,7 +77,9 @@ for (const issue of content.issues) {
     }
     const speechInput = applyPronunciationAliases(narration, pronunciationAliases);
     if (!narration.endsWith(issue.audio.requiredClosing)) errors.push(`Issue ${issue.number} audio has the wrong closing line`);
-    if (narration.split(/\s+/).length < 500 || narration.split(/\s+/).length > 950) errors.push(`Issue ${issue.number} audio transcript is outside 500-950 words`);
+    const minWords = issue.audio.minWords ?? 500;
+    const maxWords = issue.audio.maxWords ?? 950;
+    if (narration.split(/\s+/).length < minWords || narration.split(/\s+/).length > maxWords) errors.push(`Issue ${issue.number} audio transcript is outside ${minWords}-${maxWords} words`);
     if (!Number.isFinite(issue.audio.minSeconds) || !Number.isFinite(issue.audio.maxSeconds) || issue.audio.minSeconds >= issue.audio.maxSeconds) errors.push(`Issue ${issue.number} audio duration contract is invalid`);
     try {
       const audioPath = join(root, issue.audio.src.replace(/^\/+/, ""));

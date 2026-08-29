@@ -1,0 +1,24 @@
+{
+  "issue": "004",
+  "slug": "004-comfortable-being-uncomfortable",
+  "title": "Comfortable Being Uncomfortable",
+  "source": "/assets/audio/standard-004-comfortable-being-uncomfortable-v2.mp3",
+  "transcript": "/content/audio/004-comfortable-being-uncomfortable.txt",
+  "wordCount": 911,
+  "durationSeconds": 348.764,
+  "voiceId": "Ib97zM6uFBc71OWgj75I",
+  "modelId": "eleven_multilingual_v2",
+  "normalization": "measured two-pass loudnorm with codec compensation / -16 LUFS / ≤ -1.5 dBTP / mono / 96 kbps MP3",
+  "measuredIntegratedLufs": -16.12,
+  "measuredTruePeakDbtp": -1.72,
+  "pronunciationAliases": [
+    {
+      "written": "Mat",
+      "spoken": "Matt"
+    }
+  ],
+  "transcriptSha256": "4d6c74cd179bf62e885536153b77100e81c8514fd6cfe3b071fbeaa7f1fcabe1",
+  "speechInputSha256": "814d732ba79dc1fe8e62ffa06f4631025dd582bf58f85501553bdbc2580de796",
+  "sha256": "ef6435bfb02392b799b241b03db953adf56cee2ddff3706b5286a2ac52437d3f",
+  "generatedAt": "2026-08-28T22:43:06.125Z"
+}
