@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="readability" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#06101e" stop-opacity=".96"/>
+      <stop offset=".40" stop-color="#071322" stop-opacity=".89"/>
+      <stop offset=".57" stop-color="#071322" stop-opacity=".28"/>
+      <stop offset=".72" stop-color="#071322" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="foot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset=".55" stop-color="#071322" stop-opacity="0"/>
+      <stop offset="1" stop-color="#071322" stop-opacity=".54"/>
+    </linearGradient>
+  </defs>
+  <image xlink:href="og-004-training-photo-v4.png" x="0" y="0" width="1200" height="630" preserveAspectRatio="xMidYMid slice"/>
+  <rect width="1200" height="630" fill="url(#readability)"/>
+  <rect width="1200" height="630" fill="url(#foot)"/>
+  <text x="48" y="61" fill="#fff" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="5.2">THE STANDARD<tspan fill="#60a5fa">.</tspan></text>
+  <rect x="48" y="90" width="152" height="31" rx="15.5" fill="#2563eb"/>
+  <text x="69" y="111" fill="#fff" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2.6">EDITION 004</text>
+  <g font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-weight="800" font-size="79" letter-spacing="-3">
+    <text x="44" y="243" fill="#fff">MAKE ROOM</text>
+    <text x="44" y="331" fill="#77b7ff">TO LEARN.</text>
+  </g>
+  <path d="M48 375h66" stroke="#60a5fa" stroke-width="5"/>
+  <text x="48" y="427" fill="#fff" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="23" font-weight="700" letter-spacing=".5">
+    <tspan x="48">COMFORTABLE BEING</tspan>
+    <tspan x="48" dy="32">UNCOMFORTABLE</tspan>
+  </text>
+  <text x="48" y="564" fill="#bed1e8" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="2.2">ESSAY + AUDIO</text>
+  <rect x="926" y="27" width="230" height="57" rx="7" fill="#fff" fill-opacity=".96"/>
+  <image xlink:href="avc-logo-horizontal-light.svg" x="940" y="36" width="204" height="38.4"/>
+  <rect x="0" y="624" width="1200" height="6" fill="#2563eb"/>
+</svg>

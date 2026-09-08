@@ -447,194 +447,172 @@ export const issues = [
     ]
   },
   {
-    number: "004",
-    slug: "004-comfortable-being-uncomfortable",
-    title: "Comfortable Being Uncomfortable",
-    thesis: "Comfort is not rest. Comfort is the low-arousal side of the curve. Discomfort is not the goal. Capacity is.",
-    summary:
-      "Comfort is not rest. It is the low-arousal side of the curve. Discomfort is not the goal. Capacity is.",
-    readingTime: "8 min read",
-    publicationDate: "August 2026",
-    publishedAt: "2026-08-28T15:09:43-07:00",
-    modifiedAt: "2026-08-28T15:09:43-07:00",
-    share: {
-      url: "https://meltckr.github.io/the-standard/issues/004-comfortable-being-uncomfortable/",
-      image: "og-004-comfortable-being-uncomfortable.png",
-      imageWidth: 1200,
-      imageHeight: 630,
-      hook: "Choose the stretch.",
-      alt: "The Standard Edition 004 social card showing an inverted performance curve with the stretch zone highlighted beside the words Choose the Stretch.",
-      message:
-        "The Standard — No. 004\nComfortable Being Uncomfortable\n\nComfort is not rest. Comfort is the low-arousal side of the curve. Discomfort is not the goal. Capacity is.\n\nChris Paul: you can be comfortable or you can be great, but you can’t be both.\n\nProtect recovery. Choose the stretch. Grow the capacity."
+    "number": "004",
+    "slug": "004-comfortable-being-uncomfortable",
+    "title": "Comfortable Being Uncomfortable",
+    "thesis": "You don't need to look accomplished before you're willing to learn.",
+    "summary": "Getting better sometimes means letting people see what you still have to learn. A principle for players, mortgage teams, front offices, managers, and CEOs.",
+    "readingTime": "6 min read",
+    "publicationDate": "August 2026",
+    "publishedAt": "2026-08-28T15:09:43-07:00",
+    "modifiedAt": "2026-09-08T20:46:30Z",
+    "share": {
+      "url": "https://meltckr.github.io/the-standard/issues/004-comfortable-being-uncomfortable/",
+      "image": "og-004-comfortable-being-uncomfortable-v4.png",
+      "imageWidth": 1200,
+      "imageHeight": 630,
+      "hook": "MAKE ROOM TO LEARN.",
+      "alt": "The Standard 004: Make room to learn. Illustrative photorealistic scene of an adult basketball player practicing a skill with a trainer, with the Comfortable Being Uncomfortable title and AVC branding.",
+      "message": "Mat — Edition 004 of The Standard: Comfortable Being Uncomfortable.\n\nThis one is about being willing to work on what we haven't mastered, even when other people can see it. It applies to a player taking a correction, a mortgage teammate learning a new responsibility, or a CEO hearing a challenge to a decision. I'd be interested in where you see it showing up across the organization.\n\nhttps://meltckr.github.io/the-standard/issues/004-comfortable-being-uncomfortable/"
     },
-    audio: {
-      player: "mel-audio-player",
-      label: "Audio",
-      title: "Comfortable Being Uncomfortable",
-      description: "A spoken essay on using discomfort as information while protecting recovery and staying out of panic.",
-      durationLabel: "6 min listen",
-      src: "/assets/audio/standard-004-comfortable-being-uncomfortable-v2.mp3",
-      transcriptFile: "/content/audio/004-comfortable-being-uncomfortable.txt",
-      metadataFile: "/content/audio/004-comfortable-being-uncomfortable-v2.json",
-      pronunciationAliases: [
-        {
-          written: "Mat",
-          spoken: "Matt"
-        }
+    "audio": {
+      "player": "mel-audio-player",
+      "label": "Audio",
+      "title": "Comfortable Being Uncomfortable",
+      "description": "A spoken companion on useful challenge, honest feedback, and making room to learn.",
+      "durationLabel": "5 min listen",
+      "src": "/assets/audio/standard-004-comfortable-being-uncomfortable-arizona-v12-conversational-final.mp3",
+      "transcriptFile": "/content/audio/004-comfortable-being-uncomfortable-arizona-v12-conversational-final.txt",
+      "metadataFile": "/content/audio/004-comfortable-being-uncomfortable-arizona-v12-conversational-final.json",
+      "pronunciationAliases": [],
+      "minWords": 850,
+      "maxWords": 1200,
+      "minSeconds": 240,
+      "maxSeconds": 360,
+      "requiredClosing": "Much love my brother. Dominate!",
+      "transcript": [
+        "Getting comfortable being uncomfortable means being willing to work on something you haven't mastered, even when other people can see it. That applies whether you're learning a new responsibility or running the organization. You don't have to enjoy feeling inexperienced. You do have to leave room for learning.",
+        "There's a small story about Chris Paul that gets at this. In a published interview, basketball trainer Ganon Baker recalled showing Paul things he could already do. Paul wanted something different. Baker remembered him asking, teach me something I don't know.",
+        "What I like about that request is how little room it leaves for pretending. In Baker's account, an accomplished player wanted to find something he needed to work on. Another session demonstrating his strengths might have looked better. It wouldn't have done the same job.",
+        "That choice can get harder as you become more experienced. People expect you to have the answer. You've earned their trust, and you don't want to lose it. Asking a basic question can feel more costly than it did when everyone understood you were still learning.",
+        "So you choose the work you're already good at. You do it well and finish the day feeling productive. Nothing about that looks wrong. But the part you keep avoiding doesn't improve. Your calendar is full, while your preparation for the next responsibility hasn't changed much.",
+        "Familiar work still matters. Teams need dependable execution. Some practice is about maintaining a skill. People need recovery, too. I wouldn't question every routine simply because it works. I'd want us to notice when we're using the routine to avoid learning something else.",
+        "Research offers a useful distinction. In one experiment with adults taking improvisation classes, people encouraged to seek discomfort held the group's attention longer and took more expressive risks. Awkwardness became a reason to participate rather than withdraw. That's a finding about engagement. It doesn't mean every uncomfortable experience produces lasting improvement.",
+        "Learning researchers also distinguish a good-looking practice performance from what someone can do later, without the same help. An attempt may feel smooth because the answer is fresh or the situation is familiar. The better test comes afterward. Can the person use what they practiced when something changes?",
+        "This isn't a basketball principle that needs to be translated into business. It's a human situation. The work changes, but everyone eventually encounters something their experience hasn't prepared them to do. Consider a few everyday examples.",
+        "An NBA player watches a mistake on film without explaining it away. Then the player works on recognizing that situation earlier. The correction has somewhere to go in the next practice. Seeing the mistake is only the beginning.",
+        "In a mortgage business, a loan officer might rehearse a difficult borrower conversation with a colleague. A processor could work through an unfamiliar practice file with someone more experienced. They can ask questions before a customer carries the cost of what they haven't learned.",
+        "A front-office analyst might invite colleagues to test the assumptions behind a recommendation. Revising the work can feel uncomfortable after investing time in it. But if the discussion uncovers something important, the decision benefits.",
+        "For a manager, it might be a conversation they've been putting off. Rehearse the feedback with someone who will tell you whether it's clear and respectful. Hearing that your first attempt was vague gives you something specific to improve.",
+        "And for a CEO, it might mean asking someone to explain why a decision could be wrong, then listening before defending it. The willingness to hear an unwelcome answer matters more than making the invitation.",
+        "Those are examples, not accounts of a particular company or team. What connects them is the willingness to let a gap become visible and then do something useful about it. That can happen at any level of responsibility.",
+        "The person leading the work has a responsibility here. If people are embarrassed for asking questions, they may learn to hide confusion. If every imperfect attempt becomes a character problem, avoiding the attempt can start to seem sensible.",
+        "That doesn't mean removing the standard. Be clear about what someone needs to learn. Give them an appropriate place to practice, and a correction they can use. A rehearsal or a supervised attempt creates room to improve without ignoring the consequences of the real work.",
+        "The same assignment won't challenge everyone in the same way. A beginner may need a smaller step and more help. Someone experienced may need a less predictable problem. The difficulty has to leave the person able to learn from the attempt.",
+        "Pain, unsafe conditions, and sustained exhaustion need attention. They should never become evidence that someone is committed enough. Recovery and useful challenge belong in the same plan.",
+        "For the coming week, I'd choose one thing that would make someone better at the work. Be specific. Asking someone to be more confident doesn't give them much to practice. Explaining a decision or handling an unfamiliar question gives you something to observe.",
+        "Find a reasonable place to work on it. Ask for one correction. Try again while the feedback is fresh. Then come back later, with less help, and see what changed. If the person still struggles, find out what they missed and adjust the practice.",
+        "You can appreciate the courage it took to try and still be honest about what needs work. Getting through a difficult afternoon isn't the same as getting better.",
+        "Experience should help us understand more of what we're seeing. It shouldn't make it impossible to admit that we need help. A player, a loan officer, an analyst, a manager, and a CEO all have something they could learn by being willing to look less certain for a while.",
+        "Being comfortable being uncomfortable doesn't mean enjoying every awkward moment. It means you don't have to wait for that feeling to disappear before you get to work.",
+        "Don't let looking experienced keep you from getting better.",
+        "Much love my brother. Dominate!"
       ],
-      minWords: 650,
-      maxWords: 950,
-      minSeconds: 240,
-      maxSeconds: 360,
-      requiredClosing: "Protect recovery. Choose the stretch. Grow the capacity.",
-      transcript: [
-        "Chris Paul worked from one sentence. You can be comfortable or you can be great, but you can’t be both.",
-        "Trainers around him said he asked for the harder drill. Break me. Give me something hard. He treated being at ease with the unknown as a skill, not a mood.",
-        "A point guard good enough to protect his look asked for discomfort. The easy read is toughness. The useful read is that Paul was refusing practice that no longer asked anything of him.",
-        "Comfort is not rest.",
-        "Rest is recovery. It has a start, a stop, and a return. Comfort is when the work stops requiring adaptation. The room can still look busy, but the standard is being met by repetition instead of growth.",
-        "If you want to be successful, you have to be comfortable being uncomfortable. That is not a dare to live in pain. Comfort protects the status quo, and that is where capacity stops expanding.",
-        "A big who only takes the shots he already makes and a processor who only works the files he already knows are making the same trade. They are protecting comfort and calling it competence.",
-        "The science has had the shape since nineteen oh eight. Performance rises with challenge, then falls when challenge becomes threat. Too little arousal and you drift. Too much and people hide. The middle is the stretch. That is where capacity grows. The discomfort you feel there is information. It is not the assignment.",
-        "In twenty twenty-two, Woolley and Fishbach ran five experiments with two thousand one hundred sixty-three people. Some were told to treat discomfort as a signal of growth. They stayed longer, took more risk, and reported more progress. The study was not a practice or a mortgage desk. The usable finding is smaller than the slogan. The feeling can be information instead of a stop sign.",
-        "Success makes this harder. The room that just performed will protect how it works. A coach who eases practice is not recovering the team unless recovery was planned. A loan officer who only originates the product he knows is shrinking the book. A player who only wants the look he makes is staying where he cannot miss. An owner who only sits in meetings that go well is staying where nothing will surprise him.",
-        "Kobe wrote that he liked challenging people and making them uncomfortable because it forced them to look at themselves. That is the leadership half of Paul’s choice. The job is not to make people suffer. It is to keep the room from settling into the version of itself that already works.",
-        "Navy SEALs drill the same phrase as a maxim. Get comfortable being uncomfortable. The point is not the cold water. The point is that discomfort stops being a reason to quit.",
-        "Some rooms hear this and start collecting hardship. Extra meetings. Extra reps. Extra noise. That is not the standard. The stretch must force adaptation, remain recoverable, and target a real skill. Panic is a different zone. So is rest. Confusing the three is how a program gets loud and worse.",
-        "Brené Brown put the same choice in different words. You can choose courage or you can choose comfort. You cannot have both. Courage here is not a speech. It is the decision to stay in the stretch when the easier room is available.",
-        "That choice has four practical lanes. Player to player, the reaction is, I already have this. Give me the look I know. The useful response is, give me the one I miss. Stay in it.",
-        "Coach to coach, the reaction is, they earned an easier day. The useful response is, recovery is on the calendar. The work still has to stretch them.",
-        "For a loan officer or processor, the reaction is, these are the files I know. The useful response is, take the one that makes you slow, and stay until you aren’t.",
-        "For an owner, the reaction is, this room already works. Don’t touch it. The useful response is, it works. That is why it will drift. What is the stretch this week?",
-        "The leadership practice is to separate the three zones, then pick the middle one. There are five tests. First, is this rest, stretch, or panic? If you cannot name the zone, do not change the plan. Second, am I asking for adaptation, or am I asking for pain? Only the first grows capacity. Third, is the feeling immediate and tied to a real skill? If not, you are decorating the day. Fourth, will the person be able to return tomorrow? If not, you left the stretch. Fifth, did we just succeed? If the answer is yes, look for the comfort that will try to follow the win.",
-        "Then make the stretch visible in five ways. Define rest as recovery with a return time. Ask each leader for one stretch this week that is uncomfortable, recoverable, and tied to a real skill. Correct the room that collects pain, because discomfort is the signal and capacity is the job. Put the floor and the mortgage desk on the same test. Are we repeating what we already do, or expanding what we can do? After a win, name the comfort that will try to follow it.",
-        "So the question for Mat is not who looks the toughest. The question is this. Where have we let a room get comfortable, and called it culture?",
-        "Protect recovery. Choose the stretch. Grow the capacity."
-      ]
+      "bitrateKbps": 160,
+      "sampleRateHz": 24000
     },
-    sections: [
+    "sections": [
       {
-        id: "story",
-        eyebrow: "The Basketball Lesson",
-        title: "Greatness and comfort do not share a room.",
-        body: [
-          "Chris Paul worked from one sentence: “You can be comfortable or you can be great, but you can’t be both.”",
-          "Trainers around him said he asked for the harder drill. “Break me, give me something hard.” He treated being at ease with the unknown as a skill, not a mood.",
-          "That is the sports moment. A point guard already good enough to protect his look, asking to be made less comfortable on purpose.",
-          "The easy read is toughness. The useful read is narrower. Paul was not collecting pain. He was refusing the version of practice that no longer asked anything of him.",
-          "A big who only takes the shots he already makes and a processor who only works the files he already knows are making the same trade. They are protecting comfort and calling it competence."
+        "id": "story",
+        "eyebrow": "The starting point",
+        "title": "Ask for something you don't know.",
+        "body": [
+          "Getting comfortable being uncomfortable means being willing to work on something you haven't mastered, even when other people can see it. That applies whether you're learning a new responsibility or running the organization.",
+          "In a 2020 interview, basketball trainer Ganon Baker recalled showing Chris Paul things he could already do. Paul wanted a different kind of session. Baker remembered a request that included: “Teach me something I don't know.”",
+          "What I like about that request is how little room it leaves for pretending. In Baker's account, an accomplished player was asking the workout to reveal something missing. A session spent demonstrating his strengths might have looked better. It wouldn't have answered the same question.",
+          "That choice can get harder as you become more experienced. People expect you to know. You've earned their trust, and you don't want to lose it. Asking a basic question or struggling with something new can feel more costly than it did when everyone understood you were still learning."
         ]
       },
       {
-        id: "distinction",
-        eyebrow: "The Distinction",
-        title: "Comfort is not rest. Comfort is drift.",
-        body: [
-          "Rest is recovery. It has a start, a stop, and a return to the work. The body is tired. The system is being restored.",
-          "Comfort is different. Comfort is what happens when the work itself stops requiring adaptation. Nobody is tired. Nothing new is being asked. The room can still look busy. The standard is being met by repetition, not by growth.",
-          "If you want to be successful, you have to be comfortable being uncomfortable. That line is not a dare to live in pain. It is a warning about the other side of the curve. Comfort protects the status quo. The status quo is where capacity stops expanding.",
-          "On the far side of the curve, panic is not growth either. Too much arousal and the system protects itself. Learning drops. People hide. The science has had this shape since 1908: performance rises with challenge, then falls when the challenge becomes threat. The middle of that curve is the stretch. That is the only place capacity grows.",
-          "Discomfort is the feeling you get in that middle. It is information. It is not the assignment."
+        "id": "distinction",
+        "eyebrow": "What gets in the way",
+        "title": "Being good can become a place to hide.",
+        "body": [
+          "It's easy to choose the work you're already good at, do it well, and finish the day feeling productive. Nothing about that looks wrong. Over time, though, the part you keep avoiding doesn't get any better. Your calendar is full, but your preparation for the next responsibility hasn't changed much.",
+          "Familiar work still matters. Teams need dependable execution. Some practice is about maintaining a skill, and people need time to recover. I wouldn't want us questioning every routine simply because it works. I would want us to notice when we're using the routine to avoid learning something else.",
+          "A useful study gives that hesitation some context. In an experiment with adults taking improvisation classes, Kaitlin Woolley and Ayelet Fishbach found that encouraging people to seek discomfort helped them hold the group's attention longer and take more expressive risks. Awkwardness became a reason to participate rather than withdraw. The finding concerns engagement, not proof that discomfort always produces lasting skill.",
+          "Learning researchers also distinguish a good-looking practice performance from what someone can do later without the same help. An attempt can feel smooth because the answer is fresh or the situation is familiar. It can feel harder because the person has to think it through. We still have to find out whether they learned anything."
         ]
       },
       {
-        id: "evidence",
-        eyebrow: "What The Evidence Shows",
-        title: "The feeling is a signal. It is not a stop sign.",
-        body: [
-          "Yerkes and Dodson mapped the inverted-U in 1908. Too little arousal and you underperform. Moderate challenge and you learn. Too much and you break. Comfort is not a neutral parking spot. It is the low-arousal side of that curve.",
-          "In 2022, Woolley and Fishbach published five experiments in Psychological Science with 2,163 people. Some were told to treat awkwardness and discomfort as a signal of growth. The others got standard instructions. The people told to seek the feeling stayed longer, took more risk, and reported more progress. The effect showed up where the growth task produced immediate discomfort — improvisation, hard writing, information people would rather not sit with.",
-          "The study was not a practice and it was not a mortgage desk. The usable finding is smaller than the slogan: people can use the feeling as information instead of a reason to quit.",
-          "That is the backstage. It does not need a collage of famous names to stand."
-        ]
-      },
-      {
-        id: "room",
-        eyebrow: "What Comfort Does to a Room",
-        title: "Success expands the zone. Then the room starts protecting it.",
-        body: [
-          "The room that just performed is the room most likely to start protecting how it already works.",
-          "A coach who makes practice easier because the team earned it is not recovering them unless recovery was the plan. He is moving them down the curve. A loan officer who only originates the product he already sells is not being efficient. He is shrinking the book. A player who only wants the look he already makes is not being professional. He is staying where he cannot miss. An owner who only sits in the meetings that already go well is not leading. He is staying where nothing will surprise him.",
-          "Kobe wrote that he liked “challenging people and making them uncomfortable” because it forced them to look at themselves. That sentence earns its place because it is the leadership half of Paul’s fork. The job is not to make people suffer. The job is to keep the room from settling into the version of itself that already works.",
-          "Navy SEALs drill the same phrase as a maxim: get comfortable being uncomfortable. The point of the repetition is not the cold water. It is that discomfort stops being a reason to quit."
-        ]
-      },
-      {
-        id: "capacity",
-        eyebrow: "The Important Distinction",
-        title: "Discomfort is not the goal. Capacity is.",
-        body: [
-          "Some rooms hear this and start collecting hardship. Extra meetings. Extra reps. Extra noise. That is not the standard.",
-          "The science does not support maximizing suffering. Optimal growth sits in the stretch: uncomfortable enough to force adaptation, recoverable, and aimed at a real skill. Panic is a different zone. So is rest. Confusing the three is how a program gets loud and worse.",
-          "Brené Brown put the same fork in different words: “You can choose courage or you can choose comfort. You cannot have both.” Courage here is not a speech. It is the decision to stay in the stretch when the easier room is available."
+        "id": "room",
+        "eyebrow": "Across the organization",
+        "title": "The job changes. The moment is familiar.",
+        "body": [
+          "This isn't a basketball principle that needs to be translated into business. It's a human situation that shows up wherever people are trying to improve. The work changes, but everyone eventually encounters something their experience hasn't prepared them to do.",
+          "Consider where that moment can occur."
         ],
-        comparisons: [
+        "examples": [
           {
-            context: "Player to player",
-            reaction: "“I already have this. Give me the look I know.”",
-            response: "“Give me the one I miss. Stay in it.”"
+            "role": "An NBA player",
+            "text": "A player watches a mistake on film without explaining it away, then works on recognizing the situation earlier. The correction has somewhere to go in the next practice."
           },
           {
-            context: "Coach to coach",
-            reaction: "“They earned an easier day.”",
-            response: "“Recovery is on the calendar. The work still has to stretch them.”"
+            "role": "A mortgage team",
+            "text": "A loan officer rehearses a difficult borrower conversation with a colleague. A processor works through an unfamiliar practice file with someone more experienced. Both can ask questions before a customer carries the cost."
           },
           {
-            context: "Loan officer / processor",
-            reaction: "“These are the files I know.”",
-            response: "“Take the one that makes you slow, and stay until you aren’t.”"
+            "role": "A front-office professional",
+            "text": "An analyst invites colleagues to test the assumptions behind a recommendation. Revising the work may feel uncomfortable after investing time in it. The decision benefits from what the discussion uncovers."
           },
           {
-            context: "Owner",
-            reaction: "“This room already works. Don’t touch it.”",
-            response: "“It works. That is why it will drift. What is the stretch this week?”"
+            "role": "A manager",
+            "text": "A manager stops postponing necessary feedback and rehearses how to deliver it clearly and respectfully. Hearing that the first attempt was vague gives the manager something specific to improve."
+          },
+          {
+            "role": "A CEO",
+            "text": "A CEO asks someone to explain why a decision might be wrong, then listens before defending it. The willingness to hear an unwelcome answer matters more than making the invitation."
           }
-        ]
-      },
-      {
-        id: "practice",
-        eyebrow: "The Leadership Practice",
-        title: "Separate the three zones. Then pick the middle one.",
-        body: [
-          "Peer and staff accountability here is not about toughness theater. It is about naming which zone the room is actually in."
         ],
-        prompts: [
-          "Is this rest, stretch, or panic? If you cannot name the zone, do not change the plan.",
-          "Am I asking for adaptation, or am I asking for pain? Only the first grows capacity.",
-          "Is the feeling immediate and tied to a real skill? If not, you are decorating the day.",
-          "Will the person be able to return tomorrow? If not, you left the stretch.",
-          "Did we just succeed? If yes, look for the comfort that will try to follow the win."
+        "afterExamples": "These are illustrative situations, not accounts of a particular team or company. What connects them is the willingness to let a gap become visible and then do something useful about it."
+      },
+      {
+        "id": "capacity",
+        "eyebrow": "The leader's responsibility",
+        "title": "Make it possible to try again.",
+        "body": [
+          "Someone has to make that willingness worth the risk. If people are embarrassed for asking questions, they may learn to conceal confusion. If every imperfect attempt is treated as a character problem, avoiding the attempt can start to seem sensible.",
+          "That doesn't mean removing the standard. It means being clear about what the person needs to learn, giving them an appropriate place to practice, and offering a correction they can use. A practice case, a rehearsal, or a supervised attempt creates room to improve without ignoring the consequences of the real work.",
+          "The same assignment won't challenge everyone in the same way. Researchers Mark Guadagnoli and Timothy Lee describe how the demands of practice interact with the learner's skill. A beginner may need a smaller step and more help. Someone experienced may need a less predictable problem. Difficulty only helps when the person can learn from it.",
+          "Pain, unsafe conditions, and sustained exhaustion need attention. They should never become evidence that someone is committed enough. Recovery and useful challenge belong in the same plan.",
+          "And leaders have to accept some discomfort themselves. If you ask for honest feedback, people will watch how you respond when it arrives. Let the person finish. Ask what they are seeing. You can disagree after you've understood the concern. Your response helps determine whether there will be a next conversation."
+        ]
+      },
+      {
+        "id": "practice",
+        "eyebrow": "Put it to work",
+        "title": "Look for what changes afterward.",
+        "body": [
+          "For the coming week, I'd choose one thing that would make someone better at the work. Keep it small enough to practice and specific enough to recognize when it improves. “Be more confident” is hard to work on directly. Explaining a decision or handling an unfamiliar question gives you something to observe.",
+          "Then come back to it after the first attempt. Can the person do it in a different situation, with less help? If they still struggle, find out what they missed and adjust the practice. Getting through a difficult afternoon isn't the same as getting better.",
+          "Experience should give us more to draw on. It shouldn't make it impossible to admit that we need help. A player, a loan officer, an analyst, a manager, and a CEO all have something they could learn by being willing to look less certain for a while.",
+          "Being comfortable being uncomfortable doesn't mean enjoying every awkward moment. It means you don't have to wait for that feeling to disappear before you get to work."
         ]
       }
     ],
-    pullQuotes: [
+    "pullQuotes": [
       {
-        after: "story",
-        text: "Comfort is not rest. Discomfort is not the goal. Capacity is."
-      },
-      {
-        after: "room",
-        text: "If the work no longer asks anything of you, you are not recovering. You are drifting."
+        "after": "distinction",
+        "text": "Your calendar is full, but your preparation for the next responsibility hasn't changed much."
       }
     ],
-    applicationTitle: "Make the stretch visible.",
-    applicationPoints: [
-      "Define rest as recovery with a return time. Everything else that feels easy at work is comfort.",
-      "Ask each leader for one stretch this week that is uncomfortable, recoverable, and tied to a real skill.",
-      "Correct the room that collects pain. Discomfort is the signal. Capacity is the job.",
-      "Put the floor and the mortgage desk on the same test: are we repeating what we already do, or expanding what we can do.",
-      "After a win, name the comfort that will try to follow it."
+    "applicationTitle": "Choose one thing to get better at.",
+    "applicationPoints": [
+      "Name a specific skill, not a personality trait.",
+      "Find a place to practice with an appropriate margin for error.",
+      "Ask for one correction you can use.",
+      "Try again while the feedback is fresh.",
+      "Check later: can you do it with less help?"
     ],
-    closingQuestion: "Where have we let a room get comfortable, and called it culture?",
-    closingStandard: "Protect recovery. Choose the stretch. Grow the capacity.",
-    sources: [
-      "Chris Paul workout philosophy and trainer observations, as collected in the August 21, 2026 research brief",
-      "Yerkes and Dodson, “The Relation of Strength of Stimulus to Rapidity of Habit-Formation” (1908)",
-      "Woolley and Fishbach, “Motivating Personal Growth by Seeking Discomfort” (2022)",
-      "Kobe Bryant, leadership observation collected in the August 21, 2026 research brief",
-      "Navy SEAL maxim collected in the August 21, 2026 research brief",
-      "Brené Brown, courage and comfort observation collected in the August 21, 2026 research brief"
-    ]
+    "closingQuestion": "What are we avoiding because we don't want to look inexperienced?",
+    "closingStandard": "Don't let looking experienced keep you from getting better.",
+    "sources": [
+      "<a href=\"https://www.basketballnetwork.net/latest-news/chris-pauls-workout-philosophy-you-can-be-comfortable-or-you-can-be-great-but-you-cant-be-both\" target=\"_blank\" rel=\"noreferrer\">Ganon Baker on Chris Paul’s approach to training</a>. Basketball Network, October 21, 2020. The workout account and quotation are Baker’s recollection.",
+      "<a href=\"https://journals.sagepub.com/eprint/GYY8QMPZAJRVRZQD7EJT/full\" target=\"_blank\" rel=\"noreferrer\">Woolley &amp; Fishbach, “Motivating Personal Growth by Seeking Discomfort”</a>. Psychological Science, 2022. Findings concern engagement and perceived progress; they do not establish that discomfort always produces lasting skill.",
+      "<a href=\"https://bjorklab.psych.ucla.edu/research/\" target=\"_blank\" rel=\"noreferrer\">UCLA Bjork Learning and Forgetting Lab</a>. Research on practice performance, retention, transfer, and desirable difficulties.",
+      "<a href=\"https://pubmed.ncbi.nlm.nih.gov/15130871/\" target=\"_blank\" rel=\"noreferrer\">Guadagnoli &amp; Lee, “Challenge Point”</a>. Journal of Motor Behavior, 2004. A conceptual framework for the interaction between practice difficulty and a learner’s skill."
+    ],
+    "presentation": "editorial-v2"
   }
 ];
 

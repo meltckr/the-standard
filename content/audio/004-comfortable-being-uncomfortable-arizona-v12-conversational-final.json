@@ -1,0 +1,46 @@
+{
+  "issue": "004",
+  "source": "/assets/audio/standard-004-comfortable-being-uncomfortable-arizona-v12-conversational-final.mp3",
+  "sizeBytes": 6241484,
+  "sha256": "e471fea1aacb2325b1269d38698cca3b0352ebc33efc10e931c234ff9bfe7b53",
+  "transcriptSha256": "b489c2114e569470bca4f69f93c1e96f02e72d3ee767c1751e4859480fec6ece",
+  "speechInputSha256": "b489c2114e569470bca4f69f93c1e96f02e72d3ee767c1751e4859480fec6ece",
+  "xingMetadata": true,
+  "title": "Comfortable Being Uncomfortable",
+  "voice": "AVC Arizona Voice v12",
+  "provider": "Private local MLX Audio",
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+  "generatedAt": "2026-09-08T20:12:10Z",
+  "durationSeconds": 311.977958,
+  "wordCount": 988,
+  "targetWordsPerMinute": 190,
+  "measuredWordsPerMinute": 190.01342396118895,
+  "codec": "mp3",
+  "channels": 1,
+  "sampleRateHz": 24000,
+  "bitrateKbps": 160,
+  "normalization": "Approved sentence-level v12 factory, followed by a pitch-preserving tempo adjustment calculated from the full transcript and measured factory duration to target 190 words per minute, then two-pass loudnorm. Small encoding-level compensation; measured on the delivered MP3. No additional EQ.",
+  "measuredIntegratedLufs": -16.05,
+  "measuredTruePeakDbtp": -1.78,
+  "loudnessMeasurement": "FFmpeg loudnorm input measurement with dual_mono=true, matching the approved factory",
+  "tempoMultiplierRelativeToFactory": 0.8099726217948718,
+  "pronunciationAliases": [],
+  "requiredClosing": "Much love my brother. Dominate!",
+  "listeningReview": {
+    "status": "pending",
+    "reason": "No perceptual listening review was available. Technical verification and automated transcription are separate checks; naturalness, pronunciation, pace and clean joins still require listening approval."
+  },
+  "transcriptScreen": {
+    "status": "completed",
+    "method": "Local Whisper large-v3-turbo automated transcription of the complete delivered MP3; not perceptual listening",
+    "closingMatched": true,
+    "recognizedClosing": "Much love, my brother. Dominate.",
+    "note": "The full sequence and sign-off were recognized. Minor recognition variants remain, including Ganon/Gannon, leave/lead and experienced/experience; automated transcription cannot resolve pronunciation or exact spoken-word fidelity. Perceptual listening remains pending."
+  },
+  "silenceScreen": {
+    "status": "passed",
+    "thresholdDb": -50,
+    "minimumGapSeconds": 0.3,
+    "detectedGaps": 0
+  }
+}

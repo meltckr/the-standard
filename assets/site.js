@@ -29,7 +29,7 @@ function home() {
       ${masthead()}
       <div class="home-hero__content reveal">
         <h1>The <span>Standard.</span></h1>
-        <p class="series-intro">A private weekly series on leadership, performance and the principles that create a competitive advantage.</p>
+        <p class="series-intro">A private series on leadership, performance and the principles that create a competitive advantage.</p>
       </div>
     </section>
     <main id="library" class="library">
@@ -65,6 +65,8 @@ function renderSection(section, quote) {
       </div>
       <div class="section-body">
         ${section.body.map((paragraph) => `<p>${paragraph}</p>`).join("")}
+        ${section.examples ? `<dl class="role-examples">${section.examples.map((example) => `<div><dt>${example.role}</dt><dd>${example.text}</dd></div>`).join("")}</dl>` : ""}
+        ${section.afterExamples ? `<p class="example-note">${section.afterExamples}</p>` : ""}
         ${section.comparisons ? `
           <div class="language-shifts" aria-label="Turn reactions into useful responses">
             ${section.comparisons.map((comparison) => `
@@ -157,6 +159,8 @@ function renderAudio(issue) {
 
 function issuePage(issue) {
   document.title = `${issue.title} — The Standard No. ${issue.number}`;
+  const editorialV2 = issue.presentation === "editorial-v2";
+  root.dataset.presentation = issue.presentation ?? "classic";
   const issueHref = withBase(`/issues/${issue.slug}/`);
   const shareUrl = issue.share.url;
   const navItems = [
@@ -182,11 +186,13 @@ function issuePage(issue) {
             <span>${issue.publicationDate}</span>
             <span>Private circulation</span>
           </div>
+          ${editorialV2 ? `<div class="hero-entry"><div class="hero-entry__links"><a href="${issueHref}#story">Read the essay <span aria-hidden="true">↘</span></a>${issue.audio ? `<a href="${issueHref}#listen">Audio · ${issue.audio.durationLabel} <span aria-hidden="true">↓</span></a>` : ""}</div></div>` : ""}
         </div>
       </div>
     </section>
     <main id="article">
       ${renderAudio(issue)}
+      ${editorialV2 ? `<details class="mobile-contents"><summary>In this edition</summary><nav aria-label="Mobile issue sections">${navItems.map(([id, label]) => `<a href="${issueHref}#${id}">${label}</a>`).join("")}</nav></details>` : ""}
       <div class="issue-layout">
         <nav class="section-nav" aria-label="Issue sections">
           <span class="section-nav__label">In this issue</span>
@@ -216,7 +222,7 @@ function issuePage(issue) {
         </div>
       </section>
       <footer class="article-footer">
-        <p class="source-note"><strong>Source note:</strong> ${issue.sources.join("; ")}.</p>
+        ${editorialV2 ? `<details class="source-notes"><summary>Sources &amp; research notes <span>${issue.sources.length} sources</span></summary><ol>${issue.sources.map((source) => `<li>${source}</li>`).join("")}</ol></details>` : `<p class="source-note"><strong>Source note:</strong> ${issue.sources.join("; ")}.</p>`}
         <div class="footer-actions">
           <a class="back-link" href="${withBase("/")}">Series library</a>
           <div class="controls" aria-label="Issue actions">
@@ -342,7 +348,7 @@ function initIssue() {
   window.addEventListener("scroll", updateProgress, { passive: true });
   updateProgress();
 
-  const navLinks = [...document.querySelectorAll(".section-nav a")];
+  const navLinks = [...document.querySelectorAll(".section-nav a, .mobile-contents a")];
   const sections = [...document.querySelectorAll("[data-section]")];
   const sectionObserver = new IntersectionObserver(
     (entries) => {
@@ -354,6 +360,20 @@ function initIssue() {
   );
   sections.forEach((section) => sectionObserver.observe(section));
 
+  const mobileContents = document.querySelector(".mobile-contents");
+  mobileContents?.addEventListener("click", (event) => {
+    if (event.target.closest("a")) mobileContents.open = false;
+  });
+  const sourceNotes = document.querySelector(".source-notes");
+  let sourcesWereOpen = false;
+  window.addEventListener("beforeprint", () => {
+    if (!sourceNotes) return;
+    sourcesWereOpen = sourceNotes.open;
+    sourceNotes.open = true;
+  });
+  window.addEventListener("afterprint", () => {
+    if (sourceNotes) sourceNotes.open = sourcesWereOpen;
+  });
   document.querySelector("[data-print]").addEventListener("click", () => window.print());
   document.querySelector("[data-copy]").addEventListener("click", async (event) => {
     const button = event.currentTarget;
