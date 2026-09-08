@@ -1,0 +1,66 @@
+{
+  "issue": "004",
+  "source": "/assets/audio/standard-004-comfortable-being-uncomfortable-arizona-v12-clean-opening-and-endings.mp3",
+  "sizeBytes": 7013804,
+  "sha256": "0851de40e37f449bf2d25b54617fbdf386c5cf240ef5b3c124be26e024b5af01",
+  "transcriptSha256": "d095cba55ef423f6e12535b5a9f1eb7d8b8e84c6350226196702520585c958fd",
+  "speechInputSha256": "d095cba55ef423f6e12535b5a9f1eb7d8b8e84c6350226196702520585c958fd",
+  "xingMetadata": true,
+  "title": "Comfortable Being Uncomfortable",
+  "voice": "AVC Arizona Voice v12",
+  "provider": "Private local MLX Audio",
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+  "generatedAt": "2026-09-08T21:10:50.929Z",
+  "durationSeconds": 350.613333,
+  "wordCount": 989,
+  "measuredWordsPerMinute": 169.2462733583494,
+  "baselineWordsPerMinute": 190,
+  "codec": "mp3",
+  "channels": 1,
+  "sampleRateHz": 24000,
+  "bitrateKbps": 160,
+  "normalization": "Approved sentence-level v12 factory and reference pair. Original sentence WAVs retained privately before cleanup, then assembled with protected word tails. One pitch-preserving tempo pass at the preceding releases effective speech rate, the same v12 EQ and de-essing, and two-pass loudnorm. Encoding-level compensation; measurements taken from the delivered MP3.",
+  "measuredIntegratedLufs": -16.24,
+  "measuredTruePeakDbtp": -1.76,
+  "loudnessMeasurement": "FFmpeg loudnorm input measurement with dual_mono=true, matching the approved factory",
+  "tempoMultiplierRelativeToRawSentences": 0.9314685150641026,
+  "pronunciationAliases": [],
+  "requiredClosing": "Much love my brother. Dominate!",
+  "openingRepair": {
+    "directAddress": "Mat",
+    "quietLeadInMilliseconds": 80,
+    "method": "Replaced the noise-like opening with a complete voiced first sentence; no broad trim through the first word."
+  },
+  "sentenceAssembly": {
+    "sentenceCount": 91,
+    "activityThresholdDb": -60,
+    "retainedTailMilliseconds": 120,
+    "finalTailMilliseconds": 250,
+    "outgoingFadeMilliseconds": 20,
+    "maximumFadeWindowLevelDb": -60.48176482250891,
+    "internalPausesCollapsed": false,
+    "articulationRatePreserved": true,
+    "contextualRepair": "Sentence 33 was generated with following context, then extracted at a verified pause after the complete final word. No added context remains in the delivered audio."
+  },
+  "listeningReview": {
+    "status": "pending",
+    "reason": "No perceptual listening review was available. Waveform inspection, word alignment and browser playback checks are technical evidence, not listening approval."
+  },
+  "transcriptScreen": {
+    "status": "completed",
+    "method": "Private local Whisper large-v3-turbo word-level transcription of the complete delivered MP3",
+    "openingMatched": true,
+    "closingMatched": true,
+    "recognizedOpening": "Matt, getting comfortable being uncomfortable means being willing to work on something you haven't mastered, even when other people",
+    "recognizedClosing": "Much love, my brother. Dominate.",
+    "note": "Complete sequence recognized. Minor recognition variants remain, including Mat/Matt, Ganon/Gannon, practiced/practice and experienced/experience; listening is needed to resolve pronunciation and exact spoken-word fidelity."
+  },
+  "silenceScreen": {
+    "status": "reviewed",
+    "thresholdDb": -50,
+    "minimumGapSeconds": 0.3,
+    "detectedGaps": 26,
+    "longestGapSeconds": 0.706417,
+    "note": "Natural pauses retained; they are not treated as clipped audio or removed merely to pass a zero-gap test."
+  }
+}
