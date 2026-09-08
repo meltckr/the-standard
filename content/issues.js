@@ -453,9 +453,9 @@ export const issues = [
     "thesis": "You don't need to look accomplished before you're willing to learn.",
     "summary": "Getting better sometimes means letting people see what you still have to learn. A principle for players, mortgage teams, front offices, managers, and CEOs.",
     "readingTime": "6 min read",
-    "publicationDate": "August 2026",
+    "publicationDate": "September 2026",
     "publishedAt": "2026-08-28T15:09:43-07:00",
-    "modifiedAt": "2026-09-08T21:10:55Z",
+    "modifiedAt": "2026-09-08T21:54:53Z",
     "share": {
       "url": "https://meltckr.github.io/the-standard/issues/004-comfortable-being-uncomfortable/",
       "image": "og-004-comfortable-being-uncomfortable-v4.png",
