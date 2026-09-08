@@ -52,6 +52,9 @@ for (const issue of content.issues) {
   if (Date.parse(issue.modifiedAt) < Date.parse(issue.publishedAt)) errors.push(`Issue ${issue.number} modifiedAt precedes publishedAt`);
   const expectedUrl = `https://meltckr.github.io/the-standard/issues/${issue.slug}/`;
   if (issue.share?.url !== expectedUrl) errors.push(`Issue ${issue.number} has the wrong canonical share URL`);
+  for (const section of issue.sections) {
+    if (section.examples && (!Array.isArray(section.examples) || !section.examples.length || section.examples.some((example) => !example.role?.trim() || !example.text?.trim()))) errors.push(`Issue ${issue.number} has an incomplete role example`);
+  }
   try {
     const imagePath = join(root, "assets", issue.share.image);
     const image = await readFile(imagePath);
@@ -86,7 +89,7 @@ for (const issue of content.issues) {
       const audioStats = await stat(audioPath);
       if (audioStats.size < 10_000) errors.push(`Issue ${issue.number} audio file is unexpectedly small`);
       const probe = spawnSync("ffprobe", [
-        "-v", "error", "-show_entries", "stream=codec_name,channels,bit_rate:format=duration",
+        "-v", "error", "-show_entries", "stream=codec_name,channels,bit_rate,sample_rate:format=duration",
         "-of", "json", audioPath
       ], { encoding: "utf8" });
       if (probe.status !== 0) {
@@ -96,7 +99,9 @@ for (const issue of content.issues) {
         const stream = details.streams?.[0];
         const duration = Number(details.format?.duration);
         if (!Number.isFinite(duration) || duration < issue.audio.minSeconds || duration > issue.audio.maxSeconds) errors.push(`Issue ${issue.number} probed audio duration is outside its contract`);
-        if (stream?.codec_name !== "mp3" || stream?.channels !== 1 || Number(stream?.bit_rate) !== 96_000) errors.push(`Issue ${issue.number} audio must be mono 96 kbps MP3`);
+        const bitrateKbps = issue.audio.bitrateKbps ?? 96;
+        if (stream?.codec_name !== "mp3" || stream?.channels !== 1 || Number(stream?.bit_rate) !== bitrateKbps * 1000) errors.push(`Issue ${issue.number} audio must be mono ${bitrateKbps} kbps MP3`);
+        if (issue.audio.sampleRateHz && Number(stream?.sample_rate) !== issue.audio.sampleRateHz) errors.push(`Issue ${issue.number} audio must use ${issue.audio.sampleRateHz} Hz`);
       }
     } catch {
       errors.push(`Issue ${issue.number} audio file is missing`);
