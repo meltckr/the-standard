@@ -1,0 +1,18 @@
+{
+  "version": "visual review v10",
+  "imagePath": "assets/standard-005/share-card-sunset-v10.jpg",
+  "dimensions": [
+    1200,
+    630
+  ],
+  "bytes": 171136,
+  "sha256": "8385f9be48379ef3d9602662d730ecc8fad11d7c96e2801a367998ff7ebacde0",
+  "localHttpStatus": 200,
+  "localContentType": "image/jpeg",
+  "localBytesMatch": true,
+  "ogTwitterStructuredImageMatch": true,
+  "approvedLayoutCommit": "dedbed706a7cc105717604c62d1f5684674b8844",
+  "layoutBytesUnchanged": true,
+  "approvedProseTranscriptAudioPreserved": true,
+  "publicationPerformed": false
+}

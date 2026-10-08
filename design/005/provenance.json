@@ -1,0 +1,54 @@
+{
+  "scope": "Standard 005 visual review only",
+  "baseCommit": "b11bb15c569377e68560c3d4a71d0e8f80ec278f",
+  "blender": {
+    "executable": "/opt/homebrew/bin/blender",
+    "source": "design/005/render-assist.py",
+    "scene": "design/005/assist-sculpture.blend",
+    "clientAsset": "assets/standard-005/assist-sculpture.webp",
+    "renderer": "Cycles CPU, 48 samples, denoised",
+    "rights": "Original procedural artwork created for this review; no people or factual game depiction"
+  },
+  "figma": {
+    "url": "https://www.figma.com/design/cKkQPuoX4kouKoFpAyHuG9",
+    "desktopFrame": "2:2",
+    "phoneFrame": "2:18",
+    "shareFrame": "5:2",
+    "method": "Editable native plugin API layout studies and uploaded original art; no paid generation",
+    "limitation": "Figma studies use Inter for reading text because the implementation's native book-serif font was unavailable in the font catalog"
+  },
+  "reference": {
+    "url": "https://meltckr.github.io/suns-pregame-dashboard/season-review/2026-10-05-det-away/",
+    "use": "Read-only visual reference and existing OFL fonts; no Suns files modified"
+  },
+  "pixabay": {
+    "page": "https://pixabay.com/photos/sunset-basketball-people-silhouette-5383040/",
+    "license": "https://pixabay.com/service/terms/",
+    "author": "kucukgulberkan",
+    "reportedOriginalDimensions": [
+      5146,
+      3108
+    ],
+    "downloadedSource": "https://cdn.pixabay.com/photo/2020/07/08/08/04/sunset-5383040_1280.jpg",
+    "downloadedPreviewWidth": 1280,
+    "candidate": "assets/standard-005/share-card-pixabay-review.png",
+    "candidateDimensions": [
+      1200,
+      630
+    ],
+    "use": "Editorial composite wired to OG/Twitter metadata in review branch only; original PNG and old published share asset retained",
+    "restrictions": "No standalone redistribution, misleading event depiction, endorsement implication or trademark use; no source original committed",
+    "v10ClientAsset": "assets/standard-005/share-card-sunset-v10.jpg",
+    "v10Bytes": 171136,
+    "v10Encoding": "Progressive optimized JPEG, quality 88, full chroma, 1200 \u00d7 630; same Figma export crop"
+  },
+  "deanSmith": {
+    "page": "https://commons.wikimedia.org/wiki/File:Dean_Smith_cutting_down_the_nets,_Duke_Chronicle_1982-12-03_page_21.jpg",
+    "dimensions": [
+      1634,
+      2019
+    ],
+    "status": "Excluded",
+    "finding": "Commons labels this work U.S. public domain because of publication without notice from 1978 through February 1989 and no registration within five years; expressly warns it remains copyrighted in countries not applying the rule of the shorter term. No worldwide public-domain claim."
+  }
+}

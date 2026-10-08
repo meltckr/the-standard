@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import {readFileSync,statSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+import {issues} from '../content/issues.js';
+const base='b11bb15c569377e68560c3d4a71d0e8f80ec278f';
+const unchanged=['assets/styles.css','assets/avc-audio-player/avc-audio-player.js','content/audio/005-make-the-assist-visible-arizona-v12-v9.txt','content/audio/005-make-the-assist-visible-arizona-v12-v9.json','content/review/005-make-the-assist-visible-v9-page.txt','assets/audio/standard-005-make-the-assist-visible-arizona-v12-v9.mp3','assets/og-005-make-the-assist-visible-v2.png'];
+for(const file of unchanged) assert.deepEqual(readFileSync(file),execFileSync('git',['show',`${base}:${file}`],{maxBuffer:16*1024*1024}),`${file} must preserve approved bytes`);
+const hash=createHash('sha256').update(readFileSync('assets/audio/standard-005-make-the-assist-visible-arizona-v12-v9.mp3')).digest('hex');assert.equal(hash,'8e6426abbf224c78839264b5f75cb3cf4e3f8e5b8bd92e1daf32ee64cfd51259');
+assert.ok(statSync('assets/standard-005/assist-sculpture.webp').size<100000,'hero image must remain small');
+const luminance=h=>{const rgb=h.match(/[a-f0-9]{2}/gi).map(x=>parseInt(x,16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722;};
+const pairs=[['headline','#f5f1e8','#101e2c'],['hero labels','#c1c9ce','#101e2c'],['hero eyebrow','#daa16e','#101e2c'],['essay','#203244','#f5f1e8'],['navigation','#53616b','#f5f1e8'],['links','#315e86','#f5f1e8'],['entry button','#132538','#e4ad7c']];
+for(const [name,a,b] of pairs){const x=luminance(a),y=luminance(b),ratio=(Math.max(x,y)+.05)/(Math.min(x,y)+.05);assert.ok(ratio>=4.5,`${name} contrast ${ratio}`);console.log(`${name}: ${ratio.toFixed(2)}:1`);}
+console.log('Approved content, transcript, audio, previous share asset, shared styles and player preserved; small hero and contrast checks pass.');
+
+const originalSource=execFileSync('git',['show',`${base}:content/issues.js`],{encoding:'utf8'});
+const originalIssues=(await import('data:text/javascript;base64,'+Buffer.from(originalSource).toString('base64'))).issues;
+const actual=structuredClone(issues); const original=structuredClone(originalIssues);
+const current005=actual.find(i=>i.number==='005');
+assert.equal(current005.share.image,'standard-005/share-card-sunset-v10.jpg');
+assert.match(current005.share.alt,/sunset basketball-court photograph/);
+current005.share.image=original.find(i=>i.number==='005').share.image;
+current005.share.alt=original.find(i=>i.number==='005').share.alt;
+assert.deepEqual(actual,original,'Only the authorized 005 share image path and image description may change');
+const html=readFileSync('dist/issues/005-reward-the-assist/index.html','utf8');
+for(const tag of ['og:image','og:image:secure_url','twitter:image']) assert.ok(html.includes(`="${tag}" content="https://meltckr.github.io/the-standard/assets/standard-005/share-card-sunset-v10.jpg"`));
+const imageTypeTags = [...html.matchAll(/<meta property="og:image:type" content="([^"]*)">/g)];
+assert.equal(imageTypeTags.length, 1, "Exactly one OG image MIME tag is required");
+assert.equal(imageTypeTags[0][1], "image/jpeg");
+assert.ok(statSync('assets/standard-005/share-card-sunset-v10.jpg').size<200000);
+assert.deepEqual(readFileSync('assets/site.js'),execFileSync('git',['show','dedbed706a7cc105717604c62d1f5684674b8844:assets/site.js']));
+assert.deepEqual(readFileSync('assets/standard-005/editorial.css'),execFileSync('git',['show','dedbed706a7cc105717604c62d1f5684674b8844:assets/standard-005/editorial.css']));
+console.log('v10 metadata points to the optimized sunset JPEG; approved reader layout and all prose/audio remain unchanged.');
