@@ -26,14 +26,21 @@ assert.equal(data.headline,issue.title);
 assert.ok(data.associatedMedia, 'Current audio must be included in the revised Article');
 assert.equal(data.associatedMedia.name, issue.title);
 assert.equal(data.associatedMedia.transcript, issue.audio.transcript.join('\n\n'));
-assert.ok(data.associatedMedia.contentUrl.endsWith('standard-005-make-the-assist-visible-arizona-v12-v2.mp3'));
+assert.ok(data.associatedMedia.contentUrl.endsWith('standard-005-make-the-assist-visible-arizona-v12-v3.mp3'));
 assert.ok(html.includes('rel="alternate" type="audio/mpeg"'));
 assert.ok(!issue.audio.status && !issue.audio.reviewNotice);
 const accepted = await import(`data:text/javascript;base64,${Buffer.from(execFileSync('git',['show','65b54ade7068cb712bdfeae9fb82cf7f606c53bf:content/issues.js'])).toString('base64')}`);
 const withoutAudio = ({audio,...written}) => written;
-assert.deepEqual(withoutAudio(issue), withoutAudio(accepted.issues.at(-1)), 'Accepted written article and metadata must remain unchanged');
+const expected = structuredClone(accepted.issues.at(-1));
+expected.sections.find(s=>s.id==='organization').body[0] = 'Against Chicago on October 7, Jalen Green set up Oso Ighodaro for a first-quarter alley-oop dunk. The pass created the finish. Both contributions belong in the story.';
+expected.sections.find(s=>s.id==='organization').body[1] = 'That is where the leader looks. Name the pass. Give the result its full story.';
+expected.sources[expected.sources.findIndex(s=>s.includes('dominayton'))] = issue.sources.find(s=>s.includes('20261007_PHXCHI_book.pdf#page=9'));
+assert.deepEqual(withoutAudio(issue), withoutAudio(expected), 'Only the authorized Suns example and its source may change');
 for (const file of ['assets/audio/standard-005-reward-the-assist-arizona-v12-v1.mp3','content/audio/005-reward-the-assist-arizona-v12-v1.txt','content/audio/005-reward-the-assist-arizona-v12-v1.json']) {
  assert.deepEqual(await readFile(file), execFileSync('git',['show',`65b54ade7068cb712bdfeae9fb82cf7f606c53bf:${file}`], { maxBuffer: 10 * 1024 * 1024 }), 'Prior audio must be preserved');
+}
+for (const file of ['assets/audio/standard-005-make-the-assist-visible-arizona-v12-v2.mp3','content/audio/005-make-the-assist-visible-arizona-v12-v2.txt','content/audio/005-make-the-assist-visible-arizona-v12-v2.json']) {
+ assert.deepEqual(await readFile(file), execFileSync('git',['show',`5b8bcaf0729dc5a8638c774369d57bc1c2fc474b:${file}`], { maxBuffer: 10 * 1024 * 1024 }), 'Superseded v2 audio must be preserved');
 }
 assert.equal(issue.title, 'Make the Assist Visible');
 assert.equal(issue.closingStandard, issue.title);
@@ -41,7 +48,8 @@ assert.equal(issue.sections[0].id, 'story');
 assert.equal(issue.closingQuestion, 'Who helped create our last important result, and would anyone know it from the way we celebrated?');
 assert.ok(issue.sources.some(s=>s.includes('received only an acknowledgement of their help')));
 assert.ok(issue.sources.some(s=>s.includes('uwmcareers.com/blog/doing-well-by-doing-good')));
-assert.ok(issue.sources.some(s=>s.includes('suns-clippers-game-2-analysis')));
+assert.ok(issue.sources.some(s=>s.includes('20261007_PHXCHI_book.pdf#page=9') && s.includes('6:57') && s.includes('official current Suns roster')));
+assert.ok(!JSON.stringify(issue).match(/Crowder|Ayton|Booker.s screen|June 22, 2021/));
 const essay = [issue.title,issue.thesis,...issue.sections.flatMap(s=>[s.title,...s.body]),issue.applicationTitle,...issue.applicationPoints,issue.closingQuestion,issue.closingStandard].join(' ');
 assert.ok(essay.split(/\s+/).length < 800, 'Essay must read in under four minutes at 200 wpm');
 assert.ok(!/\b(can be|meaningful signs|leaders have an opportunity)\b/i.test(essay));
@@ -61,4 +69,4 @@ assert.equal(data.associatedMedia.duration, `PT${Math.floor(seconds/60)}M${secon
 assert.ok(issue.audio.transcript.join(' ').includes(issue.closingQuestion));
 assert.equal(issue.audio.transcript.at(-1), 'Much love my brother. Dominate!');
 assert.ok(mp3.subarray(0,4096).includes(Buffer.from('Info')) || mp3.subarray(0,4096).includes(Buffer.from('Xing')));
-console.log('005 review integration checks passed: archives, neutral player parity, built route/head, draft gate, unchanged written edition, preserved prior audio and current under-four-minute audio/hash/transcript.');
+console.log('005 review integration checks passed: archives, neutral player parity, built route/head, draft gate, restricted Suns revision, preserved prior audio and current under-four-minute audio/hash/transcript.');
