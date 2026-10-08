@@ -26,7 +26,7 @@ assert.equal(data.headline,issue.title);
 assert.ok(data.associatedMedia, 'Current audio must be included in the revised Article');
 assert.equal(data.associatedMedia.name, issue.title);
 assert.equal(data.associatedMedia.transcript, issue.audio.transcript.join('\n\n'));
-assert.ok(data.associatedMedia.contentUrl.endsWith('standard-005-make-the-assist-visible-arizona-v12-v3.mp3'));
+assert.ok(data.associatedMedia.contentUrl.endsWith('standard-005-make-the-assist-visible-arizona-v12-v4.mp3'));
 assert.ok(html.includes('rel="alternate" type="audio/mpeg"'));
 assert.ok(!issue.audio.status && !issue.audio.reviewNotice);
 const accepted = await import(`data:text/javascript;base64,${Buffer.from(execFileSync('git',['show','65b54ade7068cb712bdfeae9fb82cf7f606c53bf:content/issues.js'])).toString('base64')}`);
@@ -41,6 +41,9 @@ for (const file of ['assets/audio/standard-005-reward-the-assist-arizona-v12-v1.
 }
 for (const file of ['assets/audio/standard-005-make-the-assist-visible-arizona-v12-v2.mp3','content/audio/005-make-the-assist-visible-arizona-v12-v2.txt','content/audio/005-make-the-assist-visible-arizona-v12-v2.json']) {
  assert.deepEqual(await readFile(file), execFileSync('git',['show',`5b8bcaf0729dc5a8638c774369d57bc1c2fc474b:${file}`], { maxBuffer: 10 * 1024 * 1024 }), 'Superseded v2 audio must be preserved');
+}
+for (const file of ['assets/audio/standard-005-make-the-assist-visible-arizona-v12-v3.mp3','content/audio/005-make-the-assist-visible-arizona-v12-v3.txt','content/audio/005-make-the-assist-visible-arizona-v12-v3.json']) {
+ assert.deepEqual(await readFile(file),execFileSync('git',['show',`69bbbc4d1af48ec10bf61ea41d2571e100d1e51b:${file}`],{maxBuffer:10*1024*1024}),'Prior v3 preserved');
 }
 assert.equal(issue.title, 'Make the Assist Visible');
 assert.equal(issue.closingStandard, issue.title);
@@ -61,7 +64,8 @@ const meta = JSON.parse(await readFile(issue.audio.metadataFile.slice(1),'utf8')
 assert.equal(createHash('sha256').update(mp3).digest('hex'),meta.sha256);
 assert.equal(meta.sizeBytes,mp3.length);
 assert.ok(meta.durationSeconds < 240, 'Current audio must be under four minutes');
-assert.equal(meta.tempoMultiplierRelativeToRawSentences, 1, 'Native articulation remains unaccelerated');
+assert.equal(meta.tempoMultiplierRelativeToRawSentences, 1.12, 'Mel requested brisker normal-speed delivery');
+assert.deepEqual(await readFile(issue.audio.transcriptFile.slice(1)),await readFile('content/audio/005-make-the-assist-visible-arizona-v12-v3.txt'),'Accepted spoken words must remain exact');
 assert.ok(meta.measuredTruePeakDbtp <= -1.5);
 assert.equal(meta.listeningReview.status, 'pending');
 const seconds = Math.round(meta.durationSeconds);

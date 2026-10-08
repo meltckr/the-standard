@@ -1,0 +1,84 @@
+{
+  "issue": "005",
+  "source": "/assets/audio/standard-005-make-the-assist-visible-arizona-v12-v4.mp3",
+  "sizeBytes": 3322124,
+  "sha256": "31c869ead8a18f7356d97941ed28aa13fb7a5543f017b4924927005666b93d81",
+  "transcriptSha256": "1cd05393ca2143204d0cc0e53f6776912ac5acacad656d5ccfe0756e485b83f0",
+  "speechInputSha256": "1cd05393ca2143204d0cc0e53f6776912ac5acacad656d5ccfe0756e485b83f0",
+  "xingMetadata": true,
+  "title": "Make the Assist Visible",
+  "voice": "AVC Arizona Voice v12",
+  "provider": "Private local MLX Audio",
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+  "generatedAt": "2026-10-08T16:50:06.513Z",
+  "durationSeconds": 166.018708,
+  "wordCount": 574,
+  "measuredWordsPerMinute": 207.44650054739614,
+  "codec": "mp3",
+  "channels": 1,
+  "sampleRateHz": 24000,
+  "bitrateKbps": 160,
+  "normalization": "Existing approved sentence-level Arizona v12 renderer and reference pair; protected tails and retained internal pauses, pitch-preserving tempo 1.12 per Mel delivery feedback, v12 EQ/de-essing and measured two-pass loudnorm. Measurements from delivered MP3.",
+  "measuredIntegratedLufs": -16.17,
+  "measuredTruePeakDbtp": -1.87,
+  "loudnessMeasurement": "Delivered MP3, FFmpeg loudnorm input measurement with dual_mono=true",
+  "tempoMultiplierRelativeToRawSentences": 1.12,
+  "pronunciationAliases": [],
+  "requiredClosing": "Much love my brother. Dominate!",
+  "sentenceAssembly": {
+    "sentenceCount": 73,
+    "activityThresholdDb": -60,
+    "retainedTailMilliseconds": 100,
+    "finalTailMilliseconds": 250,
+    "outgoingFadeMilliseconds": 20,
+    "maximumFadeWindowLevelDb": -67.3864379856296,
+    "minimumSourceTailMilliseconds": 40.625,
+    "internalPausesCollapsed": true,
+    "longQuietRunsShortened": 14,
+    "removedQuietMilliseconds": 12785.499999999998,
+    "contextualRepairs": [
+      43,
+      55,
+      68
+    ],
+    "replacementSegments": [],
+    "reusedSegments": 73
+  },
+  "listeningReview": {
+    "status": "pending",
+    "reason": "Prepared for Mel to listen. Technical waveform, automated transcription and browser checks are not human listening approval."
+  },
+  "deliveryRevision": {
+    "reason": "Mel feedback: normal 1x too slow and lacking energy",
+    "method": "Reuse approved Arizona v12 voice render, trim excess quiet leading runway, shorten 14 internal quiet holds to 220ms with protected margins, pitch-preserving FFmpeg atempo 1.12. Player default unchanged.",
+    "limitation": "Installed Base voice-cloning model does not implement style instructions or model speed; no claim of regenerated expressive prosody or human-approved energy."
+  },
+  "deliveredTailScreen": {
+    "decodedDurationSeconds": 166.01870833333334,
+    "finalQuietTailMilliseconds": 168.20833333333334
+  },
+  "digitalBlackScreen": {
+    "thresholdPcm16": 4,
+    "minimumRunSeconds": 0.28,
+    "detectedRuns": 1,
+    "runs": [
+      {
+        "start": 85.20408333333333,
+        "duration": 0.299875
+      }
+    ]
+  },
+  "silenceScreen": {
+    "thresholdDb": -50,
+    "minimumGapSeconds": 0.3,
+    "detectedGaps": 1,
+    "longestGapSeconds": 0.379542
+  },
+  "transcriptScreen": {
+    "status": "completed",
+    "method": "Complete delivered MP3, cached local English recognizer CPU mode",
+    "newExampleRecognized": "r son's example. Against Chicago on October 7th,  Jalen Green set up Osoyo Gondaro for our first quarter alley oop dunk. The pass created the finish.  Both contributions belong in the story. Name the pass. Give the result is full story. The same  principle matters ",
+    "closingRecognized": ". Then examine what needs to improve. Credit and accountability belong  in the same conversation. Who helped create our last important result? And would anyone know  it from the way we celebrated? When attention settles on the person who finished, look back at  the person who helped make the assist visible. Much love my brother. Dominate.",
+    "note": "Broad sequence only; proper names and short words remain human listening checks."
+  }
+}
