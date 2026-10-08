@@ -468,10 +468,10 @@ export class AvcAudioPlayer extends HTMLElement {
     this.seek.max = String(duration || 0);
     this.seek.value = String(clamp(current, 0, duration || 0));
     this.seek.style.setProperty("--progress", `${progress}%`);
-    this.seek.setAttribute("aria-valuetext", `${formatTime(current)} of ${formatTime(duration)}`);
+    this.seek.setAttribute("aria-valuetext", `${formatTime(current)} of ${formatTime(Math.round(duration))}`);
     this.currentLabel.textContent = formatTime(current);
-    this.durationLabel.textContent = formatTime(duration);
-    this.briefLabel.textContent = duration > 0 ? `${formatTime(duration)} audio` : "Audio brief";
+    this.durationLabel.textContent = formatTime(Math.round(duration));
+    this.briefLabel.textContent = duration > 0 ? `${formatTime(Math.round(duration))} audio` : "Audio brief";
   }
 
   updatePlayState() {

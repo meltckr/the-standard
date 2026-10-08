@@ -11,8 +11,11 @@ for (const name of ['mel-audio-player.js','player-utils.mjs']) {
 }
 const legacy = await readFile('assets/mel-audio-player/mel-audio-player.js','utf8');
 const neutral = await readFile('assets/avc-audio-player/avc-audio-player.js','utf8');
-assert.equal(neutral,legacy.replaceAll('mel-audio-player','avc-audio-player').replaceAll('MelAudioPlayer','AvcAudioPlayer'),'Player behavior must be preserved by token-only renaming');
+assert.equal(neutral,legacy.replaceAll('mel-audio-player','avc-audio-player').replaceAll('MelAudioPlayer','AvcAudioPlayer').replaceAll('formatTime(duration)','formatTime(Math.round(duration))'),'Player changes are limited to neutral tokens and total-duration rounding');
 assert.ok(!/Mel|mel-/.test(neutral));
+const { formatTime } = await import('../assets/avc-audio-player/player-utils.mjs');
+assert.equal(formatTime(Math.round(264.704875)), '4:25');
+assert.equal(formatTime(264.704875), '4:24', 'Elapsed-time floor semantics remain unchanged');
 const issue = issues.at(-1);
 const html = await readFile(`dist/issues/${issue.slug}/index.html`,'utf8');
 assert.ok(html.includes(`href="${issue.share.url}"`));

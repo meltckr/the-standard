@@ -18,9 +18,9 @@ Recovered from the original implementation checkout without modifying it. The in
 
 ## Validation
 
-`npm run lint`, `npm run build`, syntax checks, `git diff --check` and `node scripts/check-005-review.mjs` pass. Integration assertions prove all four archived issue objects and legacy player assets unchanged, neutral player token-only parity, exact built canonical/OG/Article/AudioObject data, transcript/hash binding and the draft indexing gate. Edition 005 is deliberately `draft`, has no claimed publication timestamp, uses noindex/nofollow and is absent from the publication sitemap. Existing robots sitemap reference remains correct. Set actual publication timestamps/status only after publication approval.
+`npm run lint`, `npm run build`, syntax checks, `git diff --check` and `node scripts/check-005-review.mjs` pass. Integration assertions prove all four archived issue objects and legacy player assets unchanged, neutral player parity except total-duration rounding, exact built canonical/OG/Article/AudioObject data, transcript/hash binding and the draft indexing gate. Edition 005 is deliberately `draft`, has no claimed publication timestamp, uses noindex/nofollow and is absent from the publication sitemap. Existing robots sitemap reference remains correct. Set actual publication timestamps/status only after publication approval.
 
-The approved player's implementation is preserved under new `assets/avc-audio-player/` paths, `AvcAudioPlayer` class and neutral custom element/event/storage tokens. Only the selected edition's player is imported; previous editions retain their player. No voice engine labels or personal identifiers appear in new player chrome.
+The approved player's implementation is preserved, with total duration rounded consistently to 4:25, under new `assets/avc-audio-player/` paths, `AvcAudioPlayer` class and neutral custom element/event/storage tokens. Only the selected edition's player is imported; previous editions retain their player. No voice engine labels or personal identifiers appear in new player chrome.
 
 Browser checks: 1280 × 900 desktop and 390 × 844 phone CSS viewports; no horizontal overflow; initial audio paused; exact transcript collapsed; play/pause, forward/backward 15-second seek, slider, 1×/1.5×/2× and playback through the ending work. Download targets the selected unique MP3. Copy link was clicked and pasted into a local test textarea, proving the full permanent URL. No browser console errors. Screenshots of the exact built route are retained separately in the recovery task's `review-evidence/` directory.
 
@@ -29,3 +29,7 @@ The completed private assembly report records 78 sentences, at least 51.375 ms s
 ## Open approval gates
 
 Independent parent QA and Mel's listening/editorial approval remain pending. Automated transcription, waveform analysis and browser playback do not establish perceptual approval of pronunciation, joins or word tails. No publication, workflow dispatch, main push/merge or client delivery was performed. The Pages workflow triggers only on main or manual dispatch, so this review branch/PR does not deploy. After approval, publish through the existing workflow and verify live HTTP 200, audio MIME, byte ranges and hash before delivery.
+
+## Bounded QA correction
+
+Independent QA passed the editorial/source/controls/draft-state checks and identified a total-duration display mismatch. The new AVC player now rounds only total duration (brief, end label and slider accessible total) to the nearest second, matching the page link and AudioObject at 4:25. Elapsed time and seeking are unchanged; archived players and MP3/transcript bytes remain untouched. The optional study note describes mixed experiment results and limitations; independent QA did not retrieve full study text, so no full-text verification is claimed.
