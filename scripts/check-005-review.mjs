@@ -26,15 +26,19 @@ assert.equal(data.headline,issue.title);
 assert.ok(data.associatedMedia, 'Current audio must be included in the revised Article');
 assert.equal(data.associatedMedia.name, issue.title);
 assert.equal(data.associatedMedia.transcript, issue.audio.transcript.join('\n\n'));
-assert.ok(data.associatedMedia.contentUrl.endsWith('standard-005-make-the-assist-visible-arizona-v12-v8.mp3'));
+assert.ok(data.associatedMedia.contentUrl.endsWith('standard-005-make-the-assist-visible-arizona-v12-v9.mp3'));
 assert.ok(html.includes('rel="alternate" type="audio/mpeg"'));
 assert.ok(!issue.audio.status && !issue.audio.reviewNotice);
-const approvedPage = execFileSync('git',['show','cb9f3036608c8eae253a3ec300bc031d6ebce4b2:content/review/005-make-the-assist-visible-v8-page.txt'],{encoding:'utf8'}).trim();
-const approvedAudio = execFileSync('git',['show','cb9f3036608c8eae253a3ec300bc031d6ebce4b2:content/review/005-make-the-assist-visible-v8-audio.txt'],{encoding:'utf8'}).trim();
+const originalPage = execFileSync('git',['show','cb9f3036608c8eae253a3ec300bc031d6ebce4b2:content/review/005-make-the-assist-visible-v8-page.txt'],{encoding:'utf8'}).trim();
+const originalAudio = execFileSync('git',['show','cb9f3036608c8eae253a3ec300bc031d6ebce4b2:content/review/005-make-the-assist-visible-v8-audio.txt'],{encoding:'utf8'}).trim();
+const approvedPage = originalPage.replace('even in a game Phoenix lost 124-117.','even in a game Phoenix lost. Chicago finished with 124 points. Phoenix finished with 117.');
+const approvedAudio = originalAudio.replace('even in a game Phoenix lost one hundred twenty-four to one hundred seventeen.','even in a game Phoenix lost. Chicago finished with one hundred twenty-four points. Phoenix finished with one hundred seventeen.');
 assert.equal([...issue.sections.flatMap(s=>s.body),issue.closingQuestion,issue.closingParagraph,issue.signoff].join('\n\n'),approvedPage,'Page paragraphs must exactly match approved v8');
 assert.equal(issue.audio.transcript.join('\n\n'),approvedAudio,'Audio must exactly match approved v8 spoken numbers');
 assert.equal(issue.textApproval.status,'approved');
-assert.equal(issue.reviewVersion,'v8');
+assert.equal(issue.reviewVersion,'v9-score-clarity');
+assert.equal(issue.textApproval.version,'v8');
+assert.equal(issue.scoreClarityRevision.status,'pending-listening');
 assert.equal(issue.applicationPoints.length,0,'No previous application copy added to approved v8');
 for (const file of ['assets/audio/standard-005-reward-the-assist-arizona-v12-v1.mp3','content/audio/005-reward-the-assist-arizona-v12-v1.txt','content/audio/005-reward-the-assist-arizona-v12-v1.json']) {
  assert.deepEqual(await readFile(file), execFileSync('git',['show',`65b54ade7068cb712bdfeae9fb82cf7f606c53bf:${file}`], { maxBuffer: 10 * 1024 * 1024 }), 'Prior audio must be preserved');
@@ -50,6 +54,10 @@ for (const file of ['assets/audio/standard-005-make-the-assist-visible-arizona-v
 }
 for (const file of ['assets/audio/standard-005-make-the-assist-visible-arizona-v12-v5.mp3','content/audio/005-make-the-assist-visible-arizona-v12-v5.txt','content/audio/005-make-the-assist-visible-arizona-v12-v5.json']) {
  assert.deepEqual(await readFile(file),execFileSync('git',['show',`b548b7a3e5c34b27b43dc6c89e1324a7cdf7c153:${file}`],{maxBuffer:10*1024*1024}),'Prior v5 preserved');
+}
+for (const suffix of ['mp3','txt','json']) {
+ const file = suffix==='mp3' ? 'assets/audio/standard-005-make-the-assist-visible-arizona-v12-v8.mp3' : `content/audio/005-make-the-assist-visible-arizona-v12-v8.${suffix}`;
+ assert.deepEqual(await readFile(file),execFileSync('git',['show',`b1193a11ee19b4b3e5154750e235b6d24aa87420:${file}`],{maxBuffer:10*1024*1024}),'V8 preserved after score fix');
 }
 assert.equal(issue.title, 'Make the Assist Visible');
 assert.equal(issue.closingStandard, issue.title);

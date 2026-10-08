@@ -623,7 +623,7 @@ export const issues = [
   "readingTime": "2½ min read",
   "publicationDate": "October 2026",
   "status": "draft",
-  "modifiedAt": "2026-10-08T18:06:55.993Z",
+  "modifiedAt": "2026-10-08T18:35:59.678Z",
   "share": {
     "url": "https://meltckr.github.io/the-standard/issues/005-reward-the-assist/",
     "image": "og-005-make-the-assist-visible-v2.png",
@@ -649,7 +649,7 @@ export const issues = [
       "eyebrow": "Across the organization",
       "title": "Look behind the finish.",
       "body": [
-        "Against Chicago on October 7, Jalen Green set up Oso Ighodaro for an alley-oop dunk with 6:57 left in the first quarter. It cut Chicago’s lead to one, 18-17. The pass and the finish belong in the story, even in a game Phoenix lost 124-117.",
+        "Against Chicago on October 7, Jalen Green set up Oso Ighodaro for an alley-oop dunk with 6:57 left in the first quarter. It cut Chicago’s lead to one, 18-17. The pass and the finish belong in the story, even in a game Phoenix lost. Chicago finished with 124 points. Phoenix finished with 117.",
         "The same principle matters around a mortgage file. Think about the processor who spots missing information early and helps complete the file. The customer sees the next step; the team needs to see the preparation behind it.",
         "United Wholesale Mortgage describes a practice in which leaders and teammates give kudos for contributions above and beyond the job. Those kudos earn Pay It Forward points, which recipients use to help choose where the company's charitable dollars go."
       ]
@@ -705,10 +705,10 @@ export const issues = [
     "label": "Audio",
     "title": "Make the Assist Visible",
     "description": "A spoken companion on making contributions visible and repairing recurring handoffs.",
-    "durationLabel": "2:45 listen",
-    "src": "/assets/audio/standard-005-make-the-assist-visible-arizona-v12-v8.mp3",
-    "transcriptFile": "/content/audio/005-make-the-assist-visible-arizona-v12-v8.txt",
-    "metadataFile": "/content/audio/005-make-the-assist-visible-arizona-v12-v8.json",
+    "durationLabel": "2:49 listen",
+    "src": "/assets/audio/standard-005-make-the-assist-visible-arizona-v12-v9.mp3",
+    "transcriptFile": "/content/audio/005-make-the-assist-visible-arizona-v12-v9.txt",
+    "metadataFile": "/content/audio/005-make-the-assist-visible-arizona-v12-v9.json",
     "pronunciationAliases": [],
     "minWords": 500,
     "maxWords": 750,
@@ -721,7 +721,7 @@ export const issues = [
       "Mat, Dean Smith had his players point to the passer. At North Carolina, the player who scored acknowledged the teammate who made the pass. The scorer had the basket; the pointed finger gave the play its full story.",
       "In his twenty thirteen Presidential Medal of Freedom remarks honoring Smith, President Barack Obama called him \"the pioneer who popularized the idea of pointing to the passer.\" A small act showed what the program valued.",
       "That is where this Standard starts. Make the Assist Visible. When something goes well, look behind the person at the finish. Who helped? What did their contribution make possible?",
-      "Against Chicago on October seventh, Jalen Green set up Oso Ighodaro for an alley-oop dunk with six minutes and fifty-seven seconds left in the first quarter. It cut Chicago’s lead to one, eighteen to seventeen. The pass and the finish belong in the story, even in a game Phoenix lost one hundred twenty-four to one hundred seventeen.",
+      "Against Chicago on October seventh, Jalen Green set up Oso Ighodaro for an alley-oop dunk with six minutes and fifty-seven seconds left in the first quarter. It cut Chicago’s lead to one, eighteen to seventeen. The pass and the finish belong in the story, even in a game Phoenix lost. Chicago finished with one hundred twenty-four points. Phoenix finished with one hundred seventeen.",
       "The same principle matters around a mortgage file. Think about the processor who spots missing information early and helps complete the file. The customer sees the next step; the team needs to see the preparation behind it.",
       "United Wholesale Mortgage describes a practice in which leaders and teammates give kudos for contributions above and beyond the job. Those kudos earn Pay It Forward points, which recipients use to help choose where the company's charitable dollars go.",
       "Carry that principle into the next conversation. Describe the work and connect it to the result.",
@@ -742,12 +742,18 @@ export const issues = [
   "closingParagraph": "When attention settles on the person who finished, look back at the person who helped. Make the Assist Visible.",
   "closingLead": "When attention settles on the person who finished, look back at the person who helped.",
   "signoff": "Much love my brother. Dominate!",
-  "pageTranscriptFile": "/content/review/005-make-the-assist-visible-v8-page.txt",
-  "reviewVersion": "v8",
+  "pageTranscriptFile": "/content/review/005-make-the-assist-visible-v9-page.txt",
+  "reviewVersion": "v9-score-clarity",
   "textApproval": {
     "status": "approved",
     "version": "v8",
     "evidence": "Mel: Approve V8; text and matching audio preparation only"
+  },
+  "scoreClarityRevision": {
+    "version": "v9",
+    "scope": "Only final score passage and matching page counterpart; authorized by Mel audible-defect feedback",
+    "status": "pending-listening",
+    "originalVersion": "v8"
   }
 }
 ];

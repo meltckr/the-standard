@@ -14,5 +14,3 @@ SHA256: 8e6426abbf224c78839264b5f75cb3cf4e3f8e5b8bd92e1daf32ee64cfd51259
 A 9.7-second score excerpt is cut from this delivered MP3. Local CPU ASR resolves Chicago 124 and Phoenix 117, but is not audible approval. Mel's score listening review and final full-audio listening remain pending. V8 text approval does not approve v9 audio or publication.
 
 Lint, build, exact narrow-diff integration and archival byte-preservation checks pass. No publication, main merge or client delivery.
-
-Current files: assets/audio/standard-005-make-the-assist-visible-arizona-v12-v9.mp3; content/audio/005-make-the-assist-visible-arizona-v12-v9.txt and .json.
