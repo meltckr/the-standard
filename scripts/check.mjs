@@ -61,9 +61,29 @@ for (const issue of content.issues) {
     const imagePath = join(root, "assets", issue.share.image);
     const image = await readFile(imagePath);
     const pngSignature = image.subarray(1, 4).toString("ascii") === "PNG";
-    const width = pngSignature && image.length >= 24 ? image.readUInt32BE(16) : 0;
-    const height = pngSignature && image.length >= 24 ? image.readUInt32BE(20) : 0;
-    if (!pngSignature || width !== issue.share.imageWidth || height !== issue.share.imageHeight) errors.push(`Issue ${issue.number} share image dimensions do not match its metadata`);
+    let width = pngSignature && image.length >= 24 ? image.readUInt32BE(16) : 0;
+    let height = pngSignature && image.length >= 24 ? image.readUInt32BE(20) : 0;
+    if (image.length > 4 && image[0] === 0xff && image[1] === 0xd8) {
+      const frameMarkers = new Set([0xc0, 0xc1, 0xc2, 0xc3, 0xc5, 0xc6, 0xc7, 0xc9, 0xca, 0xcb, 0xcd, 0xce, 0xcf]);
+      let offset = 2;
+      while (offset + 4 <= image.length) {
+        if (image[offset++] !== 0xff) break;
+        while (image[offset] === 0xff) offset++;
+        const marker = image[offset++];
+        if (marker === 0xd9 || marker === 0xda) break;
+        if (marker === 0x01 || (marker >= 0xd0 && marker <= 0xd7)) continue;
+        if (offset + 2 > image.length) break;
+        const length = image.readUInt16BE(offset);
+        if (length < 2 || offset + length > image.length) break;
+        if (frameMarkers.has(marker) && length >= 8) {
+          height = image.readUInt16BE(offset + 3);
+          width = image.readUInt16BE(offset + 5);
+          break;
+        }
+        offset += length;
+      }
+    }
+    if (width !== issue.share.imageWidth || height !== issue.share.imageHeight) errors.push(`Issue ${issue.number} share image dimensions do not match its metadata`);
     if (width < 1200 || Math.abs(width / height - 1.905) > 0.01) errors.push(`Issue ${issue.number} share image must preserve the large-image social ratio`);
   } catch {
     errors.push(`Issue ${issue.number} share image is missing`);

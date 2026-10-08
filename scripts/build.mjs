@@ -120,6 +120,7 @@ async function issueShell(issue) {
   html = replaceMeta(html, "property", "og:url", url);
   html = replaceMeta(html, "property", "og:image", image);
   html = replaceMeta(html, "property", "og:image:secure_url", image);
+  if (issue.number === "005") html = html.replace("</head>", '  <meta property="og:image:type" content="image/jpeg">\n</head>');
   html = replaceMeta(html, "property", "og:image:width", issue.share.imageWidth);
   html = replaceMeta(html, "property", "og:image:height", issue.share.imageHeight);
   html = replaceMeta(html, "property", "og:image:alt", imageAlt);

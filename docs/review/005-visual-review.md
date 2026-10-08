@@ -4,9 +4,9 @@ Review candidate based on approved published v9, b11bb15c569377e68560c3d4a71d0e8
 
 ## What changed
 
-Only issue 005 opts into the new visual layer: original Blender assist sculpture, navy/copper opening, dashboard-derived local font hierarchy, warm essay background, 690 px reading column, clearer section boundaries, responsive phone layout, neutral audio colors and motion-free reveal states. Earlier issues do not load the stylesheet. The approved article, transcript, audio, metadata and shared audio-player implementation remain byte-identical.
+Only issue 005 opts into the new visual layer: original Blender assist sculpture, navy/copper opening, dashboard-derived local font hierarchy, warm essay background, 690 px reading column, clearer section boundaries, responsive phone layout, neutral audio colors and motion-free reveal states. Earlier issues do not load the stylesheet. The approved article, transcript, audio, shared audio-player implementation and all metadata except the authorized share-image path/description remain byte-identical.
 
-A separate 1200 × 630 Figma share-card proposal uses the exact verified Pixabay photograph and approved title. It is not wired into social metadata. The downloaded source is Pixabay's 1280 px preview, not the reported 5146 × 3108 original. The derivative combines photo, title, publication identity, contrast veil and credit; it is not a standalone stock-photo distribution.
+A separate 1200 × 630 Figma share-card proposal uses the exact verified Pixabay photograph and approved title. Visual review v10 wires the optimized 171,136-byte progressive JPEG into OG/Twitter metadata in this review branch only; the original proposal PNG and old published share asset remain available for rollback. The downloaded source is Pixabay's 1280 px preview, not the reported 5146 × 3108 original. The derivative combines photo, title, publication identity, contrast veil and credit; it is not a standalone stock-photo distribution.
 
 ## Tools and source evidence
 
@@ -24,4 +24,4 @@ Current audio duration 168.530542 seconds; approved MP3 SHA-256 8e6426abbf224c78
 
 ## Review boundary
 
-Independent visual QA and owner approval remain pending. Share-card activation and any interior licensed-photo choice need review. This branch does not change published content or deployment settings. Screenshot evidence includes the host browser's floating extension UI in some captures; those controls are not part of the site.
+Independent visual QA and owner approval remain pending. Owner approval for the complete v10 revision and any interior licensed-photo choice remain pending. This branch does not change published content or deployment settings. Screenshot evidence includes the host browser's floating extension UI in some captures; those controls are not part of the site.

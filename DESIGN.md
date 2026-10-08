@@ -1,6 +1,6 @@
 # Design source of truth
 
-The approved published Standard 005 is commit b11bb15c569377e68560c3d4a71d0e8f80ec278f. Its article, transcript, audio, metadata and previous editions are immutable in this visual review. The reader implementation is authoritative; the editable Figma file contains layout studies and a separate share-card proposal: https://www.figma.com/design/cKkQPuoX4kouKoFpAyHuG9 .
+The approved published Standard 005 is commit b11bb15c569377e68560c3d4a71d0e8f80ec278f. Its article, transcript, audio, publication metadata and previous editions are immutable in this visual review. The reader implementation is authoritative; the editable Figma file contains layout studies and a separate share-card proposal: https://www.figma.com/design/cKkQPuoX4kouKoFpAyHuG9 .
 
 ## Brand and visual language
 
@@ -48,4 +48,4 @@ Review branch only; no publication or delivery. Local Blender and native Figma A
 
 ## Open questions
 
-The separate Pixabay share-card proposal needs visual approval before any social metadata changes. The requested Dean Smith newspaper image is public domain in the U.S. according to Commons, which expressly warns of copyright in countries that do not apply the shorter-term rule. It is excluded from this globally accessible candidate pending an appropriate rights decision; the original sculpture is the safe alternative.
+The selected Pixabay composite is optimized and wired into review-branch OG/Twitter metadata for the complete v10 review. Owner approval remains required before release. The requested Dean Smith newspaper image is public domain in the U.S. according to Commons, which expressly warns of copyright in countries that do not apply the shorter-term rule. It is excluded from this globally accessible candidate pending an appropriate rights decision; the original sculpture is the safe alternative.

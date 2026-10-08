@@ -627,11 +627,11 @@ export const issues = [
   "modifiedAt": "2026-10-08T19:17:26.000Z",
   "share": {
     "url": "https://meltckr.github.io/the-standard/issues/005-reward-the-assist/",
-    "image": "og-005-make-the-assist-visible-v2.png",
+    "image": "standard-005/share-card-sunset-v10.jpg",
     "imageWidth": 1200,
     "imageHeight": 630,
     "hook": "WHO MADE IT POSSIBLE?",
-    "alt": "The Standard Edition 005, Make the Assist Visible: Who made it possible? A symbolic basketball pass connects the contribution to the finish, beside AVC branding.",
+    "alt": "The Standard No. 005: Make the Assist Visible. Give the result its full story. An editorial sunset basketball-court photograph with silhouetted players, AVC publication credit and a Pixabay photo credit.",
     "message": "Mat, here’s the review draft of Edition 005 of The Standard: Make the Assist Visible. It starts with Dean Smith’s point-to-the-passer habit and follows the work behind the finish. The central question is who gets credit—and whether repeated rescues reveal a process we need to repair. I’d be interested in what comes to mind for you."
   },
   "sections": [
