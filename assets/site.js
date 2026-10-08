@@ -63,7 +63,7 @@ function renderSection(section, quote) {
         <h2>${section.title}</h2>
       </div>
       <div class="section-body">
-        ${section.body.map((paragraph) => `<p>${paragraph}</p>`).join("")}
+        ${(section.bodyOpeningAsHeading ? section.body.slice(1) : section.body).map((paragraph) => `<p>${paragraph}</p>`).join("")}
         ${section.examples ? `<dl class="role-examples">${section.examples.map((example) => `<div><dt>${example.role}</dt><dd>${example.text}</dd></div>`).join("")}</dl>` : ""}
         ${section.afterExamples ? `<p class="example-note">${section.afterExamples}</p>` : ""}
         ${section.comparisons ? `
@@ -166,7 +166,7 @@ function issuePage(issue) {
   const navItems = [
     ...(issue.audio ? [["listen", "Listen"]] : []),
     ...issue.sections.map((section) => [section.id, section.eyebrow]),
-    ["application", "The Application"],
+    ...(issue.applicationPoints.length ? [["application", "The Application"]] : []),
     ["question", "Question for Mat"],
     ["standard", "The Standard"]
   ];
@@ -200,7 +200,7 @@ function issuePage(issue) {
         </nav>
         <article class="article">
           ${issue.sections.map((section) => renderSection(section, issue.pullQuotes.find((quote) => quote.after === section.id))).join("")}
-          <section class="application reveal" id="application" data-section="application">
+          ${issue.applicationPoints.length ? `<section class="application reveal" id="application" data-section="application">
             <div class="application__head">
               <div>
                 <span class="eyebrow">The Application</span>
@@ -208,7 +208,7 @@ function issuePage(issue) {
               </div>
               <ol>${issue.applicationPoints.map((point) => `<li>${point}</li>`).join("")}</ol>
             </div>
-          </section>
+          </section>` : ""}
           <section class="question reveal" id="question" data-section="question">
             <span class="eyebrow">The Question for Mat</span>
             <h2>${issue.closingQuestion}</h2>
@@ -218,7 +218,9 @@ function issuePage(issue) {
       <section class="closing" id="standard" data-section="standard">
         <div class="closing__inner reveal">
           <span class="eyebrow">The Standard</span>
-          <h2>${issue.closingStandard}</h2>
+          ${issue.closingLead ? `<p>${issue.closingLead}</p>` : ""}
+          <h2>${issue.closingStandard}${issue.signoff ? "." : ""}</h2>
+          ${issue.signoff ? `<p>${issue.signoff}</p>` : ""}
         </div>
       </section>
       <footer class="article-footer">

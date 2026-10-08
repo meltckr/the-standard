@@ -26,16 +26,16 @@ assert.equal(data.headline,issue.title);
 assert.ok(data.associatedMedia, 'Current audio must be included in the revised Article');
 assert.equal(data.associatedMedia.name, issue.title);
 assert.equal(data.associatedMedia.transcript, issue.audio.transcript.join('\n\n'));
-assert.ok(data.associatedMedia.contentUrl.endsWith('standard-005-make-the-assist-visible-arizona-v12-v5.mp3'));
+assert.ok(data.associatedMedia.contentUrl.endsWith('standard-005-make-the-assist-visible-arizona-v12-v8.mp3'));
 assert.ok(html.includes('rel="alternate" type="audio/mpeg"'));
 assert.ok(!issue.audio.status && !issue.audio.reviewNotice);
-const accepted = await import(`data:text/javascript;base64,${Buffer.from(execFileSync('git',['show','65b54ade7068cb712bdfeae9fb82cf7f606c53bf:content/issues.js'])).toString('base64')}`);
-const withoutAudio = ({audio,...written}) => written;
-const expected = structuredClone(accepted.issues.at(-1));
-expected.sections.find(s=>s.id==='organization').body[0] = 'Against Chicago on October 7, Jalen Green set up Oso Ighodaro for a first-quarter alley-oop dunk. The pass created the finish. Both contributions belong in the story.';
-expected.sections.find(s=>s.id==='organization').body[1] = 'That is where the leader looks. Name the pass. Give the result its full story.';
-expected.sources[expected.sources.findIndex(s=>s.includes('dominayton'))] = issue.sources.find(s=>s.includes('20261007_PHXCHI_book.pdf#page=9'));
-assert.deepEqual(withoutAudio(issue), withoutAudio(expected), 'Only the authorized Suns example and its source may change');
+const approvedPage = execFileSync('git',['show','cb9f3036608c8eae253a3ec300bc031d6ebce4b2:content/review/005-make-the-assist-visible-v8-page.txt'],{encoding:'utf8'}).trim();
+const approvedAudio = execFileSync('git',['show','cb9f3036608c8eae253a3ec300bc031d6ebce4b2:content/review/005-make-the-assist-visible-v8-audio.txt'],{encoding:'utf8'}).trim();
+assert.equal([...issue.sections.flatMap(s=>s.body),issue.closingQuestion,issue.closingParagraph,issue.signoff].join('\n\n'),approvedPage,'Page paragraphs must exactly match approved v8');
+assert.equal(issue.audio.transcript.join('\n\n'),approvedAudio,'Audio must exactly match approved v8 spoken numbers');
+assert.equal(issue.textApproval.status,'approved');
+assert.equal(issue.reviewVersion,'v8');
+assert.equal(issue.applicationPoints.length,0,'No previous application copy added to approved v8');
 for (const file of ['assets/audio/standard-005-reward-the-assist-arizona-v12-v1.mp3','content/audio/005-reward-the-assist-arizona-v12-v1.txt','content/audio/005-reward-the-assist-arizona-v12-v1.json']) {
  assert.deepEqual(await readFile(file), execFileSync('git',['show',`65b54ade7068cb712bdfeae9fb82cf7f606c53bf:${file}`], { maxBuffer: 10 * 1024 * 1024 }), 'Prior audio must be preserved');
 }
@@ -48,11 +48,14 @@ for (const file of ['assets/audio/standard-005-make-the-assist-visible-arizona-v
 for (const file of ['assets/audio/standard-005-make-the-assist-visible-arizona-v12-v4.mp3','content/audio/005-make-the-assist-visible-arizona-v12-v4.txt','content/audio/005-make-the-assist-visible-arizona-v12-v4.json']) {
  assert.deepEqual(await readFile(file),execFileSync('git',['show',`5ddd8f4e83a5a8d1e735dc1e564ae08846818603:${file}`],{maxBuffer:10*1024*1024}),'Approved v4 preserved');
 }
+for (const file of ['assets/audio/standard-005-make-the-assist-visible-arizona-v12-v5.mp3','content/audio/005-make-the-assist-visible-arizona-v12-v5.txt','content/audio/005-make-the-assist-visible-arizona-v12-v5.json']) {
+ assert.deepEqual(await readFile(file),execFileSync('git',['show',`b548b7a3e5c34b27b43dc6c89e1324a7cdf7c153:${file}`],{maxBuffer:10*1024*1024}),'Prior v5 preserved');
+}
 assert.equal(issue.title, 'Make the Assist Visible');
 assert.equal(issue.closingStandard, issue.title);
 assert.equal(issue.sections[0].id, 'story');
 assert.equal(issue.closingQuestion, 'Who helped create our last important result, and would anyone know it from the way we celebrated?');
-assert.ok(issue.sources.some(s=>s.includes('received only an acknowledgement of their help')));
+assert.ok(issue.sources.some(s=>s.includes('obamawhitehouse.archives.gov')));
 assert.ok(issue.sources.some(s=>s.includes('uwmcareers.com/blog/doing-well-by-doing-good')));
 assert.ok(issue.sources.some(s=>s.includes('20261007_PHXCHI_book.pdf#page=9') && s.includes('6:57') && s.includes('official current Suns roster')));
 assert.ok(!JSON.stringify(issue).match(/Crowder|Ayton|Booker.s screen|June 22, 2021/));
@@ -68,7 +71,7 @@ assert.equal(createHash('sha256').update(mp3).digest('hex'),meta.sha256);
 assert.equal(meta.sizeBytes,mp3.length);
 assert.ok(meta.durationSeconds < 240, 'Current audio must be under four minutes');
 assert.equal(meta.tempoMultiplierRelativeToRawSentences, 1.12, 'Mel requested brisker normal-speed delivery');
-assert.deepEqual(await readFile(issue.audio.transcriptFile.slice(1)),await readFile('content/audio/005-make-the-assist-visible-arizona-v12-v3.txt'),'Accepted spoken words must remain exact');
+assert.equal((await readFile(issue.audio.transcriptFile.slice(1),'utf8')).trim(),approvedAudio);
 assert.ok(meta.measuredTruePeakDbtp <= -1.5);
 assert.equal(meta.listeningReview.status, 'pending');
 const seconds = Math.round(meta.durationSeconds);

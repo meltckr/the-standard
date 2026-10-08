@@ -620,10 +620,10 @@ export const issues = [
   "title": "Make the Assist Visible",
   "thesis": "Make the Assist Visible. Give the result its full story.",
   "summary": "Dean Smith’s pointed finger, the work behind the finish, and the difference between rewarding a rescue and repairing the process.",
-  "readingTime": "3½ min read",
+  "readingTime": "2½ min read",
   "publicationDate": "October 2026",
   "status": "draft",
-  "modifiedAt": "2026-10-08T12:52:31.920Z",
+  "modifiedAt": "2026-10-08T18:06:55.993Z",
   "share": {
     "url": "https://meltckr.github.io/the-standard/issues/005-reward-the-assist/",
     "image": "og-005-make-the-assist-visible-v2.png",
@@ -639,20 +639,9 @@ export const issues = [
       "eyebrow": "The coaching example",
       "title": "Point to the passer.",
       "body": [
-        "At North Carolina, Dean Smith’s players acknowledged an assist by pointing to the teammate who made the pass. The scorer had the basket. The pointed finger gave the play its full story.",
-        "There is a leadership lesson in that gesture. The contribution was named while the result was fresh. The person who benefited did the acknowledging. Everyone watching saw the connection between the pass and the finish.",
-        "In the 2013 Presidential Medal of Freedom remarks honoring Smith, President Barack Obama credited him with popularizing the gesture. A small act showed what the program valued.",
-        "Pointing to the passer removes the guesswork from appreciation. It tells a specific teammate that their contribution was seen. That is a fair question for any organization: when something goes well, how clearly do we acknowledge the people who helped make it possible?"
-      ]
-    },
-    {
-      "id": "recognition",
-      "eyebrow": "The leadership practice",
-      "title": "Name what mattered.",
-      "body": [
-        "Start with the work. Who helped? What did they do? How did that contribution improve the result?",
-        "“You’re a great teammate” expresses appreciation. “You stayed with the new processor until they could handle that question themselves” names the contribution. The person knows what you valued. Everyone else hears a behavior they recognize.",
-        "Keep the credit honest. Did the help make someone more capable? Did it improve the handoff? Did it solve a problem that mattered? Describe the work. Connect it to the result."
+        "Mat, Dean Smith had his players point to the passer. At North Carolina, the player who scored acknowledged the teammate who made the pass. The scorer had the basket; the pointed finger gave the play its full story.",
+        "In his 2013 Presidential Medal of Freedom remarks honoring Smith, President Barack Obama called him \"the pioneer who popularized the idea of pointing to the passer.\" A small act showed what the program valued.",
+        "That is where this Standard starts. Make the Assist Visible. When something goes well, look behind the person at the finish. Who helped? What did their contribution make possible?"
       ]
     },
     {
@@ -660,22 +649,32 @@ export const issues = [
       "eyebrow": "Across the organization",
       "title": "Look behind the finish.",
       "body": [
-        "Against Chicago on October 7, Jalen Green set up Oso Ighodaro for a first-quarter alley-oop dunk. The pass created the finish. Both contributions belong in the story.",
-        "That is where the leader looks. Name the pass. Give the result its full story.",
-        "In a mortgage operation, think about the processor who spots missing information early and helps complete the file. The customer sees the next step. The team needs to see the preparation behind it.",
-        "UWM put recognition into a formal practice. In an April 2023 account, the company described leaders and teammates giving kudos for contributions above and beyond the job. Those kudos earned Pay It Forward points. Recipients used the points to help choose where UWM’s charitable dollars went.",
-        "The contribution received acknowledgment, and the recipient received a choice. Recognition became a specific action. That is the leadership principle to carry into the next conversation.",
-        "In each case, the right question reaches one step behind the outcome. What allowed the person at the finish to do the job well?"
+        "Against Chicago on October 7, Jalen Green set up Oso Ighodaro for an alley-oop dunk with 6:57 left in the first quarter. It cut Chicago’s lead to one, 18-17. The pass and the finish belong in the story, even in a game Phoenix lost 124-117.",
+        "The same principle matters around a mortgage file. Think about the processor who spots missing information early and helps complete the file. The customer sees the next step; the team needs to see the preparation behind it.",
+        "United Wholesale Mortgage describes a practice in which leaders and teammates give kudos for contributions above and beyond the job. Those kudos earn Pay It Forward points, which recipients use to help choose where the company's charitable dollars go."
+      ]
+    },
+    {
+      "id": "recognition",
+      "eyebrow": "The leadership practice",
+      "title": "Name what mattered.",
+      "body": [
+        "Carry that principle into the next conversation. Describe the work and connect it to the result.",
+        "\"You're a great teammate\" expresses appreciation. \"You stayed with the new processor until they could handle that question themselves\" names the contribution. The person knows what you valued, and everyone else hears a behavior they recognize.",
+        "Some people welcome public credit. Others prefer a quiet thank-you. Fit the acknowledgment to the person.",
+        "Keep the credit honest: recognize help that builds capability, improves a handoff or solves a problem that matters."
       ]
     },
     {
       "id": "repair",
       "eyebrow": "The operating standard",
       "title": "Reward the rescue. Repair the process.",
+      "bodyOpeningAsHeading": true,
       "body": [
-        "When the same person keeps rescuing an incomplete handoff, the help is revealing a process that needs repair. Thank the person. Then fix what keeps making the rescue necessary.",
-        "Ask where the handoff broke, who owns the correction, and what changes before the next file or decision moves. Credit the rescue without turning it into a permanent job.",
-        "The test is what happens next. More complete handoffs. Earlier help. People ready to handle the responsibility themselves. Recognize the contribution and reduce the need for another rescue."
+        "Reward the rescue. Repair the process.",
+        "When the same person keeps rescuing an incomplete handoff, the help reveals a process that needs repair. Thank the person. Then fix what keeps making the rescue necessary.",
+        "Ask where the handoff broke. Who owns the correction? What changes before the next file or decision moves? Credit the rescue without turning it into a permanent job.",
+        "The test is what happens next: cleaner handoffs, earlier help, and people ready to handle it themselves. Recognize the contribution and reduce the need for another rescue."
       ]
     },
     {
@@ -684,33 +683,21 @@ export const issues = [
       "title": "Make acknowledgment part of the work.",
       "body": [
         "At the next review of a good result, ask the person closest to it who helped make it possible. Listen for the contribution that rarely reaches the room.",
-        "Keep the acknowledgment specific and proportionate. Name the action and its effect. Some people welcome public credit. Others prefer a quiet thank-you. Fit the acknowledgment to the person.",
-        "Do this when the outcome disappoints, too. Recognize sound preparation, honest information and help that made a teammate better. Then examine what needs to improve. Credit and accountability belong in the same conversation.",
-        "Smith’s gesture gives us a place to start. When attention settles on the person who finished, look back at the person who helped."
+        "Do this when the outcome disappoints, too. Recognize sound preparation, honest information and help that made a teammate better. Then examine what needs to improve. Credit and accountability belong in the same conversation."
       ]
     }
   ],
-  "pullQuotes": [
-    {
-      "after": "story",
-      "text": "The person who benefited did the acknowledging."
-    }
-  ],
+  "pullQuotes": [],
   "applicationTitle": "Give the result its full story.",
-  "applicationPoints": [
-    "Ask who helped make the outcome possible.",
-    "Name the action and its effect.",
-    "Invite the person who benefited to acknowledge the help.",
-    "Reward the rescue. Assign the repair."
-  ],
+  "applicationPoints": [],
   "closingQuestion": "Who helped create our last important result, and would anyone know it from the way we celebrated?",
   "closingStandard": "Make the Assist Visible",
   "sources": [
     "<a href=\"https://goheels.com/news/2015/2/23/209902687\" target=\"_blank\" rel=\"noreferrer\">UNC Athletics, “Remembering Coach Smith”</a>. February 23, 2015. UNC’s account describes a scoring player pointing to the teammate who made the pass as an acknowledgment of the assist.",
-    "<a href=\"https://goheels.com/news/2013/11/20/209317448\" target=\"_blank\" rel=\"noreferrer\">UNC Athletics, “President Obama’s Remarks On Dean Smith”</a>. November 20, 2013. The transcript of the Presidential Medal of Freedom remarks credits Smith with popularizing pointing to the passer.",
-    "<a href=\"https://statsdmz.nba.com/pdfs/20261007/20261007_PHXCHI_book.pdf#page=9\" target=\"_blank\" rel=\"noreferrer\">NBA official gamebook, Phoenix at Chicago</a>. October 7, 2026, page 9: first quarter, 6:57, Oso Ighodaro alley-oop dunk assisted by Jalen Green. Both appear on the <a href=\"https://www.nba.com/team/1610612756/suns\" target=\"_blank\" rel=\"noreferrer\">official current Suns roster</a>, checked October 8, 2026. The example describes the assisted basket only.",
+    "<a href=\"https://obamawhitehouse.archives.gov/the-press-office/2013/11/20/remarks-president-presidential-medal-freedom-ceremony\" target=\"_blank\" rel=\"noreferrer\">Official White House archive, Presidential Medal of Freedom remarks</a>. November 20, 2013. Obama called Smith “the pioneer who popularized the idea of pointing to the passer.”",
+    "<a href=\"https://statsdmz.nba.com/pdfs/20261007/20261007_PHXCHI_book.pdf#page=9\" target=\"_blank\" rel=\"noreferrer\">NBA official gamebook, Phoenix at Chicago</a>. October 7, 2026, page 9: Q1 6:57, Ighodaro alley-oop dunk assisted by Green, Chicago lead 18-17. <a href=\"https://statsdmz.nba.com/pdfs/20261007/20261007_PHXCHI_book.pdf#page=1\" target=\"_blank\" rel=\"noreferrer\">Final box, page 1</a>: Chicago 124, Phoenix 117. Both players appear on the <a href=\"https://www.nba.com/team/1610612756/suns\" target=\"_blank\" rel=\"noreferrer\">official current Suns roster</a>, checked October 8, 2026.",
     "<a href=\"https://uwmcareers.com/blog/doing-well-by-doing-good\" target=\"_blank\" rel=\"noreferrer\">UWM Careers, “Doing Well By Doing Good”</a>. April 11, 2023. The “Paying It Forward” section describes kudos from leaders or team members earning Pay It Forward points that let recipients choose where UWM’s charitable dollars are donated. This is UWM’s dated public description, not verification of the program’s current operation or a claim about its effect on performance.",
-    "<a href=\"https://doi.org/10.1016/j.jesp.2025.104805\" target=\"_blank\" rel=\"noreferrer\">Amarasekera, Travis, Castaneto, Cash &amp; Aknin, “What types of gratitude expressions promote prosocial behavior?: A registered report”</a>. Journal of Experimental Social Psychology, 121, 104805, November 2025. Two preregistered randomized experiments found mixed results. In one experiment, people who received thanks (for action or for character) donated more than people who received only an acknowledgement of their help; the other found no significant difference in later helping. Thanking a kind action did not significantly outperform thanking a person’s kind character. These studies did not test public recognition of teammates or organizational performance. The specific acknowledgment recommended in this essay is a leadership practice, not a claimed experimental effect."
+    "The mortgage processor is an illustrative example. Leadership practices are editorial recommendations, not claimed research results."
   ],
   "presentation": "editorial-v2",
   "audio": {
@@ -718,10 +705,10 @@ export const issues = [
     "label": "Audio",
     "title": "Make the Assist Visible",
     "description": "A spoken companion on making contributions visible and repairing recurring handoffs.",
-    "durationLabel": "3:02 listen",
-    "src": "/assets/audio/standard-005-make-the-assist-visible-arizona-v12-v5.mp3",
-    "transcriptFile": "/content/audio/005-make-the-assist-visible-arizona-v12-v5.txt",
-    "metadataFile": "/content/audio/005-make-the-assist-visible-arizona-v12-v5.json",
+    "durationLabel": "2:45 listen",
+    "src": "/assets/audio/standard-005-make-the-assist-visible-arizona-v12-v8.mp3",
+    "transcriptFile": "/content/audio/005-make-the-assist-visible-arizona-v12-v8.txt",
+    "metadataFile": "/content/audio/005-make-the-assist-visible-arizona-v12-v8.json",
     "pronunciationAliases": [],
     "minWords": 500,
     "maxWords": 750,
@@ -731,26 +718,36 @@ export const issues = [
     "sampleRateHz": 24000,
     "requiredClosing": "Much love my brother. Dominate!",
     "transcript": [
-      "Mat, Dean Smith had his players point to the passer. At North Carolina, a player who scored acknowledged the teammate who made the pass. The scorer had the basket. The pointed finger gave the play its full story.",
-      "Think about what that gesture did. It named the contribution while the result was fresh. The person who benefited did the acknowledging. Everyone watching saw the connection between the pass and the finish.",
-      "In the Presidential Medal of Freedom remarks honoring Smith in twenty thirteen, President Barack Obama credited him with popularizing the gesture. A small act showed what the program valued.",
-      "That is where this Standard starts. Make the Assist Visible. When something goes well, look behind the person at the finish. Who helped? What did they do? How did their contribution improve the result?",
-      "There is a clear Suns example. Against Chicago on October seventh, Jalen Green set up Oso Ighodaro for a first-quarter alley-oop dunk. The pass created the finish. Both contributions belong in the story. Name the pass. Give the result its full story.",
-      "The same principle matters in the work around a mortgage file. Think about the processor who spots missing information early and helps complete the file. The customer sees the next step. The team needs to see the preparation behind it.",
-      "United Wholesale Mortgage put recognition into a formal practice. In an April twenty twenty-three account, the company described leaders and teammates giving kudos for contributions above and beyond the job. Those kudos earned Pay It Forward points. Recipients used the points to help choose where the company’s charitable dollars went.",
-      "That was a specific action. The contribution received acknowledgment, and the recipient received a choice. Carry that principle into the next conversation. Describe the work. Connect it to the result.",
-      "“You’re a great teammate” expresses appreciation. “You stayed with the new processor until they could handle that question themselves” names the contribution. The person knows what you valued. Everyone else hears a behavior they recognize.",
-      "Keep the credit honest. Did the help make someone more capable? Did it improve the handoff? Did it solve a problem that mattered?",
-      "Here is the next step. Reward the rescue. Repair the process.",
-      "When the same person keeps rescuing an incomplete handoff, the help is revealing a process that needs repair. Thank the person. Then fix what keeps making the rescue necessary.",
+      "Mat, Dean Smith had his players point to the passer. At North Carolina, the player who scored acknowledged the teammate who made the pass. The scorer had the basket; the pointed finger gave the play its full story.",
+      "In his twenty thirteen Presidential Medal of Freedom remarks honoring Smith, President Barack Obama called him \"the pioneer who popularized the idea of pointing to the passer.\" A small act showed what the program valued.",
+      "That is where this Standard starts. Make the Assist Visible. When something goes well, look behind the person at the finish. Who helped? What did their contribution make possible?",
+      "Against Chicago on October seventh, Jalen Green set up Oso Ighodaro for an alley-oop dunk with six minutes and fifty-seven seconds left in the first quarter. It cut Chicago’s lead to one, eighteen to seventeen. The pass and the finish belong in the story, even in a game Phoenix lost one hundred twenty-four to one hundred seventeen.",
+      "The same principle matters around a mortgage file. Think about the processor who spots missing information early and helps complete the file. The customer sees the next step; the team needs to see the preparation behind it.",
+      "United Wholesale Mortgage describes a practice in which leaders and teammates give kudos for contributions above and beyond the job. Those kudos earn Pay It Forward points, which recipients use to help choose where the company's charitable dollars go.",
+      "Carry that principle into the next conversation. Describe the work and connect it to the result.",
+      "\"You're a great teammate\" expresses appreciation. \"You stayed with the new processor until they could handle that question themselves\" names the contribution. The person knows what you valued, and everyone else hears a behavior they recognize.",
+      "Some people welcome public credit. Others prefer a quiet thank-you. Fit the acknowledgment to the person.",
+      "Keep the credit honest: recognize help that builds capability, improves a handoff or solves a problem that matters.",
+      "Reward the rescue. Repair the process.",
+      "When the same person keeps rescuing an incomplete handoff, the help reveals a process that needs repair. Thank the person. Then fix what keeps making the rescue necessary.",
       "Ask where the handoff broke. Who owns the correction? What changes before the next file or decision moves? Credit the rescue without turning it into a permanent job.",
-      "The test is what happens next. More complete handoffs. Earlier help. People ready to handle the responsibility themselves. Recognize the contribution and reduce the need for another rescue.",
-      "At the next review of a good result, ask the person closest to it who helped make it possible. Listen for the contribution that rarely reaches the room. Name the action and its effect. Some people welcome public credit. Others prefer a quiet thank-you. Fit the acknowledgment to the person.",
+      "The test is what happens next: cleaner handoffs, earlier help, and people ready to handle it themselves. Recognize the contribution and reduce the need for another rescue.",
+      "At the next review of a good result, ask the person closest to it who helped make it possible. Listen for the contribution that rarely reaches the room.",
       "Do this when the outcome disappoints, too. Recognize sound preparation, honest information and help that made a teammate better. Then examine what needs to improve. Credit and accountability belong in the same conversation.",
       "Who helped create our last important result, and would anyone know it from the way we celebrated?",
       "When attention settles on the person who finished, look back at the person who helped. Make the Assist Visible.",
       "Much love my brother. Dominate!"
     ]
+  },
+  "closingParagraph": "When attention settles on the person who finished, look back at the person who helped. Make the Assist Visible.",
+  "closingLead": "When attention settles on the person who finished, look back at the person who helped.",
+  "signoff": "Much love my brother. Dominate!",
+  "pageTranscriptFile": "/content/review/005-make-the-assist-visible-v8-page.txt",
+  "reviewVersion": "v8",
+  "textApproval": {
+    "status": "approved",
+    "version": "v8",
+    "evidence": "Mel: Approve V8; text and matching audio preparation only"
   }
 }
 ];

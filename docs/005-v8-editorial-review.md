@@ -1,11 +1,11 @@
-# Standard 005 review draft v8 — awaiting approval
+# Standard 005 v8 — text approved, final audio/publication pending
 
 V8 applies only the three parent-authorized routine fixes from Zubin’s review in Slack thread `1791481155.053109`, message `1791481237.972749`, to the exact paired v7 drafts. The closing question and final Make the Assist Visible line are preserved; the optional ending cut was not applied.
 
 - Page: `content/review/005-make-the-assist-visible-v8-page.txt`.
 - Audio script with spoken numbers: `content/review/005-make-the-assist-visible-v8-audio.txt`.
 
-V8 supersedes v7 for review. Mel must explicitly say **approve v8** before rendering. No new audio exists for v8. Preserved v5 polished audio and the integrated reader remain prior copy and do not match this draft. No publication, main merge, deployment or Mat delivery.
+V8 supersedes v7 for review. Mel explicitly said **Approve V8**, authorizing this exact text and matching audio preparation. The approved page and corresponding spoken-number script are now integrated with versioned v8 audio. See [v8 implementation review](005-v8-implementation-review.md). Final listening and publication approval remain pending. Preserved v5 audio is historical prior copy. No publication, main merge, deployment or Mat delivery.
 
 ## Supplied verified claim/source audit
 

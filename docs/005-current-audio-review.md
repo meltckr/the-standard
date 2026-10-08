@@ -1,17 +1,16 @@
 # Standard 005 current audio review
 
-**Editorial hold:** [review draft v8](005-v8-editorial-review.md) is saved and awaits Mel’s explicit numbered approval. No v8 audio exists. V5 is preserved prior-copy audio and does not narrate v8.
+Active candidate: **approved v8 text with matching v8 audio**, following Mel’s explicit “Approve V8” for text and audio preparation. Final listening, independent technical QA and publication approval remain pending. See [v8 implementation review](005-v8-implementation-review.md).
 
-Prior audio candidate: **v5 tail polish**, after Mel approved v4 direction and pace but heard clipped endings. See [v5 tail-polish review](005-tail-polish-review.md).
+- MP3: `assets/audio/standard-005-make-the-assist-visible-arizona-v12-v8.mp3`.
+- Exact 512-word spoken transcript: `content/audio/005-make-the-assist-visible-arizona-v12-v8.txt`; byte-identical to the approved v8 audio draft.
+- Exact 499-word page draft: `content/review/005-make-the-assist-visible-v8-page.txt`; integrated with digit-form numbers.
+- Metadata: `content/audio/005-make-the-assist-visible-arizona-v12-v8.json`.
+- Duration 164.743625 seconds (2:44.744), 3,296,684 bytes.
+- SHA-256 `cae3088f1e032bf714fe4173eef789bf45bb6d1ff8f10cfb933da3d15b17c975`.
+- Delivered -16.22 LUFS / -1.91 dBTP. Same approved Arizona v12 voice, pitch-preserving tempo 1.12, v5 conservative tail-restoration/smooth-join method.
 
-- MP3: `assets/audio/standard-005-make-the-assist-visible-arizona-v12-v5.mp3`.
-- Exact 574-word transcript: `content/audio/005-make-the-assist-visible-arizona-v12-v5.txt`, byte-identical to accepted v3/v4.
-- Metadata: `content/audio/005-make-the-assist-visible-arizona-v12-v5.json`.
-- Duration 182.343125 seconds (3:02.343), 3,648,524 bytes.
-- SHA-256 `f680a2212b54af995968c3ba232a56177bcc0c321018d6ee81366e015210fd7f`.
-- Delivered -16.21 LUFS / -1.87 dBTP; approved voice and pitch-preserving tempo 1.12 retained. Original faint tails restored, conservative quiet joins and lighter de-essing.
-
-Mel's final listening approval and independent v5 QA remain pending. Accepted article, current-roster example, exact Mat question and signoff are unchanged. Prior versions preserved. No publication, main merge, deployment or client delivery.
+Prior versions preserved. The separate stalled worker’s old Reward the Assist branch/PR is not adopted. No publication, deployment, main merge or Mat delivery.
 
 ## Historical v2 review — superseded
 

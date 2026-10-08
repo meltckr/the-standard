@@ -1,0 +1,114 @@
+{
+  "issue": "005",
+  "source": "/assets/audio/standard-005-make-the-assist-visible-arizona-v12-v8.mp3",
+  "sizeBytes": 3296684,
+  "sha256": "cae3088f1e032bf714fe4173eef789bf45bb6d1ff8f10cfb933da3d15b17c975",
+  "transcriptSha256": "e5206a5b4a6ec0ad7f7b9e59ec8f816174c51935e8b31a076075ee0c1977a902",
+  "speechInputSha256": "e5206a5b4a6ec0ad7f7b9e59ec8f816174c51935e8b31a076075ee0c1977a902",
+  "xingMetadata": true,
+  "title": "Make the Assist Visible",
+  "voice": "AVC Arizona Voice v12",
+  "provider": "Private local MLX Audio",
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+  "generatedAt": "2026-10-08T18:09:16.249Z",
+  "durationSeconds": 164.743625,
+  "wordCount": 512,
+  "measuredWordsPerMinute": 186.47155542437528,
+  "codec": "mp3",
+  "channels": 1,
+  "sampleRateHz": 24000,
+  "bitrateKbps": 160,
+  "normalization": "Approved local Arizona v12 source segments, v4 pitch-preserving atempo 1.12 and v5 conservative -72dBFS tail protection/quiet-only cuts, 200ms tails, 350ms final tail, lighter de-essing and final 250ms quiet pad; delivered MP3 measurements. Measured two-pass loudnorm.",
+  "measuredIntegratedLufs": -16.22,
+  "measuredTruePeakDbtp": -1.91,
+  "loudnessMeasurement": "Delivered MP3, FFmpeg loudnorm input measurement with dual_mono=true",
+  "tempoMultiplierRelativeToRawSentences": 1.12,
+  "pronunciationAliases": [],
+  "requiredClosing": "Much love my brother. Dominate!",
+  "sentenceAssembly": {
+    "sentenceCount": 48,
+    "activityThresholdDb": -72,
+    "retainedTailMilliseconds": 200,
+    "finalTailMilliseconds": 350,
+    "outgoingFadeMilliseconds": 20,
+    "maximumFadeWindowLevelDb": -76.32959861247399,
+    "minimumSourceTailMilliseconds": 21.916666666666668,
+    "internalPausesCollapsed": true,
+    "longQuietRunsShortened": 4,
+    "removedQuietMilliseconds": 5030.375000000001,
+    "contextualRepairs": [
+      35
+    ],
+    "replacementSegments": [
+      1,
+      2,
+      3,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      25,
+      28,
+      35
+    ],
+    "reusedSegments": 30,
+    "protectedFinalSourceActivityMilliseconds": 500,
+    "sourceTailVerification": {
+      "segments": 48,
+      "allFinal500msPreservedBeforePacing": true
+    },
+    "contextualRepairDetail": "Sentence 35 rendered with following context and extracted at aligned quiet boundary 6.982375 seconds; following speech excluded."
+  },
+  "listeningReview": {
+    "status": "pending",
+    "reason": "Prepared for Mel to listen. Technical waveform, automated transcription and browser checks are not human listening approval."
+  },
+  "textApproval": {
+    "version": "v8",
+    "status": "approved",
+    "evidence": "Mel: Approve V8; matching audio preparation, not publication"
+  },
+  "deliveredTailScreen": {
+    "decodedDurationSeconds": 164.743625,
+    "quietTailAtMinus60DbfsMilliseconds": 272.4166666666667,
+    "quietTailAtMinus72DbfsMilliseconds": 258.75
+  },
+  "transcriptScreen": {
+    "status": "completed",
+    "method": "Complete delivered MP3, cached local English recognizer CPU mode",
+    "quoteRecognized": "arks honoring Smith,  President Barack Obama called him the pioneer who popularized the idea of pointing to the passer,  a small act showed what the program valued. That is where the standard starts.  Make the ",
+    "exampleRecognized": " possible?  Against Chicago on October 7th, Jalen Greene set up Oso Ikedaro for an alley-oop dunk with  six minutes and 57 seconds left in the first quarter. It cuts Chicago's lead to one 18 to 17.  The pass and the finish belong in the story even in the game. Phoenix lost one to one 117.  The same principle matters around a mortgage file. Think about the processor who spots missing  inf",
+    "closingRecognized": "  result? And would anyone know it from the way we celebrated? When attention settles on the  person who finished, look back at the person who helped make the assist visible. Much love my  My brother, dominate.",
+    "note": "Proper-name, exact score and short-word recognition ambiguities require final human listening. ASR does not certify fidelity."
+  },
+  "silenceScreen": {
+    "thresholdDb": -50,
+    "minimumGapSeconds": 0.3,
+    "detectedGaps": 7,
+    "longestGapSeconds": 0.54075
+  },
+  "digitalBlackScreen": {
+    "thresholdPcm16": 4,
+    "minimumRunSeconds": 0.28,
+    "detectedRuns": 2,
+    "runs": [
+      {
+        "start": 31.744125,
+        "duration": 0.3279166666666667
+      },
+      {
+        "start": 76.46345833333334,
+        "duration": 0.2985833333333333
+      }
+    ],
+    "note": "Conservative quiet margins retained to protect endings."
+  }
+}

@@ -41,6 +41,7 @@ for (const issue of content.issues) {
   const draft = issue.status === "draft";
   const fields = ["number", "slug", "title", "thesis", "summary", "readingTime", "publicationDate", "modifiedAt", "sections", "applicationPoints", "closingQuestion", "closingStandard", "sources", ...(!draft ? ["publishedAt"] : [])];
   for (const field of fields) {
+    if (field === "applicationPoints" && Array.isArray(issue[field]) && issue[field].length === 0 && issue.pageTranscriptFile && issue.textApproval?.status === "approved") continue;
     if (!issue[field] || issue[field].length === 0) errors.push(`Issue ${issue.number} is missing ${field}`);
   }
   if (!issue.share?.url) errors.push(`Issue ${issue.number} is missing its permanent share URL`);
