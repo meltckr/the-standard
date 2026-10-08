@@ -622,8 +622,9 @@ export const issues = [
   "summary": "Dean Smith’s pointed finger, the work behind the finish, and the difference between rewarding a rescue and repairing the process.",
   "readingTime": "2½ min read",
   "publicationDate": "October 2026",
-  "status": "draft",
-  "modifiedAt": "2026-10-08T18:35:59.678Z",
+  "status": "published",
+  "publishedAt": "2026-10-08T12:17:26-07:00",
+  "modifiedAt": "2026-10-08T19:17:26.000Z",
   "share": {
     "url": "https://meltckr.github.io/the-standard/issues/005-reward-the-assist/",
     "image": "og-005-make-the-assist-visible-v2.png",

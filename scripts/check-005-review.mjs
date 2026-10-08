@@ -19,8 +19,8 @@ assert.equal(formatTime(264.704875), '4:24', 'Elapsed-time floor semantics remai
 const issue = issues.at(-1);
 const html = await readFile(`dist/issues/${issue.slug}/index.html`,'utf8');
 assert.ok(html.includes(`href="${issue.share.url}"`));
-assert.ok(html.includes('content="noindex, nofollow"'));
-assert.ok(!html.includes('article:published_time'));
+assert.equal(html.includes('content="noindex, nofollow"'), issue.status === 'draft');
+assert.equal(html.includes('article:published_time'), issue.status !== 'draft');
 const data = JSON.parse(html.match(/data-structured-data>(.*?)<\/script>/s)[1]);
 assert.equal(data.headline,issue.title);
 assert.ok(data.associatedMedia, 'Current audio must be included in the revised Article');
@@ -71,7 +71,7 @@ const essay = [issue.title,issue.thesis,...issue.sections.flatMap(s=>[s.title,..
 assert.ok(essay.split(/\s+/).length < 800, 'Essay must read in under four minutes at 200 wpm');
 assert.ok(!/\b(can be|meaningful signs|leaders have an opportunity)\b/i.test(essay));
 assert.equal(data.image.width,1200); assert.equal(data.image.height,630);
-assert.ok(!(await readFile('dist/sitemap.xml','utf8')).includes(issue.slug),'Review drafts stay out of publication sitemap');
+assert.equal((await readFile('dist/sitemap.xml','utf8')).includes(issue.slug),issue.status !== 'draft','Sitemap follows publication status');
 assert.ok((await readFile('dist/robots.txt','utf8')).includes('https://meltckr.github.io/the-standard/sitemap.xml'));
 const mp3 = await readFile(issue.audio.src.slice(1));
 const meta = JSON.parse(await readFile(issue.audio.metadataFile.slice(1),'utf8'));
