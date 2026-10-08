@@ -613,7 +613,149 @@ export const issues = [
       "<a href=\"https://pubmed.ncbi.nlm.nih.gov/15130871/\" target=\"_blank\" rel=\"noreferrer\">Guadagnoli &amp; Lee, “Challenge Point”</a>. Journal of Motor Behavior, 2004. A conceptual framework for the interaction between practice difficulty and a learner’s skill."
     ],
     "presentation": "editorial-v2"
+  },
+{
+  "number": "005",
+  "slug": "005-reward-the-assist",
+  "title": "Reward the Assist",
+  "thesis": "Make the work behind a teammate’s success visible.",
+  "summary": "Dean Smith’s point-to-the-passer habit offers a practical way to recognize the contributions that make shared results possible.",
+  "readingTime": "5 min read",
+  "publicationDate": "October 2026",
+  "status": "draft",
+  "modifiedAt": "2026-10-08T18:04:03Z",
+  "share": {
+    "url": "https://meltckr.github.io/the-standard/issues/005-reward-the-assist/",
+    "image": "og-005-reward-the-assist-v1.png",
+    "imageWidth": 1200,
+    "imageHeight": 630,
+    "hook": "WHO MADE IT POSSIBLE?",
+    "alt": "The Standard Edition 005, Reward the Assist: Who made it possible? A symbolic basketball passing diagram connects a blue contribution point to a white finish point, beside AVC branding.",
+    "message": "Mat, here’s Edition 005 of The Standard: Reward the Assist. It starts with Dean Smith’s point-to-the-passer habit and looks at how leaders make the work behind someone else’s success visible. It’s a useful question across a team: who helped create the result, and did we give them credit? I’d be interested in what comes to mind for you."
+  },
+  "sections": [
+    {
+      "id": "concept",
+      "eyebrow": "The leadership idea",
+      "title": "Give the result its full story.",
+      "body": [
+        "A good result usually has a visible finish. A player makes the shot. A loan officer brings a borrower to closing. An executive presents a recommendation that helps the organization make a sound decision.",
+        "The work leading to that moment can be harder to see. Someone created the opening, caught a problem early or helped a colleague become ready. When the celebration reaches only the person at the finish, an important part of the story disappears.",
+        "Leaders have an opportunity to bring that work into view. Naming the contribution gives credit to the person who made it and gives everyone else a clearer picture of how the result happened. A team gets a more complete account of its own success."
+      ]
+    },
+    {
+      "id": "story",
+      "eyebrow": "The coaching example",
+      "title": "Point to the passer.",
+      "body": [
+        "At North Carolina, Dean Smith’s players acknowledged an assist by pointing to the teammate who made the pass. The scorer directed attention back to the person who had helped create the basket.",
+        "There is a useful leadership lesson in the simplicity of that gesture. The contribution was identified while the result was still fresh. The person who benefited did the acknowledging. Anyone watching could connect the pass to the finish.",
+        "A general compliment can leave people wondering what the leader actually noticed. Pointing to the passer removes that guesswork. It tells a specific teammate that his contribution was seen.",
+        "The gesture became closely associated with Smith. In the remarks honoring him with the Presidential Medal of Freedom in 2013, President Barack Obama described how Smith had popularized it. A small act of acknowledgment had become a recognizable expression of what his program valued.",
+        "That is a useful question for any organization: when something goes well, how clearly do we acknowledge the people who helped make it possible?"
+      ]
+    },
+    {
+      "id": "recognition",
+      "eyebrow": "The leadership practice",
+      "title": "Help people see the contribution.",
+      "body": [
+        "Start with something that actually happened. Who helped? What did the person do? How did that contribution affect the work?",
+        "“You’re a great teammate” expresses appreciation. Adding “You stayed with the new processor until she could handle that question herself” makes the contribution understandable. The person hears what was valued. Colleagues hear an example they can recognize in their own work.",
+        "The second sentence also gives a leader something to examine. Did the help make the person more capable? Did it improve the handoff? Did it solve a problem that mattered? Appreciation stays credible when the contribution can be described honestly.",
+        "Over time, leaders can look for those same contributions in the work itself. Earlier help, more complete handoffs and colleagues who are better prepared would be meaningful signs that the habit is taking hold."
+      ]
+    },
+    {
+      "id": "organization",
+      "eyebrow": "Across the organization",
+      "title": "Find the work behind the finish.",
+      "body": [
+        "Consider a few ordinary situations in which the contribution can disappear behind the result. These are illustrative examples.",
+        "On a basketball team, a scorer may have room because a teammate set a well-timed screen. A rebound may become available because another player held his position and kept an opponent away from the ball. Looking back through the possession gives the group a fuller account of what worked.",
+        "In a mortgage operation, a processor may notice missing information early and help get the file complete. The customer experiences a smoother next step. Recognizing that contribution gives appropriate credit to the preparation behind the visible progress.",
+        "In a front office, an analyst may share a concern that improves a colleague’s recommendation. The final presentation carries one person’s voice, while its quality reflects several people’s work. The presenter can make that contribution visible by explaining what the colleague noticed and how it improved the decision.",
+        "A manager may spend time helping someone master a responsibility. Weeks later, that person handles the work independently. The improvement belongs in the story of both people: the person who learned and the person who helped make the learning possible.",
+        "In each case, the useful question reaches one step behind the outcome. What allowed the person at the finish to do the job well?"
+      ]
+    },
+    {
+      "id": "practice",
+      "eyebrow": "Put it to work",
+      "title": "Make acknowledgment part of the work.",
+      "body": [
+        "The next time a team reviews a good result, ask the person closest to it who helped make it possible. Give the answer enough attention to understand the contribution. It may be someone whose work rarely reaches the room.",
+        "Keep the acknowledgment specific and proportionate. Name what the person did and connect it to the outcome. A clear sentence in the right conversation can be enough. Some people welcome public credit; others prefer a quiet thank-you. The aim is for the contribution to be understood and the person to feel seen.",
+        "Use the same care when the final result is disappointing. A team can fall short while someone makes a sound decision, prepares a colleague well or shares useful information. Leaders can acknowledge those actions while continuing to examine what needs to improve. That helps people understand which parts of the work are worth carrying forward.",
+        "Follow the help through to its effect. A colleague who repeatedly rescues an incomplete handoff may also be revealing a process that needs repair. Recognize the help and improve the conditions that made the rescue necessary. Sustainable teamwork gives people room to contribute without making them responsible for every recurring breakdown.",
+        "Smith’s gesture offers a practical starting point. At the moment attention settles on the person who finished, look back at the person who helped. Give the result its full story."
+      ]
+    }
+  ],
+  "pullQuotes": [
+    {
+      "after": "story",
+      "text": "The person who benefited did the acknowledging."
+    }
+  ],
+  "applicationTitle": "Notice the contribution behind the result.",
+  "applicationPoints": [
+    "Ask who helped make the outcome possible.",
+    "Name the contribution and explain why it mattered.",
+    "Invite the person who benefited to acknowledge the help.",
+    "Notice sound contributions even when the final outcome disappoints.",
+    "Check whether the help improved the work or exposed a recurring problem."
+  ],
+  "closingQuestion": "Who helped create our last important result, and would anyone know it from the way we celebrated?",
+  "closingStandard": "Make the assist visible.",
+  "sources": [
+    "<a href=\"https://goheels.com/news/2015/2/23/209902687\" target=\"_blank\" rel=\"noreferrer\">UNC Athletics, “Remembering Coach Smith”</a>. February 23, 2015. UNC’s account describes a scoring player pointing to the teammate who made the pass as an acknowledgment of the assist.",
+    "<a href=\"https://goheels.com/news/2013/11/20/209317448\" target=\"_blank\" rel=\"noreferrer\">UNC Athletics, “President Obama’s Remarks On Dean Smith”</a>. November 20, 2013. The transcript of the Presidential Medal of Freedom remarks credits Smith with popularizing pointing to the passer.",
+    "<a href=\"https://doi.org/10.1016/j.jesp.2025.104805\" target=\"_blank\" rel=\"noreferrer\">Amarasekera, Travis, Castaneto, Cash &amp; Aknin, “What types of gratitude expressions promote prosocial behavior?: A registered report”</a>. Journal of Experimental Social Psychology, 121, 104805, November 2025. Two preregistered randomized experiments found mixed results. Receiving thanks increased later giving in one experiment; the other found no significant difference in subsequent helping. Thanking a kind action did not significantly outperform thanking a person’s kind character. These studies did not test public recognition of teammates or organizational performance. The specific acknowledgment recommended in this essay is a leadership practice, not a claimed experimental effect."
+  ],
+  "presentation": "editorial-v2",
+  "audio": {
+    "player": "mel-audio-player",
+    "label": "Audio",
+    "title": "Reward the Assist",
+    "description": "A spoken companion on recognizing the work behind a teammate’s success.",
+    "durationLabel": "4:25 listen",
+    "src": "/assets/audio/standard-005-reward-the-assist-arizona-v12-v1.mp3",
+    "transcriptFile": "/content/audio/005-reward-the-assist-arizona-v12-v1.txt",
+    "metadataFile": "/content/audio/005-reward-the-assist-arizona-v12-v1.json",
+    "pronunciationAliases": [],
+    "minWords": 700,
+    "maxWords": 950,
+    "minSeconds": 240,
+    "maxSeconds": 360,
+    "bitrateKbps": 160,
+    "sampleRateHz": 24000,
+    "requiredClosing": "Much love my brother. Dominate!",
+    "transcript": [
+      "Mat, think about how we talk about a good result. Usually, there’s someone at the finish. A player makes the shot. A loan officer gets a borrower to closing. An executive presents a recommendation that helps the organization make a good decision.",
+      "That person deserves credit. And there’s usually more to understand about how the result happened. Someone created the opening. Someone caught a problem early. Someone helped a colleague get ready. Those contributions can be harder to see, especially once everybody’s attention moves to the finish.",
+      "Dean Smith had a simple way of bringing one of those contributions into view. At North Carolina, his players acknowledged an assist by pointing to the teammate who made the pass. The scorer turned some of the attention toward the person who had helped create the basket.",
+      "Think about how much that little gesture communicated. It happened while the play was still fresh. It identified a particular contribution. And the person who benefited was the one doing the acknowledging. The passer could see that his teammate understood what he had done.",
+      "The habit became so closely associated with Smith that it was mentioned in the remarks honoring him with the Presidential Medal of Freedom in twenty thirteen. Something very small had become a recognizable expression of what the program valued.",
+      "There’s a practical lesson in that for anyone leading a team. When something goes well, give the result its full story. Help people see who made the work possible.",
+      "Start with the work in front of you. Who helped? What did that person do? How did it affect someone else’s ability to do the job?",
+      "Telling someone he’s a great teammate can mean a lot. You can make the appreciation clearer by explaining what you noticed. You stayed with the new processor until she could handle that question herself. Now the person knows what you valued, and anyone listening has a concrete example of what helping a teammate can look like.",
+      "Consider a basketball possession. A player gets a clean look because a teammate set a good screen. Another player collects the rebound because someone else kept an opponent away from the ball. Looking back through the possession gives the team a fuller account of what worked.",
+      "The same thing can happen in a mortgage operation. A processor notices that information is missing and helps get the file complete early. The customer experiences a smoother next step. That preparation deserves a place in the story when the team talks about the result.",
+      "A manager may also have spent time helping a colleague learn a new responsibility. Weeks later, that colleague can handle the work independently. When you recognize the improvement, there’s room to acknowledge both people. The person who learned did the work. The person who helped made an important contribution to the learning. Naming both gives a clearer picture of how the team became more capable.",
+      "Or think about an analyst who raises a concern that improves a colleague’s recommendation. One person may deliver the presentation. The work behind it belongs to several people. Acknowledging who noticed the issue helps the room understand how the decision got better.",
+      "These are ordinary examples, but they point toward a useful habit. At the next review of a good result, ask the person closest to it who helped make it possible. Then listen closely enough to understand the answer. You may hear about someone whose contribution rarely reaches that room.",
+      "Keep it specific and proportionate. Say what the person did and why it mattered. Sometimes one sentence in a meeting is enough. Sometimes a quiet thank-you will be more welcome. What matters is that the acknowledgment fits the person and the contribution.",
+      "You can also do this when the final result disappoints. Someone may have prepared well, shared important information or helped a colleague make a sound decision in a situation that still ended badly. Recognizing that work helps people understand what to carry forward while the team examines what needs to improve.",
+      "There’s another part to watch. If the same person keeps rescuing an incomplete handoff, the help may be exposing a recurring problem. Appreciate the contribution and look at what keeps making the rescue necessary. Good teamwork should leave people more capable and the work more dependable.",
+      "Over time, look for the effect in the work itself. Are handoffs becoming more complete? Are people getting useful help earlier? Are colleagues better prepared to handle a responsibility on their own? Those are meaningful things to notice.",
+      "The question for us is simple. Who helped create our last important result, and would anyone know it from the way we celebrated?",
+      "Dean Smith’s gesture gives us somewhere to start. When the attention settles on the person who finished, look back at the person who helped. Make the assist visible.",
+      "Much love my brother. Dominate!"
+    ]
   }
+}
 ];
 
 export function getIssue(slug) {
