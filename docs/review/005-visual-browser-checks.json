@@ -1,0 +1,43 @@
+{
+  "desktop": {
+    "audio": {
+      "currentTime": 90,
+      "duration": 168.530542,
+      "paused": true,
+      "rate": 1.5
+    },
+    "bodyFont": "21px",
+    "height": 900,
+    "invalidInternalAnchors": [],
+    "overflow": false,
+    "width": 1280,
+    "exactTranscriptMatchesFile": true
+  },
+  "phone": {
+    "bodyFont": "20px",
+    "entryTargets": [
+      {
+        "height": 46,
+        "text": "Read the essay \u2198"
+      },
+      {
+        "height": 46,
+        "text": "Audio \u00b7 2:49 listen \u2193"
+      }
+    ],
+    "height": 844,
+    "overflow": false,
+    "storyTop": 29.916667938232425,
+    "width": 390
+  },
+  "phoneSources": {
+    "open": true,
+    "overflow": false,
+    "sourceCount": 5
+  },
+  "narrow": {
+    "overflow": false,
+    "width": 320
+  },
+  "errors": []
+}

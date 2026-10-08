@@ -161,6 +161,14 @@ function issuePage(issue) {
   document.title = `${issue.title} — The Standard No. ${issue.number}`;
   const editorialV2 = issue.presentation === "editorial-v2";
   root.dataset.presentation = issue.presentation ?? "classic";
+  const assistVisual = issue.number === "005";
+  if (assistVisual) {
+    root.dataset.visual = "assist-v1";
+    const visualStyles = document.createElement("link");
+    visualStyles.rel = "stylesheet";
+    visualStyles.href = withBase("/assets/standard-005/editorial.css");
+    document.head.appendChild(visualStyles);
+  }
   const issueHref = withBase(`/issues/${issue.slug}/`);
   const shareUrl = issue.share.url;
   const navItems = [
@@ -176,7 +184,7 @@ function issuePage(issue) {
     <section class="issue-hero">
       ${masthead()}
       <div class="issue-hero__inner">
-        <div class="issue-number" aria-label="Issue ${issue.number}">${issue.number}</div>
+        ${assistVisual ? `<figure class="assist-art" aria-hidden="true"><img src="${withBase("/assets/standard-005/assist-sculpture.webp")}" width="1440" height="1080" alt="" fetchpriority="high"></figure>` : `<div class="issue-number" aria-label="Issue ${issue.number}">${issue.number}</div>`}
         <div class="issue-hero__copy reveal">
           <span class="eyebrow">The Standard — No. ${issue.number}</span>
           <h1>${issue.title}</h1>
