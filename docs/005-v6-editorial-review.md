@@ -1,4 +1,6 @@
-# Standard 005 review draft v6 — awaiting approval
+# Historical Standard 005 review draft v6
+
+Superseded for review by [draft v7](005-v7-editorial-review.md). Exact v6 script retained as prior evidence.
 
 The exact parent-delivered script is saved at `content/review/005-make-the-assist-visible-v6.txt`, including its three-line review heading. No competing edits were made. Mel must explicitly approve the numbered draft (for example, `approve v6`) before a new narration is rendered. This save is not publication or listening approval.
 
