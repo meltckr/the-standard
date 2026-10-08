@@ -1,6 +1,8 @@
 # Standard 005 current audio review
 
-Active candidate: **v5 tail polish**, after Mel approved v4 direction and pace but heard clipped endings. See [v5 tail-polish review](005-tail-polish-review.md).
+**Editorial hold:** [review draft v6](005-v6-editorial-review.md) is saved and awaits Mel’s explicit numbered approval. No v6 audio exists. V5 is preserved prior-copy audio and does not narrate v6.
+
+Prior audio candidate: **v5 tail polish**, after Mel approved v4 direction and pace but heard clipped endings. See [v5 tail-polish review](005-tail-polish-review.md).
 
 - MP3: `assets/audio/standard-005-make-the-assist-visible-arizona-v12-v5.mp3`.
 - Exact 574-word transcript: `content/audio/005-make-the-assist-visible-arizona-v12-v5.txt`, byte-identical to accepted v3/v4.
