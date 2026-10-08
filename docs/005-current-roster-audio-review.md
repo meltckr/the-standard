@@ -1,5 +1,7 @@
 # Standard 005 current-roster correction
 
+**Historical review: v3.** The active v4 audio is identified in [the current audio review](005-current-audio-review.md) and [v4 delivery review](005-brisk-audio-review.md). This record is preserved as prior evidence.
+
 This candidate supersedes 5b8bcaf and its v2 audio. Only the Suns example, its matching narration and source have changed. The exact Mat question, UWM date attribution, remaining accepted copy and signoff are preserved.
 
 The official NBA gamebook was downloaded and page 9 independently extracted: October 7, 2026, Phoenix at Chicago, Q1 6:57, `O.Ighodaro Alley Oop Dunk (J.Green)`. Jalen Green and Oso Ighodaro both appear on the official Suns roster checked October 8. Sources in the issue link to the gamebook page and current roster. The paragraph makes no win, screen, off-ball-cause or recognition-behavior claim.

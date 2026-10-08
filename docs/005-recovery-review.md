@@ -1,5 +1,7 @@
 # Edition 005 recovery review
 
+**Historical review: earlier recovery candidates.** The active v4 audio is identified in [the current audio review](005-current-audio-review.md) and [v4 delivery review](005-brisk-audio-review.md). This record is preserved as prior evidence.
+
 Make the Assist Visible is the current written review draft, prepared for Thursday October 8, 2026 afternoon Arizona review and possible delivery, subject to Mel's listening/editorial approval and separate publication/delivery authorization.
 
 Recovered from the original implementation checkout without modifying it. The independent recovery checkout uses branch `codex/standard-005-recovery-review-20261008`, based on main `15aab8e54f5ae58a1799f305b66a89560e3cb712`. No original processes were stopped, no original branch was pushed, and no audio was regenerated. Existing approved revised article, 808-word spoken adaptation, share art and completed MP3 were reused. No paid service or credits were consumed.
