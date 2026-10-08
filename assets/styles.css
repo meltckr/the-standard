@@ -844,7 +844,8 @@ a {
   padding: 52px 0 58px;
 }
 
-.audio-edition__module mel-audio-player {
+.audio-edition__module mel-audio-player,
+.audio-edition__module avc-audio-player {
   --player-bg: #080b10;
   --player-surface: rgba(255, 255, 255, 0.06);
   --player-border: rgba(147, 197, 253, 0.28);
@@ -1842,3 +1843,5 @@ a {
     transform: none;
   }
 }
+
+.audio-review-notice { color: #dbeafe; border-left: 3px solid #60a5fa; padding: 0.8rem 1rem; margin: 0 0 1.25rem; line-height: 1.6; background: rgba(37,99,235,.12); }

@@ -1,0 +1,194 @@
+{
+  "issue": "005",
+  "source": "/assets/audio/standard-005-make-the-assist-visible-arizona-v12-v2.mp3",
+  "sizeBytes": 4075244,
+  "sha256": "2706fe0c277b28cecc0feac0f08aa52af165d2a3726a3b1c78fa471dd4b7c431",
+  "transcriptSha256": "f5534d66dc56d77c6d58fc4296ec39f8c2512d4a6c1db0081b4d2d5424a00bd9",
+  "speechInputSha256": "f5534d66dc56d77c6d58fc4296ec39f8c2512d4a6c1db0081b4d2d5424a00bd9",
+  "xingMetadata": true,
+  "title": "Make the Assist Visible",
+  "voice": "AVC Arizona Voice v12",
+  "provider": "Private local MLX Audio",
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+  "generatedAt": "2026-10-08T16:17:17.610Z",
+  "durationSeconds": 203.687,
+  "wordCount": 585,
+  "measuredWordsPerMinute": 172.32322141324678,
+  "codec": "mp3",
+  "channels": 1,
+  "sampleRateHz": 24000,
+  "bitrateKbps": 160,
+  "normalization": "Existing approved sentence-level Arizona v12 renderer and reference pair; protected tails and retained internal pauses, no tempo acceleration, v12 EQ/de-essing and measured two-pass loudnorm. Measurements from delivered MP3.",
+  "measuredIntegratedLufs": -16.19,
+  "measuredTruePeakDbtp": -1.84,
+  "loudnessMeasurement": "Delivered MP3, FFmpeg loudnorm input measurement with dual_mono=true",
+  "tempoMultiplierRelativeToRawSentences": 1,
+  "pronunciationAliases": [],
+  "requiredClosing": "Much love my brother. Dominate!",
+  "sentenceAssembly": {
+    "sentenceCount": 74,
+    "activityThresholdDb": -60,
+    "retainedTailMilliseconds": 120,
+    "finalTailMilliseconds": 250,
+    "outgoingFadeMilliseconds": 20,
+    "maximumFadeWindowLevelDb": -72.24719895935549,
+    "minimumSourceTailMilliseconds": 40.625,
+    "internalPausesCollapsed": false,
+    "contextualRepairs": [
+      17,
+      22,
+      45,
+      57,
+      70
+    ],
+    "contextualRepairDetail": "Four context-assisted sentences extracted before following speech at aligned quiet boundaries; the contiguous Name the screen / Give the result its full story sentences are kept as one regenerated segment. No extra text remains."
+  },
+  "listeningReview": {
+    "status": "pending",
+    "reason": "Prepared for Mel to listen. Technical waveform, automated transcription and browser checks are not human listening approval."
+  },
+  "silenceScreen": {
+    "thresholdDb": -50,
+    "minimumGapSeconds": 0.3,
+    "detectedGaps": 28,
+    "longestGapSeconds": 0.657625,
+    "note": "Natural pauses preserved."
+  },
+  "digitalBlackScreen": {
+    "thresholdPcm16": 4,
+    "minimumRunSeconds": 0.28,
+    "detectedRuns": 3,
+    "runs": [
+      {
+        "start": 38.80875,
+        "end": 39.129333333333335,
+        "duration": 0.32058333333333333
+      },
+      {
+        "start": 82.53475,
+        "end": 83.03420833333334,
+        "duration": 0.49945833333333334
+      },
+      {
+        "start": 106.43975,
+        "end": 106.78654166666666,
+        "duration": 0.34679166666666666
+      }
+    ],
+    "note": "These three brief quiet intervals are within retained natural pauses or adjoining protected sentence tails. They are recorded for listening review; internal pauses were not collapsed."
+  },
+  "deliveredTailScreen": {
+    "decodedDurationSeconds": 203.687,
+    "lastActivityAtMinus60DbfsSeconds": 203.48466666666667,
+    "finalQuietTailMilliseconds": 202.29166666666666
+  },
+  "transcriptScreen": {
+    "status": "completed",
+    "method": "Existing private local Whisper automated transcription of the complete delivered MP3",
+    "openingRecognized": true,
+    "closingRecognized": true,
+    "recognitionVariants": [
+      {
+        "written": "mat",
+        "recognized": "matt"
+      },
+      {
+        "written": "pointed",
+        "recognized": "point of"
+      },
+      {
+        "written": "its",
+        "recognized": "as"
+      },
+      {
+        "written": "in",
+        "recognized": "and"
+      },
+      {
+        "written": "twenty thirteen",
+        "recognized": "2013"
+      },
+      {
+        "written": "this",
+        "recognized": "the"
+      },
+      {
+        "written": "is",
+        "recognized": "s"
+      },
+      {
+        "written": "suns",
+        "recognized": "son s"
+      },
+      {
+        "written": "twenty second twenty twenty one jae",
+        "recognized": "22 2021 jay"
+      },
+      {
+        "written": "ayton",
+        "recognized": "aiden"
+      },
+      {
+        "written": "ayton",
+        "recognized": "aiden"
+      },
+      {
+        "written": "ayton",
+        "recognized": "aiden"
+      },
+      {
+        "written": "twenty twenty three",
+        "recognized": "2023"
+      },
+      {
+        "written": "pay it",
+        "recognized": "paid"
+      },
+      {
+        "written": "acknowledgment",
+        "recognized": "acknowledgement"
+      },
+      {
+        "written": "connect it",
+        "recognized": "connected"
+      },
+      {
+        "written": "the",
+        "recognized": "a"
+      },
+      {
+        "written": "valued",
+        "recognized": "value"
+      },
+      {
+        "written": "hears",
+        "recognized": "here s"
+      },
+      {
+        "written": "is",
+        "recognized": "s"
+      },
+      {
+        "written": "ask",
+        "recognized": "that s"
+      },
+      {
+        "written": "help",
+        "recognized": ""
+      },
+      {
+        "written": "listen",
+        "recognized": "same"
+      },
+      {
+        "written": "acknowledgment",
+        "recognized": "acknowledgement"
+      },
+      {
+        "written": "assist",
+        "recognized": "assists"
+      }
+    ],
+    "note": "The cached base English recognizer shows the listed variants, including proper names and a few short words. This screen establishes broad sequence, opening and closing, not exact spoken-word certification. Mel must assess proper names, word tails and exact fidelity."
+  }
+}

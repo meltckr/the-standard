@@ -1,0 +1,84 @@
+{
+  "issue": "005",
+  "source": "/assets/audio/standard-005-make-the-assist-visible-arizona-v12-v9.mp3",
+  "sizeBytes": 3372524,
+  "sha256": "8e6426abbf224c78839264b5f75cb3cf4e3f8e5b8bd92e1daf32ee64cfd51259",
+  "transcriptSha256": "9bdfe736c6d1b191831375682c1af8d5e33a63d8ecb4e1f0e1bbb5db42dcc117",
+  "speechInputSha256": "9bdfe736c6d1b191831375682c1af8d5e33a63d8ecb4e1f0e1bbb5db42dcc117",
+  "xingMetadata": true,
+  "title": "Make the Assist Visible",
+  "voice": "AVC Arizona Voice v12",
+  "provider": "Private local MLX Audio",
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+  "generatedAt": "2026-10-08T18:35:40.614396+00:00",
+  "durationSeconds": 168.530542,
+  "wordCount": 518,
+  "measuredWordsPerMinute": 184.4176113787138,
+  "codec": "mp3",
+  "channels": 1,
+  "sampleRateHz": 24000,
+  "bitrateKbps": 160,
+  "normalization": "Same approved local Arizona v12 voice, conservative -72dBFS activity protection, 1.12 pitch-preserving tempo, measured two-pass loudnorm. Score replacement sentences retain 500ms quiet tails; other tails 200ms, final 350ms plus 250ms finishing pad.",
+  "measuredIntegratedLufs": -16.23,
+  "measuredTruePeakDbtp": -1.89,
+  "loudnessMeasurement": "Delivered MP3, FFmpeg loudnorm input measurement with dual_mono=true",
+  "tempoMultiplierRelativeToRawSentences": 1.12,
+  "pronunciationAliases": [],
+  "requiredClosing": "Much love my brother. Dominate!",
+  "sentenceAssembly": {
+    "sentenceCount": 50,
+    "activityThresholdDb": -72,
+    "retainedTailMilliseconds": 200,
+    "finalTailMilliseconds": 350,
+    "outgoingFadeMilliseconds": 20,
+    "maximumFadeWindowLevelDb": -76.32959861247399,
+    "minimumSourceTailMilliseconds": 21.916666666666668,
+    "internalPausesCollapsed": true,
+    "longQuietRunsShortened": 4,
+    "removedQuietMilliseconds": 4995.458333333333,
+    "contextualRepairs": [],
+    "replacementSegments": [
+      11,
+      12,
+      13
+    ],
+    "reusedSegments": 47,
+    "protectedFinalSourceActivityMilliseconds": 500,
+    "sourceTailVerification": {
+      "segments": 50,
+      "allFinal500msPreservedBeforePacing": true
+    },
+    "scoreSentenceQuietTailMilliseconds": 500
+  },
+  "listeningReview": {
+    "status": "pending",
+    "reason": "Prepared for Mel to listen. Technical waveform, automated transcription and browser checks are not human listening approval."
+  },
+  "textApproval": {
+    "version": "v8",
+    "status": "approved",
+    "evidence": "Mel: Approve V8; matching audio preparation, not publication"
+  },
+  "deliveredTailScreen": {
+    "decodedDurationSeconds": 168.53054166666666,
+    "quietTailAtMinus60DbfsMilliseconds": 272.4166666666667
+  },
+  "silenceScreen": {
+    "thresholdDb": -50,
+    "minimumGapSeconds": 0.3,
+    "detectedGaps": 9,
+    "longestGapSeconds": 0.549917
+  },
+  "scoreClarityRevision": {
+    "version": "v9",
+    "scope": "Only final score passage and matching page counterpart; authorized by Mel audible-defect feedback",
+    "status": "pending-listening",
+    "originalVersion": "v8"
+  },
+  "transcriptScreen": {
+    "scope": "Delivered-file score excerpt only",
+    "method": "Cached CPU English recognizer",
+    "recognized": "The past and the finish belonged in the story even in a game Phoenix Lost.\n Chicago finished with 124 points.\n Phoenix finished with 117.",
+    "note": "Automated transcription is supplementary; Mel must judge audible clarity."
+  }
+}

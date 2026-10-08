@@ -613,7 +613,150 @@ export const issues = [
       "<a href=\"https://pubmed.ncbi.nlm.nih.gov/15130871/\" target=\"_blank\" rel=\"noreferrer\">Guadagnoli &amp; Lee, “Challenge Point”</a>. Journal of Motor Behavior, 2004. A conceptual framework for the interaction between practice difficulty and a learner’s skill."
     ],
     "presentation": "editorial-v2"
+  },
+{
+  "number": "005",
+  "slug": "005-reward-the-assist",
+  "title": "Make the Assist Visible",
+  "thesis": "Make the Assist Visible. Give the result its full story.",
+  "summary": "Dean Smith’s pointed finger, the work behind the finish, and the difference between rewarding a rescue and repairing the process.",
+  "readingTime": "2½ min read",
+  "publicationDate": "October 2026",
+  "status": "published",
+  "publishedAt": "2026-10-08T12:17:26-07:00",
+  "modifiedAt": "2026-10-08T19:17:26.000Z",
+  "share": {
+    "url": "https://meltckr.github.io/the-standard/issues/005-reward-the-assist/",
+    "image": "og-005-make-the-assist-visible-v2.png",
+    "imageWidth": 1200,
+    "imageHeight": 630,
+    "hook": "WHO MADE IT POSSIBLE?",
+    "alt": "The Standard Edition 005, Make the Assist Visible: Who made it possible? A symbolic basketball pass connects the contribution to the finish, beside AVC branding.",
+    "message": "Mat, here’s the review draft of Edition 005 of The Standard: Make the Assist Visible. It starts with Dean Smith’s point-to-the-passer habit and follows the work behind the finish. The central question is who gets credit—and whether repeated rescues reveal a process we need to repair. I’d be interested in what comes to mind for you."
+  },
+  "sections": [
+    {
+      "id": "story",
+      "eyebrow": "The coaching example",
+      "title": "Point to the passer.",
+      "body": [
+        "Mat, Dean Smith had his players point to the passer. At North Carolina, the player who scored acknowledged the teammate who made the pass. The scorer had the basket; the pointed finger gave the play its full story.",
+        "In his 2013 Presidential Medal of Freedom remarks honoring Smith, President Barack Obama called him \"the pioneer who popularized the idea of pointing to the passer.\" A small act showed what the program valued.",
+        "That is where this Standard starts. Make the Assist Visible. When something goes well, look behind the person at the finish. Who helped? What did their contribution make possible?"
+      ]
+    },
+    {
+      "id": "organization",
+      "eyebrow": "Across the organization",
+      "title": "Look behind the finish.",
+      "body": [
+        "Against Chicago on October 7, Jalen Green set up Oso Ighodaro for an alley-oop dunk with 6:57 left in the first quarter. It cut Chicago’s lead to one, 18-17. The pass and the finish belong in the story, even in a game Phoenix lost. Chicago finished with 124 points. Phoenix finished with 117.",
+        "The same principle matters around a mortgage file. Think about the processor who spots missing information early and helps complete the file. The customer sees the next step; the team needs to see the preparation behind it.",
+        "United Wholesale Mortgage describes a practice in which leaders and teammates give kudos for contributions above and beyond the job. Those kudos earn Pay It Forward points, which recipients use to help choose where the company's charitable dollars go."
+      ]
+    },
+    {
+      "id": "recognition",
+      "eyebrow": "The leadership practice",
+      "title": "Name what mattered.",
+      "body": [
+        "Carry that principle into the next conversation. Describe the work and connect it to the result.",
+        "\"You're a great teammate\" expresses appreciation. \"You stayed with the new processor until they could handle that question themselves\" names the contribution. The person knows what you valued, and everyone else hears a behavior they recognize.",
+        "Some people welcome public credit. Others prefer a quiet thank-you. Fit the acknowledgment to the person.",
+        "Keep the credit honest: recognize help that builds capability, improves a handoff or solves a problem that matters."
+      ]
+    },
+    {
+      "id": "repair",
+      "eyebrow": "The operating standard",
+      "title": "Reward the rescue. Repair the process.",
+      "bodyOpeningAsHeading": true,
+      "body": [
+        "Reward the rescue. Repair the process.",
+        "When the same person keeps rescuing an incomplete handoff, the help reveals a process that needs repair. Thank the person. Then fix what keeps making the rescue necessary.",
+        "Ask where the handoff broke. Who owns the correction? What changes before the next file or decision moves? Credit the rescue without turning it into a permanent job.",
+        "The test is what happens next: cleaner handoffs, earlier help, and people ready to handle it themselves. Recognize the contribution and reduce the need for another rescue."
+      ]
+    },
+    {
+      "id": "practice",
+      "eyebrow": "Put it to work",
+      "title": "Make acknowledgment part of the work.",
+      "body": [
+        "At the next review of a good result, ask the person closest to it who helped make it possible. Listen for the contribution that rarely reaches the room.",
+        "Do this when the outcome disappoints, too. Recognize sound preparation, honest information and help that made a teammate better. Then examine what needs to improve. Credit and accountability belong in the same conversation."
+      ]
+    }
+  ],
+  "pullQuotes": [],
+  "applicationTitle": "Give the result its full story.",
+  "applicationPoints": [],
+  "closingQuestion": "Who helped create our last important result, and would anyone know it from the way we celebrated?",
+  "closingStandard": "Make the Assist Visible",
+  "sources": [
+    "<a href=\"https://goheels.com/news/2015/2/23/209902687\" target=\"_blank\" rel=\"noreferrer\">UNC Athletics, “Remembering Coach Smith”</a>. February 23, 2015. UNC’s account describes a scoring player pointing to the teammate who made the pass as an acknowledgment of the assist.",
+    "<a href=\"https://obamawhitehouse.archives.gov/the-press-office/2013/11/20/remarks-president-presidential-medal-freedom-ceremony\" target=\"_blank\" rel=\"noreferrer\">Official White House archive, Presidential Medal of Freedom remarks</a>. November 20, 2013. Obama called Smith “the pioneer who popularized the idea of pointing to the passer.”",
+    "<a href=\"https://statsdmz.nba.com/pdfs/20261007/20261007_PHXCHI_book.pdf#page=9\" target=\"_blank\" rel=\"noreferrer\">NBA official gamebook, Phoenix at Chicago</a>. October 7, 2026, page 9: Q1 6:57, Ighodaro alley-oop dunk assisted by Green, Chicago lead 18-17. <a href=\"https://statsdmz.nba.com/pdfs/20261007/20261007_PHXCHI_book.pdf#page=1\" target=\"_blank\" rel=\"noreferrer\">Final box, page 1</a>: Chicago 124, Phoenix 117. Both players appear on the <a href=\"https://www.nba.com/team/1610612756/suns\" target=\"_blank\" rel=\"noreferrer\">official current Suns roster</a>, checked October 8, 2026.",
+    "<a href=\"https://uwmcareers.com/blog/doing-well-by-doing-good\" target=\"_blank\" rel=\"noreferrer\">UWM Careers, “Doing Well By Doing Good”</a>. April 11, 2023. The “Paying It Forward” section describes kudos from leaders or team members earning Pay It Forward points that let recipients choose where UWM’s charitable dollars are donated. This is UWM’s dated public description, not verification of the program’s current operation or a claim about its effect on performance.",
+    "The mortgage processor is an illustrative example. Leadership practices are editorial recommendations, not claimed research results."
+  ],
+  "presentation": "editorial-v2",
+  "audio": {
+    "player": "avc-audio-player",
+    "label": "Audio",
+    "title": "Make the Assist Visible",
+    "description": "A spoken companion on making contributions visible and repairing recurring handoffs.",
+    "durationLabel": "2:49 listen",
+    "src": "/assets/audio/standard-005-make-the-assist-visible-arizona-v12-v9.mp3",
+    "transcriptFile": "/content/audio/005-make-the-assist-visible-arizona-v12-v9.txt",
+    "metadataFile": "/content/audio/005-make-the-assist-visible-arizona-v12-v9.json",
+    "pronunciationAliases": [],
+    "minWords": 500,
+    "maxWords": 750,
+    "minSeconds": 150,
+    "maxSeconds": 240,
+    "bitrateKbps": 160,
+    "sampleRateHz": 24000,
+    "requiredClosing": "Much love my brother. Dominate!",
+    "transcript": [
+      "Mat, Dean Smith had his players point to the passer. At North Carolina, the player who scored acknowledged the teammate who made the pass. The scorer had the basket; the pointed finger gave the play its full story.",
+      "In his twenty thirteen Presidential Medal of Freedom remarks honoring Smith, President Barack Obama called him \"the pioneer who popularized the idea of pointing to the passer.\" A small act showed what the program valued.",
+      "That is where this Standard starts. Make the Assist Visible. When something goes well, look behind the person at the finish. Who helped? What did their contribution make possible?",
+      "Against Chicago on October seventh, Jalen Green set up Oso Ighodaro for an alley-oop dunk with six minutes and fifty-seven seconds left in the first quarter. It cut Chicago’s lead to one, eighteen to seventeen. The pass and the finish belong in the story, even in a game Phoenix lost. Chicago finished with one hundred twenty-four points. Phoenix finished with one hundred seventeen.",
+      "The same principle matters around a mortgage file. Think about the processor who spots missing information early and helps complete the file. The customer sees the next step; the team needs to see the preparation behind it.",
+      "United Wholesale Mortgage describes a practice in which leaders and teammates give kudos for contributions above and beyond the job. Those kudos earn Pay It Forward points, which recipients use to help choose where the company's charitable dollars go.",
+      "Carry that principle into the next conversation. Describe the work and connect it to the result.",
+      "\"You're a great teammate\" expresses appreciation. \"You stayed with the new processor until they could handle that question themselves\" names the contribution. The person knows what you valued, and everyone else hears a behavior they recognize.",
+      "Some people welcome public credit. Others prefer a quiet thank-you. Fit the acknowledgment to the person.",
+      "Keep the credit honest: recognize help that builds capability, improves a handoff or solves a problem that matters.",
+      "Reward the rescue. Repair the process.",
+      "When the same person keeps rescuing an incomplete handoff, the help reveals a process that needs repair. Thank the person. Then fix what keeps making the rescue necessary.",
+      "Ask where the handoff broke. Who owns the correction? What changes before the next file or decision moves? Credit the rescue without turning it into a permanent job.",
+      "The test is what happens next: cleaner handoffs, earlier help, and people ready to handle it themselves. Recognize the contribution and reduce the need for another rescue.",
+      "At the next review of a good result, ask the person closest to it who helped make it possible. Listen for the contribution that rarely reaches the room.",
+      "Do this when the outcome disappoints, too. Recognize sound preparation, honest information and help that made a teammate better. Then examine what needs to improve. Credit and accountability belong in the same conversation.",
+      "Who helped create our last important result, and would anyone know it from the way we celebrated?",
+      "When attention settles on the person who finished, look back at the person who helped. Make the Assist Visible.",
+      "Much love my brother. Dominate!"
+    ]
+  },
+  "closingParagraph": "When attention settles on the person who finished, look back at the person who helped. Make the Assist Visible.",
+  "closingLead": "When attention settles on the person who finished, look back at the person who helped.",
+  "signoff": "Much love my brother. Dominate!",
+  "pageTranscriptFile": "/content/review/005-make-the-assist-visible-v9-page.txt",
+  "reviewVersion": "v9-score-clarity",
+  "textApproval": {
+    "status": "approved",
+    "version": "v8",
+    "evidence": "Mel: Approve V8; text and matching audio preparation only"
+  },
+  "scoreClarityRevision": {
+    "version": "v9",
+    "scope": "Only final score passage and matching page counterpart; authorized by Mel audible-defect feedback",
+    "status": "pending-listening",
+    "originalVersion": "v8"
   }
+}
 ];
 
 export function getIssue(slug) {

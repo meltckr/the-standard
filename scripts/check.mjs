@@ -38,8 +38,10 @@ const { brand } = await import("../content/brand.js");
 if (!brand.logos.onDark || !brand.logos.onLight) errors.push("AVC header/footer brand assets are missing");
 if (!brand.palette.blue || !brand.palette.black || !brand.palette.white) errors.push("AVC core palette is incomplete");
 for (const issue of content.issues) {
-  const fields = ["number", "slug", "title", "thesis", "summary", "readingTime", "publicationDate", "publishedAt", "modifiedAt", "sections", "applicationPoints", "closingQuestion", "closingStandard", "sources"];
+  const draft = issue.status === "draft";
+  const fields = ["number", "slug", "title", "thesis", "summary", "readingTime", "publicationDate", "modifiedAt", "sections", "applicationPoints", "closingQuestion", "closingStandard", "sources", ...(!draft ? ["publishedAt"] : [])];
   for (const field of fields) {
+    if (field === "applicationPoints" && Array.isArray(issue[field]) && issue[field].length === 0 && issue.pageTranscriptFile && issue.textApproval?.status === "approved") continue;
     if (!issue[field] || issue[field].length === 0) errors.push(`Issue ${issue.number} is missing ${field}`);
   }
   if (!issue.share?.url) errors.push(`Issue ${issue.number} is missing its permanent share URL`);
@@ -48,7 +50,7 @@ for (const issue of content.issues) {
   if (!issue.share?.alt) errors.push(`Issue ${issue.number} is missing Open Graph image alt text`);
   if (!issue.share?.message) errors.push(`Issue ${issue.number} is missing its iMessage copy`);
   if (!Number.isInteger(issue.share?.imageWidth) || !Number.isInteger(issue.share?.imageHeight)) errors.push(`Issue ${issue.number} share image dimensions are missing`);
-  if (!Number.isFinite(Date.parse(issue.publishedAt)) || !Number.isFinite(Date.parse(issue.modifiedAt))) errors.push(`Issue ${issue.number} has invalid publication timestamps`);
+  if ((draft ? Boolean(issue.publishedAt) : !Number.isFinite(Date.parse(issue.publishedAt))) || !Number.isFinite(Date.parse(issue.modifiedAt))) errors.push(`Issue ${issue.number} has invalid publication timestamps`);
   if (Date.parse(issue.modifiedAt) < Date.parse(issue.publishedAt)) errors.push(`Issue ${issue.number} modifiedAt precedes publishedAt`);
   const expectedUrl = `https://meltckr.github.io/the-standard/issues/${issue.slug}/`;
   if (issue.share?.url !== expectedUrl) errors.push(`Issue ${issue.number} has the wrong canonical share URL`);

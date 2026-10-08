@@ -1,0 +1,92 @@
+{
+  "issue": "005",
+  "source": "/assets/audio/standard-005-make-the-assist-visible-arizona-v12-v5.mp3",
+  "sizeBytes": 3648524,
+  "sha256": "f680a2212b54af995968c3ba232a56177bcc0c321018d6ee81366e015210fd7f",
+  "transcriptSha256": "1cd05393ca2143204d0cc0e53f6776912ac5acacad656d5ccfe0756e485b83f0",
+  "speechInputSha256": "1cd05393ca2143204d0cc0e53f6776912ac5acacad656d5ccfe0756e485b83f0",
+  "xingMetadata": true,
+  "title": "Make the Assist Visible",
+  "voice": "AVC Arizona Voice v12",
+  "provider": "Private local MLX Audio",
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+  "generatedAt": "2026-10-08T17:16:51.139Z",
+  "durationSeconds": 182.343125,
+  "wordCount": 574,
+  "measuredWordsPerMinute": 188.87468337509299,
+  "codec": "mp3",
+  "channels": 1,
+  "sampleRateHz": 24000,
+  "bitrateKbps": 160,
+  "normalization": "Original approved source segments restored with conservative quiet-only joins; pitch-preserving tempo 1.12, existing EQ and lighter de-essing, measured two-pass loudnorm. Measurements from delivered MP3.",
+  "measuredIntegratedLufs": -16.21,
+  "measuredTruePeakDbtp": -1.87,
+  "loudnessMeasurement": "Delivered MP3, FFmpeg loudnorm input measurement with dual_mono=true",
+  "tempoMultiplierRelativeToRawSentences": 1.12,
+  "pronunciationAliases": [],
+  "requiredClosing": "Much love my brother. Dominate!",
+  "sentenceAssembly": {
+    "sentenceCount": 73,
+    "activityThresholdDb": -72,
+    "retainedTailMilliseconds": 200,
+    "finalTailMilliseconds": 350,
+    "outgoingFadeMilliseconds": 20,
+    "maximumFadeWindowLevelDb": -76.32959861247399,
+    "minimumSourceTailMilliseconds": 7.541666666666667,
+    "internalPausesCollapsed": true,
+    "longQuietRunsShortened": 3,
+    "removedQuietMilliseconds": 6403.583333333337,
+    "contextualRepairs": [
+      43,
+      55,
+      68
+    ],
+    "replacementSegments": [],
+    "reusedSegments": 73,
+    "protectedFinalSourceActivityMilliseconds": 500,
+    "sourceTailVerification": {
+      "segments": 73,
+      "allFinal500msPreservedBeforePacing": true
+    }
+  },
+  "listeningReview": {
+    "status": "pending",
+    "reason": "Prepared for Mel to listen. Technical waveform, automated transcription and browser checks are not human listening approval."
+  },
+  "tailPolish": {
+    "reason": "Mel heard clipped endings in v4",
+    "method": "Rebuilt from pre-trim v3 source segments, restored activity down to -72dBFS, 200ms tails / 350ms final tail before tempo, 70ms leading margin, conservative quiet-only cuts with final 500ms protection. Existing 1.12 pitch-preserving pace retained; lighter de-essing 0.12.",
+    "humanListening": "pending",
+    "finalPostProcessingQuietPadMilliseconds": 250
+  },
+  "deliveredTailScreen": {
+    "decodedDurationSeconds": 182.343125,
+    "quietTailAtMinus60DbfsMilliseconds": 272.4166666666667,
+    "quietTailAtMinus72DbfsMilliseconds": 259.125
+  },
+  "transcriptScreen": {
+    "status": "completed",
+    "method": "Complete delivered MP3, cached local English recognizer CPU mode; voiced content screened before silence-only final padding",
+    "newExampleRecognized": " son's example.  Against Chicago on October 7th, Jalen Green set up Osoigodaro for our first quarter alley  oop dunk. The pass created the finish. Both contributions belong in the story. Name the pass.  Give the result is full story. The same principle matters in t",
+    "closingRecognized": ". Then examine what needs to improve.  Credit and accountability belong in the same conversation. Who helped create our last important  result? And would anyone know it from the way we celebrated? When attention settles on the person  who finished, look back at the person who helped make the assist visible. Much love my brother. Dominate.",
+    "note": "Recognition variants on names/short words remain listening checks; not human approval."
+  },
+  "silenceScreen": {
+    "thresholdDb": -50,
+    "minimumGapSeconds": 0.3,
+    "detectedGaps": 3,
+    "longestGapSeconds": 0.390917
+  },
+  "digitalBlackScreen": {
+    "thresholdPcm16": 4,
+    "minimumRunSeconds": 0.28,
+    "note": "Quiet source margins preserved to avoid abrupt endings.",
+    "detectedRuns": 1,
+    "runs": [
+      {
+        "start": 92.299875,
+        "duration": 0.303625
+      }
+    ]
+  }
+}
