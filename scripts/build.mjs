@@ -84,7 +84,7 @@ async function issueShell(issue) {
       height: issue.share.imageHeight,
       caption: imageAlt,
     },
-    datePublished: issue.publishedAt,
+    ...(issue.status !== "draft" ? { datePublished: issue.publishedAt } : {}),
     dateModified: issue.modifiedAt,
     author: { "@type": "Person", name: "Mel Tucker" },
     publisher: {
@@ -113,6 +113,7 @@ async function issueShell(issue) {
     .replace("<title>The Standard</title>", `<title>${title}</title>`)
     .replace('<meta property="og:type" content="website">', '<meta property="og:type" content="article">');
   html = replaceCanonical(html, url);
+  if (issue.status === "draft") html = replaceMeta(html, "name", "robots", "noindex, nofollow");
   html = replaceMeta(html, "name", "description", issue.summary);
   html = replaceMeta(html, "property", "og:title", title);
   html = replaceMeta(html, "property", "og:description", issue.thesis);
@@ -127,7 +128,7 @@ async function issueShell(issue) {
   html = replaceMeta(html, "name", "twitter:image", image);
   html = replaceMeta(html, "name", "twitter:image:alt", imageAlt);
   const articleMeta = [
-    `<meta property="article:published_time" content="${escapeAttribute(issue.publishedAt)}">`,
+    ...(issue.status !== "draft" ? [`<meta property="article:published_time" content="${escapeAttribute(issue.publishedAt)}">`] : []),
     `<meta property="article:modified_time" content="${escapeAttribute(issue.modifiedAt)}">`,
     '<meta property="article:section" content="Leadership">',
     ...(issue.audio ? [`<link rel="alternate" type="audio/mpeg" href="${escapeAttribute(`${siteUrl}${issue.audio.src.replace(/^\/+/, "")}`)}" title="${escapeAttribute(issue.audio.title)}">`] : []),
@@ -145,7 +146,7 @@ for (const issue of issues) {
 
 const sitemapEntries = [
   { url: siteUrl, modifiedAt: issues.at(-1)?.modifiedAt },
-  ...issues.map((issue) => ({
+  ...issues.filter((issue) => issue.status !== "draft").map((issue) => ({
     url: new URL(`issues/${issue.slug}/`, siteUrl).href,
     modifiedAt: issue.modifiedAt,
   })),

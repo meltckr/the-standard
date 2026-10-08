@@ -41,7 +41,7 @@ function home() {
         <a class="issue-card reveal" href="${withBase(`/issues/${issue.slug}/`)}" aria-label="Read Issue ${issue.number}: ${issue.title}">
           <span class="issue-card__number">${issue.number}</span>
           <span>
-            <span class="eyebrow">${issue.readingTime}${issue.audio ? ` · ${issue.audio.durationLabel}` : ""}</span>
+            <span class="eyebrow">${issue.status === "draft" ? "Review draft · " : ""}${issue.readingTime}${issue.audio ? ` · ${issue.audio.durationLabel}` : ""}</span>
             <h3>${issue.title}</h3>
             <p>${issue.summary}</p>
           </span>
@@ -184,7 +184,7 @@ function issuePage(issue) {
           <div class="hero-meta meta">
             <span>${issue.readingTime}</span>
             <span>${issue.publicationDate}</span>
-            <span>Private circulation</span>
+            <span>${issue.status === "draft" ? "Review draft" : "Private circulation"}</span>
           </div>
           ${editorialV2 ? `<div class="hero-entry"><div class="hero-entry__links"><a href="${issueHref}#story">Read the essay <span aria-hidden="true">↘</span></a>${issue.audio ? `<a href="${issueHref}#listen">Audio · ${issue.audio.durationLabel} <span aria-hidden="true">↓</span></a>` : ""}</div></div>` : ""}
         </div>
