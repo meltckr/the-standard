@@ -97,7 +97,7 @@ async function issueShell(issue) {
     articleSection: "Leadership",
     inLanguage: "en-US",
   };
-  if (issue.audio && audioMetadata) {
+  if (issue.audio && issue.audio.status !== "prior-draft" && audioMetadata) {
     structuredArticle.associatedMedia = {
       "@type": "AudioObject",
       name: issue.audio.title,
@@ -131,7 +131,7 @@ async function issueShell(issue) {
     ...(issue.status !== "draft" ? [`<meta property="article:published_time" content="${escapeAttribute(issue.publishedAt)}">`] : []),
     `<meta property="article:modified_time" content="${escapeAttribute(issue.modifiedAt)}">`,
     '<meta property="article:section" content="Leadership">',
-    ...(issue.audio ? [`<link rel="alternate" type="audio/mpeg" href="${escapeAttribute(`${siteUrl}${issue.audio.src.replace(/^\/+/, "")}`)}" title="${escapeAttribute(issue.audio.title)}">`] : []),
+    ...(issue.audio && issue.audio.status !== "prior-draft" ? [`<link rel="alternate" type="audio/mpeg" href="${escapeAttribute(`${siteUrl}${issue.audio.src.replace(/^\/+/, "")}`)}" title="${escapeAttribute(issue.audio.title)}">`] : []),
   ].join("\n    ");
   html = html.replace(`<title>${title}</title>`, `${articleMeta}\n    <title>${title}</title>`);
   html = replaceStructuredData(html, structuredArticle);

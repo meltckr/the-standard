@@ -40,7 +40,7 @@ function home() {
         <a class="issue-card reveal" href="${withBase(`/issues/${issue.slug}/`)}" aria-label="Read Issue ${issue.number}: ${issue.title}">
           <span class="issue-card__number">${issue.number}</span>
           <span>
-            <span class="eyebrow">${issue.status === "draft" ? "Review draft · " : ""}${issue.readingTime}${issue.audio ? ` · ${issue.audio.durationLabel}` : ""}</span>
+            <span class="eyebrow">${issue.status === "draft" ? "Review draft · " : ""}${issue.readingTime}${issue.audio ? ` · ${issue.audio.status === "prior-draft" ? "Prior-draft audio · " : ""}${issue.audio.durationLabel}` : ""}</span>
             <h3>${issue.title}</h3>
             <p>${issue.summary}</p>
           </span>
@@ -102,6 +102,7 @@ function renderAudio(issue) {
     return `
       <section class="audio-edition" id="listen" data-section="listen" aria-label="Audio edition">
         <div class="audio-edition__module reveal">
+          ${audio.status === "prior-draft" ? `<p class="audio-review-notice" role="note">${audio.reviewNotice}</p>` : ""}
           <${audio.player}
             src="${withBase(audio.src)}"
             title="${audio.title}"
@@ -185,7 +186,7 @@ function issuePage(issue) {
             <span>${issue.publicationDate}</span>
             <span>${issue.status === "draft" ? "Review draft" : "Private circulation"}</span>
           </div>
-          ${editorialV2 ? `<div class="hero-entry"><div class="hero-entry__links"><a href="${issueHref}#story">Read the essay <span aria-hidden="true">↘</span></a>${issue.audio ? `<a href="${issueHref}#listen">Audio · ${issue.audio.durationLabel} <span aria-hidden="true">↓</span></a>` : ""}</div></div>` : ""}
+          ${editorialV2 ? `<div class="hero-entry"><div class="hero-entry__links"><a href="${issueHref}#story">Read the essay <span aria-hidden="true">↘</span></a>${issue.audio ? `<a href="${issueHref}#listen">${issue.audio.status === "prior-draft" ? "Prior-draft audio" : "Audio"} · ${issue.audio.durationLabel} <span aria-hidden="true">↓</span></a>` : ""}</div></div>` : ""}
         </div>
       </div>
     </section>

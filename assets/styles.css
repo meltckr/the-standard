@@ -1843,3 +1843,5 @@ a {
     transform: none;
   }
 }
+
+.audio-review-notice { color: #dbeafe; border-left: 3px solid #60a5fa; padding: 0.8rem 1rem; margin: 0 0 1.25rem; line-height: 1.6; background: rgba(37,99,235,.12); }

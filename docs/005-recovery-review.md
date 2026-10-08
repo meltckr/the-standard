@@ -1,6 +1,6 @@
 # Edition 005 recovery review
 
-Reward the Assist is prepared for Thursday October 8, 2026 afternoon Arizona review and possible delivery, subject to Mel's listening/editorial approval and separate publication/delivery authorization.
+Make the Assist Visible is the current written review draft, prepared for Thursday October 8, 2026 afternoon Arizona review and possible delivery, subject to Mel's listening/editorial approval and separate publication/delivery authorization.
 
 Recovered from the original implementation checkout without modifying it. The independent recovery checkout uses branch `codex/standard-005-recovery-review-20261008`, based on main `15aab8e54f5ae58a1799f305b66a89560e3cb712`. No original processes were stopped, no original branch was pushed, and no audio was regenerated. Existing approved revised article, 808-word spoken adaptation, share art and completed MP3 were reused. No paid service or credits were consumed.
 
@@ -33,3 +33,13 @@ Independent parent QA and Mel's listening/editorial approval remain pending. Aut
 ## Bounded QA correction
 
 Independent QA passed the editorial/source/controls/draft-state checks and identified a total-duration display mismatch. The new AVC player now rounds only total duration (brief, end label and slider accessible total) to the nearest second, matching the page link and AudioObject at 4:25. Elapsed time and seeking are unchanged; archived players and MP3/transcript bytes remain untouched. The optional study note describes mixed experiment results and limitations; independent QA did not retrieve full study text, so no full-text verification is claimed.
+
+## Owner substantive revision
+
+The written title, subhead idea and final Standard are now “Make the Assist Visible”; the question for Mat is unchanged. The Dean Smith gesture opens the essay. Inclusive pronouns, the exact owner-supplied study note correction, direct prose and a separate rescue-versus-repair section are implemented. Stable review URL retains the original slug; v2 share art carries the current title and previous art is preserved.
+
+Essay: 691 words including title/thesis/headers/application/closing, about 3:27 at 200 wpm. Optional source notes add 247 words. Displayed estimate: 3½ minutes. Full essay plus optional notes: 938 words, about 3:45 at 250 wpm. The under-four-minute editorial gate uses the essay at 200 wpm, excluding optional notes and prior audio transcript.
+
+Sources: parent research supplied verified Suns account, NBA firsthand analysis and official game date, plus UWM’s April 11, 2023 kudos/Pay It Forward description. UWM page and NBA screen analysis were independently opened here. Suns team page returned no body here; pass/finish verification relies on parent source review. No current-2026 UWM operation, causal performance benefit, Mel attendance or Mat-era leadership is implied. No independent full-study-text verification is claimed.
+
+Existing 808-word narration is stale for this revised essay. MP3/transcript preserved byte-for-byte, explicitly labeled Prior-draft audio above the player and in reader/library links. It is excluded from the revised Article’s associatedMedia and audio alternate link. A new spoken adaptation and Arizona v12 render are required for current audio. No generation was performed. Human listening/editorial/publication/delivery approval remains open.
