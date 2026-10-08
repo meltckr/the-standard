@@ -1,4 +1,6 @@
-# Standard 005 delivery revision
+# Historical v4 delivery revision
+
+Superseded by [v5 tail polish](005-tail-polish-review.md). V4 direction and pace were approved, with audible tail clipping requested for correction. This record remains historical.
 
 Mel's review of v3: normal 1x was too slow, lacked energy and dragged. V4 responds with the same approved Arizona v12 voice and exact 574 accepted spoken words. The article, current-roster example, exact Mat question and signoff remain unchanged.
 

@@ -1,16 +1,15 @@
 # Standard 005 current audio review
 
-The active review candidate is **v4**, the brisker delivery prepared after Mel found normal 1x too slow. See [the v4 delivery review](005-brisk-audio-review.md) for the current finishing method, measurements and listening limitations.
+Active candidate: **v5 tail polish**, after Mel approved v4 direction and pace but heard clipped endings. See [v5 tail-polish review](005-tail-polish-review.md).
 
-- Active MP3: `assets/audio/standard-005-make-the-assist-visible-arizona-v12-v4.mp3`.
-- Exact transcript: `content/audio/005-make-the-assist-visible-arizona-v12-v4.txt`, byte-identical to v3, 574 words.
-- Metadata: `content/audio/005-make-the-assist-visible-arizona-v12-v4.json`.
-- Duration: 166.018708 seconds (2:46.019); 3,322,124 bytes.
-- SHA-256: `31c869ead8a18f7356d97941ed28aa13fb7a5543f017b4924927005666b93d81`.
-- Delivered -16.17 LUFS / -1.87 dBTP; same approved Arizona v12 voice, shorter excess pauses and pitch-preserving tempo 1.12. Player default unchanged.
-- Artifact implementation commit: `5ddd8f4e83a5a8d1e735dc1e564ae08846818603`; independent technical QA passed this exact commit.
+- MP3: `assets/audio/standard-005-make-the-assist-visible-arizona-v12-v5.mp3`.
+- Exact 574-word transcript: `content/audio/005-make-the-assist-visible-arizona-v12-v5.txt`, byte-identical to accepted v3/v4.
+- Metadata: `content/audio/005-make-the-assist-visible-arizona-v12-v5.json`.
+- Duration 182.343125 seconds (3:02.343), 3,648,524 bytes.
+- SHA-256 `f680a2212b54af995968c3ba232a56177bcc0c321018d6ee81366e015210fd7f`.
+- Delivered -16.21 LUFS / -1.87 dBTP; approved voice and pitch-preserving tempo 1.12 retained. Original faint tails restored, conservative quiet joins and lighter de-essing.
 
-Mel's listening/editorial approval remains pending. Timing changes are not a claim of regenerated expressive prosody or human-approved energy. The current roster example, accepted article, exact Mat question and signoff remain intact. Prior audio versions are preserved. No publication, deployment, main merge or client delivery.
+Mel's final listening approval and independent v5 QA remain pending. Accepted article, current-roster example, exact Mat question and signoff are unchanged. Prior versions preserved. No publication, main merge, deployment or client delivery.
 
 ## Historical v2 review — superseded
 
