@@ -1,6 +1,6 @@
 # Standard 005 current audio review
 
-**Editorial hold:** [review draft v7](005-v7-editorial-review.md) is saved and awaits Mel’s explicit numbered approval. No v7 audio exists. V5 is preserved prior-copy audio and does not narrate v7.
+**Editorial hold:** [review draft v8](005-v8-editorial-review.md) is saved and awaits Mel’s explicit numbered approval. No v8 audio exists. V5 is preserved prior-copy audio and does not narrate v8.
 
 Prior audio candidate: **v5 tail polish**, after Mel approved v4 direction and pace but heard clipped endings. See [v5 tail-polish review](005-tail-polish-review.md).
 

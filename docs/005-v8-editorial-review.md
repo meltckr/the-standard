@@ -1,13 +1,11 @@
-# Historical Standard 005 review draft v7
+# Standard 005 review draft v8 — awaiting approval
 
-Superseded for review by [draft v8](005-v8-editorial-review.md). Exact v7 drafts and source audit remain preserved.
+V8 applies only the three parent-authorized routine fixes from Zubin’s review in Slack thread `1791481155.053109`, message `1791481237.972749`, to the exact paired v7 drafts. The closing question and final Make the Assist Visible line are preserved; the optional ending cut was not applied.
 
-Exact parent-finalized formal versions, posted by the parent in Slack message `1791481000.254119`, are saved without editorial substitutions:
+- Page: `content/review/005-make-the-assist-visible-v8-page.txt`.
+- Audio script with spoken numbers: `content/review/005-make-the-assist-visible-v8-audio.txt`.
 
-- Page: `content/review/005-make-the-assist-visible-v7-page.txt`.
-- Audio script with spoken numbers: `content/review/005-make-the-assist-visible-v7-audio.txt`.
-
-V7 supersedes v6 for review. Mel must explicitly say **approve v7** before rendering. No new audio exists for v7. Preserved v5 polished audio and the integrated reader remain prior copy and do not match this draft. No publication, main merge, deployment or Mat delivery.
+V8 supersedes v7 for review. Mel must explicitly say **approve v8** before rendering. No new audio exists for v8. Preserved v5 polished audio and the integrated reader remain prior copy and do not match this draft. No publication, main merge, deployment or Mat delivery.
 
 ## Supplied verified claim/source audit
 
