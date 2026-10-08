@@ -1,6 +1,5 @@
 import { issues, getIssue } from "../content/issues.js";
 import { brand } from "../content/brand.js";
-import "./mel-audio-player/mel-audio-player.js";
 
 const root = document.querySelector("#app");
 const pagesBase = window.location.pathname === "/the-standard" || window.location.pathname.startsWith("/the-standard/")
@@ -41,7 +40,7 @@ function home() {
         <a class="issue-card reveal" href="${withBase(`/issues/${issue.slug}/`)}" aria-label="Read Issue ${issue.number}: ${issue.title}">
           <span class="issue-card__number">${issue.number}</span>
           <span>
-            <span class="eyebrow">${issue.readingTime}${issue.audio ? ` · ${issue.audio.durationLabel}` : ""}</span>
+            <span class="eyebrow">${issue.status === "draft" ? "Review draft · " : ""}${issue.readingTime}${issue.audio ? ` · ${issue.audio.durationLabel}` : ""}</span>
             <h3>${issue.title}</h3>
             <p>${issue.summary}</p>
           </span>
@@ -99,16 +98,16 @@ function renderSection(section, quote) {
 function renderAudio(issue) {
   if (!issue.audio) return "";
   const audio = issue.audio;
-  if (audio.player === "mel-audio-player") {
+  if (["mel-audio-player", "avc-audio-player"].includes(audio.player)) {
     return `
       <section class="audio-edition" id="listen" data-section="listen" aria-label="Audio edition">
         <div class="audio-edition__module reveal">
-          <mel-audio-player
+          <${audio.player}
             src="${withBase(audio.src)}"
             title="${audio.title}"
             eyebrow="${audio.label}"
             download
-          ></mel-audio-player>
+          ></${audio.player}>
           <details class="audio-transcript audio-transcript--module">
             <summary>Read the exact transcript</summary>
             <div>${audio.transcript.map((paragraph) => `<p>${paragraph}</p>`).join("")}</div>
@@ -184,7 +183,7 @@ function issuePage(issue) {
           <div class="hero-meta meta">
             <span>${issue.readingTime}</span>
             <span>${issue.publicationDate}</span>
-            <span>Private circulation</span>
+            <span>${issue.status === "draft" ? "Review draft" : "Private circulation"}</span>
           </div>
           ${editorialV2 ? `<div class="hero-entry"><div class="hero-entry__links"><a href="${issueHref}#story">Read the essay <span aria-hidden="true">↘</span></a>${issue.audio ? `<a href="${issueHref}#listen">Audio · ${issue.audio.durationLabel} <span aria-hidden="true">↓</span></a>` : ""}</div></div>` : ""}
         </div>
@@ -412,7 +411,13 @@ const slugMatch = path.match(/^\/issues\/([^/]+)$/);
 if (path === "/") {
   home();
 } else if (slugMatch && getIssue(slugMatch[1])) {
-  issuePage(getIssue(slugMatch[1]));
+  const issue = getIssue(slugMatch[1]);
+  if (issue.audio?.player === "avc-audio-player") {
+    await import("./avc-audio-player/avc-audio-player.js");
+  } else if (issue.audio?.player === "mel-audio-player") {
+    await import("./mel-audio-player/mel-audio-player.js");
+  }
+  issuePage(issue);
 } else {
   document.title = "Issue not found — The Standard";
   root.innerHTML = `

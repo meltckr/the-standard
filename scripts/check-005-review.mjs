@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
+import { issues } from '../content/issues.js';
+const base = '15aab8e54f5ae58a1799f305b66a89560e3cb712';
+const baseline = await import(`data:text/javascript;base64,${Buffer.from(execFileSync('git',['show',`${base}:content/issues.js`])).toString('base64')}`);
+assert.deepEqual(issues.slice(0,4),baseline.issues,'Published issue objects must be unchanged');
+for (const name of ['mel-audio-player.js','player-utils.mjs']) {
+ assert.deepEqual(await readFile(`assets/mel-audio-player/${name}`),execFileSync('git',['show',`${base}:assets/mel-audio-player/${name}`]));
+}
+const legacy = await readFile('assets/mel-audio-player/mel-audio-player.js','utf8');
+const neutral = await readFile('assets/avc-audio-player/avc-audio-player.js','utf8');
+assert.equal(neutral,legacy.replaceAll('mel-audio-player','avc-audio-player').replaceAll('MelAudioPlayer','AvcAudioPlayer'),'Player behavior must be preserved by token-only renaming');
+assert.ok(!/Mel|mel-/.test(neutral));
+const issue = issues.at(-1);
+const html = await readFile(`dist/issues/${issue.slug}/index.html`,'utf8');
+assert.ok(html.includes(`href="${issue.share.url}"`));
+assert.ok(html.includes('content="noindex, nofollow"'));
+assert.ok(!html.includes('article:published_time'));
+const data = JSON.parse(html.match(/data-structured-data>(.*?)<\/script>/s)[1]);
+assert.equal(data.headline,issue.title);
+assert.equal(data.associatedMedia.duration,'PT4M25S');
+assert.equal(data.associatedMedia.transcript,issue.audio.transcript.join('\n\n'));
+assert.ok(data.associatedMedia.transcript.endsWith('Much love my brother. Dominate!'));
+assert.equal(data.image.width,1200); assert.equal(data.image.height,630);
+assert.ok(!(await readFile('dist/sitemap.xml','utf8')).includes(issue.slug),'Review drafts stay out of publication sitemap');
+assert.ok((await readFile('dist/robots.txt','utf8')).includes('https://meltckr.github.io/the-standard/sitemap.xml'));
+const mp3 = await readFile(issue.audio.src.slice(1));
+const meta = JSON.parse(await readFile(issue.audio.metadataFile.slice(1),'utf8'));
+assert.equal(createHash('sha256').update(mp3).digest('hex'),meta.sha256);
+assert.equal(meta.sizeBytes,mp3.length);
+assert.ok(mp3.subarray(0,4096).includes(Buffer.from('Info')) || mp3.subarray(0,4096).includes(Buffer.from('Xing')));
+console.log('005 review integration checks passed: archives, neutral player parity, built route/head, draft gate, audio hash and exact transcript.');

@@ -1,0 +1,64 @@
+{
+  "issue": "005",
+  "source": "/assets/audio/standard-005-reward-the-assist-arizona-v12-v1.mp3",
+  "sizeBytes": 5295884,
+  "sha256": "392c201ca02792ebaa35fdf6b8923368c03c51e9fea5a61890e023f2975c561b",
+  "transcriptSha256": "ac291dfa1f04d4bda1608d3fc919ec103d7040491c6005b5369dadd7a9bef0dd",
+  "speechInputSha256": "ac291dfa1f04d4bda1608d3fc919ec103d7040491c6005b5369dadd7a9bef0dd",
+  "xingMetadata": true,
+  "title": "Reward the Assist",
+  "voice": "AVC Arizona Voice v12",
+  "provider": "Private local MLX Audio",
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+  "generatedAt": "2026-10-08T05:10:24.341607+00:00",
+  "durationSeconds": 264.704875,
+  "wordCount": 808,
+  "measuredWordsPerMinute": 183.14736364413386,
+  "baselineWordsPerMinute": 190,
+  "codec": "mp3",
+  "channels": 1,
+  "sampleRateHz": 24000,
+  "bitrateKbps": 160,
+  "normalization": "Existing approved sentence-level Arizona v12 renderer and reference pair; protected sentence tails, one pitch-preserving tempo pass, v12 EQ/de-essing and measured two-pass loudnorm. Reused completed MP3 without regeneration.",
+  "measuredIntegratedLufs": -16.23,
+  "measuredTruePeakDbtp": -1.58,
+  "loudnessMeasurement": "Delivered MP3, FFmpeg loudnorm input measurement with dual_mono=true",
+  "tempoMultiplierRelativeToRawSentences": 1.00154831029978,
+  "pronunciationAliases": [],
+  "requiredClosing": "Much love my brother. Dominate!",
+  "sentenceAssembly": {
+    "sentenceCount": 78,
+    "activityThresholdDb": -60,
+    "retainedTailMilliseconds": 120,
+    "finalTailMilliseconds": 250,
+    "outgoingFadeMilliseconds": 20,
+    "maximumFadeWindowLevelDb": -60.48176482250891,
+    "minimumSourceTailMilliseconds": 51.375,
+    "internalPausesCollapsed": false
+  },
+  "listeningReview": {
+    "status": "pending",
+    "reason": "Mel listening and editorial approval required. Automated transcription and browser playback are technical evidence."
+  },
+  "transcriptScreen": {
+    "status": "completed",
+    "method": "Existing private local automated transcription of delivered MP3",
+    "openingRecognized": true,
+    "closingRecognized": true,
+    "note": "Complete opening and ending recognized. Minor recognition variants include Mat/Matt, assist/assists and makes the shot/makes a shot; listening approval remains pending."
+  },
+  "silenceScreen": {
+    "status": "reviewed",
+    "thresholdDb": -50,
+    "minimumGapSeconds": 0.3,
+    "detectedGaps": 18,
+    "longestGapSeconds": 0.497667,
+    "note": "Natural pauses retained."
+  },
+  "deliveredTailScreen": {
+    "decodedDurationSeconds": 264.704875,
+    "lastActivityAtMinus60DbfsSeconds": 264.5735833333333,
+    "quietTailMilliseconds": 131.25,
+    "note": "Source assembly retained 250 ms after final word before tempo/EQ/normalization. Delivered tail is independently measured; perceptual ending approval is pending."
+  }
+}
